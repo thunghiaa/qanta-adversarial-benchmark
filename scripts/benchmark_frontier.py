@@ -38,6 +38,10 @@ def _post_chat(base_url: str, model: str, prompt: str, timeout: float) -> tuple[
         "temperature": 0,
         "max_tokens": 64,
         "response_format": {"type": "json_object"},
+        # Laguna exposes native reasoning through this official per-request
+        # switch. Direct-QA benchmarking disables it so hidden chain-of-thought
+        # does not consume the short answer budget or distort latency.
+        "chat_template_kwargs": {"enable_thinking": False},
     }
     request = urllib.request.Request(
         base_url.rstrip("/") + "/chat/completions",

@@ -43,6 +43,9 @@ packets 1-5. Set `LLAMA_THREADS` to the number of CPU threads reserved for the
 job; the default is 150. Model responses use a shared direct-QA prompt,
 temperature zero, a 0.75 buzz threshold, and the same reveal schedule as the
 submission runner. Images are explicitly omitted in the text-only track.
+Laguna's official `enable_thinking` request switch is set to false so hidden
+reasoning does not consume the constrained short-answer budget or inflate the
+latency measurement.
 
 ## Storage boundary
 

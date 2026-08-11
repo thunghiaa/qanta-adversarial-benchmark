@@ -37,8 +37,10 @@ cleanup() {
 trap cleanup EXIT
 
 git clone --depth 1 --branch "$git_ref" "$git_url" "$repo_dir"
-git clone https://github.com/poolsideai/llama.cpp.git "$runtime_dir"
-git -C "$runtime_dir" checkout 06f8cebd7fe728687be3d19f8bdedb70d75883af
+git init "$runtime_dir"
+git -C "$runtime_dir" remote add origin https://github.com/poolsideai/llama.cpp.git
+git -C "$runtime_dir" fetch --depth 1 origin 06f8cebd7fe728687be3d19f8bdedb70d75883af
+git -C "$runtime_dir" checkout --detach FETCH_HEAD
 
 python -m venv --system-site-packages "$scratch_root/venv"
 "$scratch_root/venv/bin/python" -m pip install --quiet "cmake>=3.28" "huggingface-hub>=0.24"
@@ -66,7 +68,8 @@ numactl --interleave=all "$runtime_dir/build/bin/llama-server" \
   --alias poolside/Laguna-S-2.1 \
   --host 127.0.0.1 --port 8000 \
   --threads "$threads" --threads-batch "$threads" \
-  --ctx-size 8192 --parallel 1 --jinja >"$server_log" 2>&1 &
+  --ctx-size 8192 --parallel 1 --jinja \
+  --reasoning off --reasoning-budget 0 >"$server_log" 2>&1 &
 server_pid="$!"
 
 for _attempt in $(seq 1 180); do
