@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import sys
 import time
@@ -159,6 +160,7 @@ def main() -> None:
     parser.add_argument("--output-root", type=Path, required=True)
     parser.add_argument("--run-id", default=datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S"))
     parser.add_argument("--limit-questions", type=int)
+    parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--timeout", type=float, default=600.0)
     args = parser.parse_args()
 
@@ -171,6 +173,8 @@ def main() -> None:
         raise SystemExit(f"{args.model!r} is not registered for {args.task}")
     if any(packet not in PACKET_LABELS for packet in args.packets):
         raise SystemExit("Packets must be between 1 and 6")
+    if args.workers < 1:
+        raise SystemExit("--workers must be at least 1")
 
     for packet in args.packets:
         output = _output_path(args.output_root, packet, args.task, args.run_id, args.model)
@@ -178,16 +182,26 @@ def main() -> None:
         rows = _load_rows(packet, args.task)
         if args.limit_questions is not None:
             rows = rows[: args.limit_questions]
-        for index, row in enumerate(rows, start=1):
-            qid = inject_packet_qid(row["qid"], packet, args.task)
-            if qid in completed:
-                continue
-            print(f"[{packet}/{args.task}] {index}/{len(rows)} {qid}", flush=True)
+        pending = [
+            (index, row)
+            for index, row in enumerate(rows, start=1)
+            if inject_packet_qid(row["qid"], packet, args.task) not in completed
+        ]
+
+        def process(row: dict[str, Any]) -> dict[str, Any]:
             if args.task == "tossup":
-                result = _tossup_row(row, packet, args.base_url, args.served_model, args.timeout)
-            else:
-                result = _bonus_row(row, packet, args.base_url, args.served_model, args.timeout)
-            _append(output, result)
+                return _tossup_row(row, packet, args.base_url, args.served_model, args.timeout)
+            return _bonus_row(row, packet, args.base_url, args.served_model, args.timeout)
+
+        with ThreadPoolExecutor(max_workers=args.workers) as executor:
+            futures = {executor.submit(process, row): index for index, row in pending}
+            for future in as_completed(futures):
+                result = future.result()
+                _append(output, result)
+                print(
+                    f"[{packet}/{args.task}] {futures[future]}/{len(rows)} {result['qid']}",
+                    flush=True,
+                )
         print(output, flush=True)
 
 

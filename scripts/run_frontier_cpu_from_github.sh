@@ -18,6 +18,7 @@ fi
 git_url="${BENCHMARK_GIT_URL:-https://github.com/thunghiaa/qanta-adversarial-benchmark.git}"
 git_ref="${BENCHMARK_GIT_REF:-main}"
 threads="${LLAMA_THREADS:-150}"
+workers="${BENCHMARK_WORKERS:-4}"
 run_id="${BENCHMARK_RUN_ID:-$(date -u +%Y%m%d_%H%M%S)}"
 scratch_root="$(mktemp -d /tmp/qanta-frontier.XXXXXX)"
 repo_dir="$scratch_root/repo"
@@ -68,7 +69,7 @@ numactl --interleave=all "$runtime_dir/build/bin/llama-server" \
   --alias poolside/Laguna-S-2.1 \
   --host 127.0.0.1 --port 8000 \
   --threads "$threads" --threads-batch "$threads" \
-  --ctx-size 8192 --parallel 1 --jinja \
+  --ctx-size "$((8192 * workers))" --parallel "$workers" --jinja \
   --reasoning off --reasoning-budget 0 >"$server_log" 2>&1 &
 server_pid="$!"
 
@@ -93,18 +94,19 @@ common_args=(
 )
 if [[ "$mode" == "smoke" ]]; then
   "$scratch_root/venv/bin/python" "$repo_dir/scripts/benchmark_frontier.py" \
-    "${common_args[@]}" --task tossup --packets 1 --limit-questions 1
+    "${common_args[@]}" --task tossup --packets 1 --limit-questions 1 --workers 1
 else
   "$scratch_root/venv/bin/python" "$repo_dir/scripts/benchmark_frontier.py" \
-    "${common_args[@]}" --task tossup --packets 1 2 3 4 5
+    "${common_args[@]}" --task tossup --packets 1 2 3 4 5 --workers "$workers"
   "$scratch_root/venv/bin/python" "$repo_dir/scripts/benchmark_frontier.py" \
-    "${common_args[@]}" --task bonus --packets 1 2 3 4 5
+    "${common_args[@]}" --task bonus --packets 1 2 3 4 5 --workers "$workers"
 fi
 
 mkdir -p "$export_dir"
 cp -a "$run_output"/. "$export_dir"/
 cp "$server_log" "$export_dir/laguna__${run_id}__server.log"
 REPO_DIR="$repo_dir" EXPORT_DIR="$export_dir" RUN_ID="$run_id" MODE="$mode" THREADS="$threads" \
+  WORKERS="$workers" \
   MODEL_FILE="$model_file" "$scratch_root/venv/bin/python" - <<'PY'
 import hashlib
 import json
@@ -135,6 +137,7 @@ manifest = {
     "runtime_revision": "06f8cebd7fe728687be3d19f8bdedb70d75883af",
     "track": "text_only",
     "threads": int(os.environ["THREADS"]),
+    "workers": int(os.environ["WORKERS"]),
     "host": platform.platform(),
 }
 path = Path(os.environ["EXPORT_DIR"]) / f"laguna__{os.environ['RUN_ID']}__manifest.json"
