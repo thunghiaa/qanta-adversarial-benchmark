@@ -41,6 +41,7 @@ python -m unittest discover -s tests
 
 The last command regenerates:
 
+- `figures/qanta_fig1_theta_ladder_paper.png`
 - `figures/qanta_fig2_difficulty_curves_paper.png`
 - `figures/qanta_fig3_delta_hist_paper.png`
 
