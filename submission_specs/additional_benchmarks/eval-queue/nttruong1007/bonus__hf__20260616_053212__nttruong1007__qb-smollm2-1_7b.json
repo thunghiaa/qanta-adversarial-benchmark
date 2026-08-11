@@ -1,0 +1,15 @@
+{
+  "id": "bonus__hf__20260616_053212__nttruong1007__qb-smollm2-1_7b",
+  "username": "nttruong1007",
+  "model_name": "qb-smollm2-1_7b",
+  "description": "SmolLM2-1.7B-Instruct lightweight baseline adapted for QANTA Quizbowl.",
+  "competition_type": "bonus",
+  "submission_type": "hf_pipeline",
+  "workflow": null,
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-16T05:32:12.284533+00:00",
+  "updated_at": "2026-06-16T05:32:12.284533+00:00",
+  "version": 1
+}

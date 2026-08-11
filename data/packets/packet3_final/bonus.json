@@ -1,0 +1,1173 @@
+[
+  {
+    "qid": "advvqa-b-rdBFzeM4y9sHCVQfaFs4",
+    "title": "Missing Band Members",
+    "leadin": "For ten points each, name the member of the music group who is redacted from each of these images.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "",
+        "clean_answers": [],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Mel B (Scary Spice)",
+        "clean_answers": [
+          "Mel B (Scary Spice)"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Identify either this artist's name OR their stage persona.",
+        "answer": "Gene Simmons (The Demon)",
+        "clean_answers": [
+          "Gene Simmons (The Demon)"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-t2HZ3kTSmoXtErgbe2m8",
+    "title": "Netflix Reality Shows",
+    "leadin": "For ten points each, identify each of these Netflix reality shows.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Too Hot to Handle",
+        "clean_answers": [
+          "Too Hot to Handle"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Perfect Match",
+        "clean_answers": [
+          "Perfect Match"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Million Dollar Secret",
+        "clean_answers": [
+          "Million Dollar Secret"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-UjPfb6xPghtmdOFIMprn",
+    "title": "Search Party",
+    "leadin": "In one episode of this television series, the main character goes to a beach-themed funeral.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the television series depicted in this image.",
+        "answer": "",
+        "clean_answers": [],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The main character of that series is played by what actress, who also portrayed Alexander Hamilton in an episode of \"Drunk History\"?",
+        "answer": "Alia Shawkat",
+        "clean_answers": [
+          "Alia Shawkat"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "As a child, Shawkat starred in what Fox sitcom with her on-screen parents seen here?",
+        "answer": "Arrested Development",
+        "clean_answers": [
+          "Arrested Development"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-v2rXBD7yUVqYjIM179JE",
+    "title": "Duets",
+    "leadin": "Identify these duet songs given two photos of faces and the year of release.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "(I've Had) The Time of My Life",
+        "clean_answers": [
+          "(I've Had) The Time of My Life"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Where You Are",
+        "clean_answers": [
+          "Where You Are"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Promiscuous",
+        "clean_answers": [
+          "Promiscuous"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-yz1HsdJ9KiZEhgKzaKhU",
+    "title": "Transforming into Animals Films",
+    "leadin": "For ten points each, identify these films where people turn into animals.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In this film, people are trying to find a romantic partner to avoid turning into animals.",
+        "answer": "The Lobster",
+        "clean_answers": [
+          "The Lobster"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The animal in this picture is the workaholic father of the girl on the left.",
+        "answer": "Nine Lives",
+        "clean_answers": [
+          "Nine Lives"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A teenage boy is cursed to live as the animal on the left until he performs a noble deed.",
+        "answer": "The Shaggy Dog",
+        "clean_answers": [
+          "The Shaggy Dog"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-ONKG87Klz56p26affrdR",
+    "title": "NHL Logos in MS Paint",
+    "leadin": "For ten points each, identify each of these NHL logos that were crudely recreated in MS Paint.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Seattle Kraken",
+        "clean_answers": [
+          "Seattle Kraken"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Anaheim Ducks",
+        "clean_answers": [
+          "Anaheim Ducks"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Nashville Predators",
+        "clean_answers": [
+          "Nashville Predators"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000023.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000024.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000021.png",
+      "bonus/images/000022.png",
+      "bonus/images/000023.png",
+      "bonus/images/000024.png",
+      "bonus/images/000025.png",
+      "bonus/images/000026.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000020.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-kzerchXe5W8OlwQ0fIt9",
+    "title": "Video Game Adaptations of Movies",
+    "leadin": "Identify these animated movies from their adaptations into video games.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Over the Hedge",
+        "clean_answers": [
+          "Over the Hedge"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Wall-E",
+        "clean_answers": [
+          "Wall-E"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Shark Tale",
+        "clean_answers": [
+          "Shark Tale"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000028.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000028.png",
+      "bonus/images/000029.png",
+      "bonus/images/000030.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000027.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-6eiGnV8rUnGVmskCiQNE",
+    "title": "Scooby Doo Cameos",
+    "leadin": "\"Scooby-Doo and Guess Who?\" is a 2019 animated television series in which Scooby-Doo and the gang solve mysteries alongside various celebrities. For 10 points each, identify the celebrity from their cartoon depiction.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Tim Gunn",
+        "clean_answers": [
+          "Tim Gunn"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Penn Jillette",
+        "clean_answers": [
+          "Penn Jillette"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Joey Chestnut",
+        "clean_answers": [
+          "Joey Chestnut"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000032.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000034.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000032.png",
+      "bonus/images/000033.png",
+      "bonus/images/000034.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000031.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Yo4hiZSSGbqYwDokUdMR",
+    "title": "Referenc\u00e9s",
+    "leadin": "Move over Petipa, make room for some modern restagings of classical ballets. For 10 points each, given a promotional image (or part of one), name the OG ballet referenced.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the referenced ballet, as choreographed  by Fabrizio Monteverde.",
+        "answer": "Nutcracker",
+        "clean_answers": [
+          "Nutcracker"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the referenced ballet, as choreographed  by Akram Khan.",
+        "answer": "Giselle",
+        "clean_answers": [
+          "Giselle"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the referenced ballet, as choreographed by Christian Spuck.",
+        "answer": "Sleeping Beauty",
+        "clean_answers": [
+          "Sleeping Beauty"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000036.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000036.png",
+      "bonus/images/000037.png",
+      "bonus/images/000038.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000035.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-4SbH77nDOJp3d4EPQA9e",
+    "title": "Reference Kart",
+    "leadin": "Get reference karted! For 10 points each, given a screenshot from Mario Kart, name something non-Mario being referenced.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Note:  The name of the boss will not be accepted. Name this game, which contains a boss whose body is essentially the course shown here.",
+        "answer": "Super Mario Galaxy 2",
+        "clean_answers": [
+          "Super Mario Galaxy 2"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Famously, this real-world Mercedes model appears in Mario Kart 8, shown here being driven by Waluigi.",
+        "answer": "300 SL (Roadster)",
+        "clean_answers": [
+          "300 SL (Roadster)"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "All of Bowser's kids are named after music-related figures. Give the last name of the real-life musician that Roy is named for, shown here with his namesake.",
+        "answer": "Orbison",
+        "clean_answers": [
+          "Orbison"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000040.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000041.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000040.png",
+      "bonus/images/000041.png",
+      "bonus/images/000042.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000039.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-loJyCQy0OKi0ovkJxpV6",
+    "title": "ReferenceTrot",
+    "leadin": "The comic strip FoxTrot is known for referencing widely. For 10 points each, identify each reference in this bonus.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the franchise that Jason swerves AWAY from referencing, do do do do do do.",
+        "answer": "Jaws",
+        "clean_answers": [
+          "Jaws"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "In a seasonal strip, Roger drinks expired eggnog and goes on a fantastical journey inspired by this book.",
+        "answer": "The Polar Express",
+        "clean_answers": [
+          "The Polar Express"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "One strip has Jason making a mod of a game; this panel shows him describing the game's original features. Name this 1993 puzzle solving adventure game.",
+        "answer": "Myst",
+        "clean_answers": [
+          "Myst"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000044.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000045.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000044.png",
+      "bonus/images/000045.png",
+      "bonus/images/000046.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000043.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-bzhflpiTuOX2D1LUuCc4",
+    "title": "Reference Another Day",
+    "leadin": "The James Bond film \"Die Another Day\" famously referenced every single Bond film before it. For 10 points each, identify three of those references here.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Given the \"Die Another Day\" screenshot, name the referenced Bond movie.",
+        "answer": "Dr. No",
+        "clean_answers": [
+          "Dr. No"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Given the \"Die Another Day\" screenshot, name the referenced Bond movie.",
+        "answer": "Thunderball",
+        "clean_answers": [
+          "Thunderball"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Given the \"Die Another Day\" screenshot, name the referenced Bond movie.",
+        "answer": "Spy Who Loved Me",
+        "clean_answers": [
+          "Spy Who Loved Me"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000048.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000049.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000048.png",
+      "bonus/images/000049.png",
+      "bonus/images/000050.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000047.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-jcKUHDw334yMauf9RAIR",
+    "title": "Turning Red-ferences",
+    "leadin": "As an \"Asian tween fever dream\", the movie Turning Red is chock-full of shout-outs to pop culture. For 10 points each, name three here.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In the shown screenshot, Mei is greeting the statues outside the temple with nicknames from this show.",
+        "answer": "Simpsons",
+        "clean_answers": [
+          "Simpsons"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Although it belongs to Mei as shown (but obscured) here, Ming is shown feeding this iconic 90s item at the end of the film.",
+        "answer": "Tamagotchi",
+        "clean_answers": [
+          "Tamagotchi"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Turning Red director Domee Shi specifically named this show as an influence. Accordingly, the climactic fight in Turning Red uses a nearly identical camera angle and composition to a scene in this show.",
+        "answer": "Attack on Titan",
+        "clean_answers": [
+          "Attack on Titan"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000052.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000053.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000052.png",
+      "bonus/images/000053.png",
+      "bonus/images/000054.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000051.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-r5rihudcKdLdScE2rzk9",
+    "title": "Endless References",
+    "leadin": "Neil Gaiman may have been cancelled, but the references in his iconic Sandman comics haven't. For 10 points each, name three references.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In Sandman, Loki has many names, including this one that is not entirely a Star Wars reference. in fact, in the original myths, he has special shoes that allowed him to travel over water as well.",
+        "answer": "Skywalker, Sky-Walker, Sky Walker",
+        "clean_answers": [
+          "Skywalker, Sky-Walker, Sky Walker"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Fiddler's Green is based on this real life man, who should not be removed from adaptations until you know why he was there in the first place.",
+        "answer": "Chesterton",
+        "clean_answers": [
+          "Chesterton"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Less of a reference and more of a straight-up crossover, Matthew the Raven in Sandman is an official reincarnation of Matthew from this IP after he died, as shown in this official art.",
+        "answer": "Swamp Thing",
+        "clean_answers": [
+          "Swamp Thing"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000056.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000056.png",
+      "bonus/images/000057.png",
+      "bonus/images/000058.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000055.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-YBQwaXjt8DnhJloIRLAz",
+    "title": "Roll for Reference Check",
+    "leadin": "Dungeons: The Dragoning is an enormous mashup of tabletop games and other media. Name some here FTPE.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Ironically, the subtitle of the 40,000th edition book 2 is a reference to this movie.",
+        "answer": "For a Few Dollars More",
+        "clean_answers": [
+          "For a Few Dollars More"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The shown gun kata technique in the rulebook is almost certainly a reference to a gunslinger from this video game franchise.",
+        "answer": "Metal Gear",
+        "clean_answers": [
+          "Metal Gear"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Reminder: name the IP, not the character. The class of assassin is described as being \"a profession, not a mental illness\", in a reference to the pictured character in this IP saying \"I'm not a crazed gunman, I'm an assassin ... one is a job and the other is mental sickness.\"",
+        "answer": "Team Fortress",
+        "clean_answers": [
+          "Team Fortress"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000060.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000060.png",
+      "bonus/images/000061.png",
+      "bonus/images/000062.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000059.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-BLExSLVdESqnSyJo3zGm",
+    "title": "Gotta Reference Them All!",
+    "leadin": "The Pokemon franchise has almost as many shout-outs as it has Pokemon. Name them all! Just kidding, three will do.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Two Master Scientists in Pok\u00e9mon Let's Go Pikachu and Let's Go Eevee!, as shown here, are a reference to actors in this IP.",
+        "answer": "Batman",
+        "clean_answers": [
+          "Batman"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "In a gag panel in \"Electric Tale of Pikachu\", we find out that Pikachu has a first name that is a reference to this other series.",
+        "answer": "Star Trek The Next Generation, Star Trek TNG, prompt on Star Trek",
+        "clean_answers": [
+          "Star Trek The Next Generation, Star Trek TNG, prompt on Star Trek"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Pokemon Sun and Moon did a full on homage to this shoujo anime featuring a Prince and a Princess ... and a bride.",
+        "answer": "(Shoujo Kakumei/Revolutionary Princess) Utena",
+        "clean_answers": [
+          "(Shoujo Kakumei/Revolutionary Princess) Utena"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000064.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000065.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000064.png",
+      "bonus/images/000065.png",
+      "bonus/images/000066.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000063.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-cXVzhjVfw0rno7WTzhuL",
+    "title": "Make! Some! References!",
+    "leadin": "The improv show \"Make Some Noise\" dips into plenty of references. Improvise some FTPE, but alas, you must be correct.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Appropriately, Ross Bryant was given the unredacted prompt, and he called it \"a meal ye will wish to enjoy tomorrow, and tomorrow, and tomorrow\". Name the referenced work.",
+        "answer": "MacBeth",
+        "clean_answers": [
+          "MacBeth"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Considering how many games on Make Some Noise are ripoffs, I mean references, to this other show, it's only appropriate that they sometimes invite an actor well known from that other show, shown here.",
+        "answer": "Whose Line Is It Anyway",
+        "clean_answers": [
+          "Whose Line Is It Anyway"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Vic Micaelis once has a running gag playing as a character with the last name \"Fish-Hands\" (first name obscured here), a reference to this film that also features a protagonist with two unusual hands.",
+        "answer": "Edward Scissorhands",
+        "clean_answers": [
+          "Edward Scissorhands"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000068.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000069.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000068.png",
+      "bonus/images/000069.png",
+      "bonus/images/000070.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000067.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-d9Cb9JlBYfXpVF42szPr",
+    "title": "World of Reference",
+    "leadin": "The MMORPG WoW has enough references to grind for days. Your quest is to name three FTPE.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "All the playable races' /dance emotes in the game are based on choreography from other media. Name the movie that originates the dance shown here, performed by a male blood elf.",
+        "answer": "Napoleon Dynamite",
+        "clean_answers": [
+          "Napoleon Dynamite"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The \"Pyrotex Ignition Cloth\" item in WoW, shown on the left, is a direct reference to the glove on the right. Name the anime or manga series that the glove comes from.",
+        "answer": "Fullmetal Alchemist",
+        "clean_answers": [
+          "Fullmetal Alchemist"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Note: the name of the object is not accepted. During the \"Love is in the Air\" seasonal event, you will see interestingly decorated crates in a reference to this video game IP.",
+        "answer": "Portal",
+        "clean_answers": [
+          "Portal"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000072.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000073.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000072.png",
+      "bonus/images/000073.png",
+      "bonus/images/000074.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000071.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-xQjomkAyJTFMM6ZMoLpD",
+    "title": "SNL Impersonations",
+    "leadin": "Identify these famous figures being impersonated on SNL.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Tucker Carlson",
+        "clean_answers": [
+          "Tucker Carlson"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Keith Morrison",
+        "clean_answers": [
+          "Keith Morrison"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "James Brown",
+        "clean_answers": [
+          "James Brown"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000076.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000077.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000076.png",
+      "bonus/images/000077.png",
+      "bonus/images/000078.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000075.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-ZKCgP29bWtkoBpAtB2RL",
+    "title": "Fast Food Offerings",
+    "leadin": "For ten points each, identify the fast food restaurant where you can find the following foods...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Raising Canes",
+        "clean_answers": [
+          "Raising Canes"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "White Castle",
+        "clean_answers": [
+          "White Castle"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Burger King",
+        "clean_answers": [
+          "Burger King"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000080.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000081.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000082.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000080.png",
+      "bonus/images/000081.png",
+      "bonus/images/000082.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000079.png"
+    },
+    "num_images": 4
+  }
+]

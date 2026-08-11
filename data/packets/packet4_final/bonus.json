@@ -1,0 +1,1177 @@
+[
+  {
+    "qid": "advvqa-b-vv1seeDRWcei0NEoFjr6",
+    "title": "Country Instruments",
+    "leadin": "For 10 points each, name these countries from their instruments.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this Aboriginal Australian wind instrument.",
+        "answer": "Didgeridoo",
+        "clean_answers": [
+          "Didgeridoo"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the largest country where this instrument is used.",
+        "answer": "India",
+        "clean_answers": [
+          "India"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the country where this instrument is originally from.",
+        "answer": "Peru",
+        "clean_answers": [
+          "Peru"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-LKmMVniSIVg8XOa3p2Wy",
+    "title": "Vermeers",
+    "leadin": "Name these paintings--all by the same artist--from the snippets.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this painting.",
+        "answer": "The Milkmaid [accept The Kitchen Maid]",
+        "clean_answers": [
+          "The Milkmaid [accept The Kitchen Maid]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this painting.",
+        "answer": "The Allegory of Painting [accept The Art of Painting]",
+        "clean_answers": [
+          "The Allegory of Painting [accept The Art of Painting]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the painting that this film poster is imitating.",
+        "answer": "Girl with a Pearl Earring",
+        "clean_answers": [
+          "Girl with a Pearl Earring"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-uSO62CnzwnuvORxgPL3I",
+    "title": "Instruments",
+    "leadin": "For 10 points each, name the instruments played by these musicians.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the instrument played by this musician.",
+        "answer": "Piano",
+        "clean_answers": [
+          "Piano"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the instrument played by the musician on the left.",
+        "answer": "Violin",
+        "clean_answers": [
+          "Violin"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the instrument played by the musician on the left, not her pianist/conductor husband on the right.",
+        "answer": "Cello",
+        "clean_answers": [
+          "Cello"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-xO8oeYpn6ZRIaYEq5q23",
+    "title": "Musical Posters",
+    "leadin": "For 10 points each, name the musical from its cropped poster.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this musical.",
+        "answer": "The Phantom of the Opera",
+        "clean_answers": [
+          "The Phantom of the Opera"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this musical.",
+        "answer": "The Book of Mormon",
+        "clean_answers": [
+          "The Book of Mormon"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this musical.",
+        "answer": "Matilda",
+        "clean_answers": [
+          "Matilda"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-2BG4UBOVzSW0gRjA32mS",
+    "title": "operatic characters",
+    "leadin": "For 10 points each, name these operatic characters.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this character.",
+        "answer": "Carmen",
+        "clean_answers": [
+          "Carmen"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the character on the left from the opera on the right.",
+        "answer": "Tatiana",
+        "clean_answers": [
+          "Tatiana"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the character in the striped pants.",
+        "answer": "Figaro",
+        "clean_answers": [
+          "Figaro"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-KmqloGoz75kLD8EJFXKm",
+    "title": "Parliaments",
+    "leadin": "For 10 points each, name these European cities from the depicted legislative buildings.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this city.",
+        "answer": "Edinburgh",
+        "clean_answers": [
+          "Edinburgh"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this city.",
+        "answer": "London",
+        "clean_answers": [
+          "London"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this city.",
+        "answer": "Berlin",
+        "clean_answers": [
+          "Berlin"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000023.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000021.png",
+      "bonus/images/000022.png",
+      "bonus/images/000023.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000020.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-eHzzmH3cGhitonhUqV84",
+    "title": "ballets",
+    "leadin": "For 10 points each, name these ballets.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this ballet.",
+        "answer": "Swan Lake",
+        "clean_answers": [
+          "Swan Lake"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this ballet.",
+        "answer": "Don Quixote",
+        "clean_answers": [
+          "Don Quixote"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this ballet.",
+        "answer": "Rodeo",
+        "clean_answers": [
+          "Rodeo"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000027.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000025.png",
+      "bonus/images/000026.png",
+      "bonus/images/000027.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000024.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-LmjDJkvMoEaXm5ByTPZj",
+    "title": "museums",
+    "leadin": "For 10 points each, name the museum from the painting.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the museum.",
+        "answer": "Louvre",
+        "clean_answers": [
+          "Louvre"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the museum.",
+        "answer": "Prado",
+        "clean_answers": [
+          "Prado"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the museum.",
+        "answer": "Art Institute of Chicago",
+        "clean_answers": [
+          "Art Institute of Chicago"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000031.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000029.png",
+      "bonus/images/000030.png",
+      "bonus/images/000031.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000028.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-UuoephrMMiqiFSr4Ycvn",
+    "title": "Voice types",
+    "leadin": "For 10 points each, name the voice type from the singer.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this person's voice type.",
+        "answer": "Contralto [or alto]",
+        "clean_answers": [
+          "Contralto [or alto]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this person's voice type.",
+        "answer": "Soprano",
+        "clean_answers": [
+          "Soprano"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this group's voice type.",
+        "answer": "Tenor",
+        "clean_answers": [
+          "Tenor"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000034.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000035.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000033.png",
+      "bonus/images/000034.png",
+      "bonus/images/000035.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000032.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-hU9AyK84Jdf1Y6c0bOKp",
+    "title": "painting subjects",
+    "leadin": "For 10 points each, name the *original* subject of the painting that each of these artworks is based on.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the subject of the painting that is the basis for this photograph.",
+        "answer": "Frida Kahlo",
+        "clean_answers": [
+          "Frida Kahlo"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the subject of the painting that is the basis for this painting.",
+        "answer": "George Washington",
+        "clean_answers": [
+          "George Washington"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the subject of the painting that is the basis for the above painting.",
+        "answer": "Girl with a Pearl Earring",
+        "clean_answers": [
+          "Girl with a Pearl Earring"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000039.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000037.png",
+      "bonus/images/000038.png",
+      "bonus/images/000039.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000036.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-pcAndeCbBOtM2yraTYNF",
+    "title": "Blueprints",
+    "leadin": "Given the blueprint of some section of a famous landmark, name the landmark. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This blueprint models what famous structure?",
+        "answer": "Gateway Arch",
+        "clean_answers": [
+          "Gateway Arch"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "These two blueprints show cross-sections of what famous landmark?",
+        "answer": "Christ the Redeemer",
+        "clean_answers": [
+          "Christ the Redeemer"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "These diagrams depict individual section layouts and a connecting section of what \"paired\" structure?",
+        "answer": "Petronas Towers (or Petronas Twin Towers)",
+        "clean_answers": [
+          "Petronas Towers (or Petronas Twin Towers)"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000041.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000043.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000041.png",
+      "bonus/images/000042.png",
+      "bonus/images/000043.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000040.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-fIx0tZH6tM6Mgo0Pl54W",
+    "title": "Place Names Before & After",
+    "leadin": "For each part, combine the two place names indicated by the image clues into a single before-and-after portmanteau. For example, Rome plus Romania could produce Romemania.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The two places shown both border the Black Sea, though only one is a city. What portmanteau can be created by mashing up these two place names?",
+        "answer": "Istanbulgaria",
+        "clean_answers": [
+          "Istanbulgaria"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The two places shown once lay on opposite sides of the Treaty of Tordesillas line; one is associated with an extreme elevation, while the other is an Atlantic archipelago. What portmanteau can be created by mashing up these two place names?",
+        "answer": "Chimborazores",
+        "clean_answers": [
+          "Chimborazores"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The left image marks a capital in the country abbreviated CAR, and the right image shows one of the Lesser Antilles. What portmanteau can be created by mashing up these two place names?",
+        "answer": "Banguilla",
+        "clean_answers": [
+          "Banguilla"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000045.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000047.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000045.png",
+      "bonus/images/000046.png",
+      "bonus/images/000047.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000044.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-TlZYFJa3StApguWEpOkb",
+    "title": "Rotated bodies of water",
+    "leadin": "Each image shows the rotated outline of a body of water. For 10 points each, name that body of water.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What body of water has been rotated?",
+        "answer": "Red Sea",
+        "clean_answers": [
+          "Red Sea"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What body of water has been rotated?",
+        "answer": "Lake Titicaca",
+        "clean_answers": [
+          "Lake Titicaca"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What body of water has been rotated?",
+        "answer": "Caspian Sea",
+        "clean_answers": [
+          "Caspian Sea"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000049.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000051.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000049.png",
+      "bonus/images/000050.png",
+      "bonus/images/000051.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000048.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-56cbhp0FfN8GmEh3xEEt",
+    "title": "Capital anagrams",
+    "leadin": "In each question, you will see an image representing an anagram of a country\u2019s capital. For 10 points each, name the country. For example, if you saw a picture representing the word \"solo\", the answer would be \"Norway\" because \"solo\" is an anagram of \"Oslo\". The anagram will always be one word.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The word represented here is an anagram of a country's capital. What is that country?",
+        "answer": "Peru",
+        "clean_answers": [
+          "Peru"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The singular form of the creature represented here is an anagram of a country's capital. What is that country?",
+        "answer": "South Korea",
+        "clean_answers": [
+          "South Korea"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The word represented here is an anagram of a country's capital. What is that country?",
+        "answer": "St. Lucia",
+        "clean_answers": [
+          "St. Lucia"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000053.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000055.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000053.png",
+      "bonus/images/000054.png",
+      "bonus/images/000055.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000052.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-MDcml0H3P5wwYlhjZdDr",
+    "title": "Endemic animals",
+    "leadin": "Each image will have a rebus representing an animal's name and the outline of the country to which the animal is endemic. For 10 points each, name the animal.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Based on the rebus and country shown, what is the animal?",
+        "answer": "aye-aye",
+        "clean_answers": [
+          "aye-aye"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Based on the rebus and country shown, what is the animal?",
+        "answer": "wombat",
+        "clean_answers": [
+          "wombat"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Based on the rebus and country shown, what is the animal?",
+        "answer": "kea",
+        "clean_answers": [
+          "kea"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000059.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000057.png",
+      "bonus/images/000058.png",
+      "bonus/images/000059.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000056.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-m6WOzxh1Y7LF5nFnxAfw",
+    "title": "Flag imagery",
+    "leadin": "For each question, you will see a picture representing imagery on a country\u2019s flag. For 10 points each, name the country.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the country whose flag features imagery inspired by the item in this image.",
+        "answer": "Mozambique",
+        "clean_answers": [
+          "Mozambique"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "For each question, you will see a picture representing the imagery on a country\u2019s flag. For 10 points each, name the country.",
+        "answer": "Kyrgyzstan",
+        "clean_answers": [
+          "Kyrgyzstan"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "For each question, you will see a picture representing the imagery on a country\u2019s flag. For 10 points each, name the country.",
+        "answer": "Papua New Guinea",
+        "clean_answers": [
+          "Papua New Guinea"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000063.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000061.png",
+      "bonus/images/000062.png",
+      "bonus/images/000063.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000060.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-v634Lk5xHSat6ltEL0gf",
+    "title": "Borders",
+    "leadin": "In each question, you will see the partial outline of a border shared by two countries. For 10 points each, name those two countries.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What two countries share this border?",
+        "answer": "Mongolia, China",
+        "clean_answers": [
+          "Mongolia, China"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What two countries share this border?",
+        "answer": "Thailand, Myanmar",
+        "clean_answers": [
+          "Thailand, Myanmar"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What two countries share this border?",
+        "answer": "Democratic Republic of the Congo (or DRC), Zambia",
+        "clean_answers": [
+          "Democratic Republic of the Congo (or DRC), Zambia"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000065.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000067.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000065.png",
+      "bonus/images/000066.png",
+      "bonus/images/000067.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000064.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-ENzwKPPns9EUzeByrVyv",
+    "title": "Stadiums",
+    "leadin": "For 10 points each, name the city containing a sports stadium that can be represented by the following rebuses.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name the city containing a sports stadium represented by this rebus.",
+        "answer": "San Antonio",
+        "clean_answers": [
+          "San Antonio"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the city containing a sports stadium represented by this rebus.",
+        "answer": "Pasadena",
+        "clean_answers": [
+          "Pasadena"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "Name the city containing a sports stadium represented by this rebus.",
+        "answer": "Boston",
+        "clean_answers": [
+          "Boston"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000069.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000071.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000072.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000073.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000069.png",
+      "bonus/images/000070.png",
+      "bonus/images/000071.png",
+      "bonus/images/000072.png",
+      "bonus/images/000073.png",
+      "bonus/images/000074.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000068.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-P1a1EhFU5deRhjv1AWyS",
+    "title": "Etymologies of place names",
+    "leadin": "For each part, give the word found in the shared etymologies of the places shown. The image gives an example.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Give the word found in the shared etymologies of these places.",
+        "answer": "north",
+        "clean_answers": [
+          "north"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Give the word found in the shared etymologies of these places.",
+        "answer": "port",
+        "clean_answers": [
+          "port"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Give the word found in the shared etymologies of these places.",
+        "answer": "black",
+        "clean_answers": [
+          "black"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000076.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000077.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000076.png",
+      "bonus/images/000077.png",
+      "bonus/images/000078.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000075.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-bqQk9A6lTYVfwzNnVG2N",
+    "title": "Resource maps",
+    "leadin": "Given a map of where a certain resource is produced most around the world, answer some questions about those resources. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This image shows the production areas of a certain crop. What is the most well-known dish cooked mainly with that crop by the populations nearest to the center of this map? It is named for an ethnic group.",
+        "answer": "jollof rice",
+        "clean_answers": [
+          "jollof rice"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This image shows the top producers of a certain crop. What port on the Arabian peninsula names a variety of a product created using that crop?",
+        "answer": "Mocha/Mokha/Mukha",
+        "clean_answers": [
+          "Mocha/Mokha/Mukha"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "With data from 2024, this map shows the top mines for a particular resource. The most prominent island named for that resource can be found in what body of water?",
+        "answer": "Mediterranean Sea",
+        "clean_answers": [
+          "Mediterranean Sea"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000080.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000081.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000082.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000080.png",
+      "bonus/images/000081.png",
+      "bonus/images/000082.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000079.png"
+    },
+    "num_images": 4
+  }
+]

@@ -1,0 +1,8 @@
+transformers>=4.49.0
+torch
+accelerate
+pillow
+sentencepiece
+einops
+timm
+qwen-vl-utils

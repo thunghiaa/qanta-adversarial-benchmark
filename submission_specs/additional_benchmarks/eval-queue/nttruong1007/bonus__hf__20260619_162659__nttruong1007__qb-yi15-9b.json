@@ -1,0 +1,15 @@
+{
+  "id": "bonus__hf__20260619_162659__nttruong1007__qb-yi15-9b",
+  "username": "nttruong1007",
+  "model_name": "qb-yi15-9b",
+  "description": "Yi-1.5-9B is a strong mid-sized model with solid factual recall and reasoning ability. I wrapped it in a custom Quizbowl pipeline that returns calibrated answers, confidence scores, and buzzing decisions for QANTA evaluation.",
+  "competition_type": "bonus",
+  "submission_type": "hf_pipeline",
+  "workflow": null,
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-19T16:26:59.371716+00:00",
+  "updated_at": "2026-06-19T16:26:59.371716+00:00",
+  "version": 1
+}

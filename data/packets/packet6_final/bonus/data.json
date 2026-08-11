@@ -1,0 +1,1162 @@
+[
+  {
+    "qid": "advvqa-b-baTETx2Qtc2mKc3ksFQM",
+    "title": "Identify the historical boundary/treaty",
+    "leadin": "Each image is a map crop with all labels, legends, place names, and modern borders removed. Identify the line. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This unlabeled Atlantic map shows a north\u2013south line placed west of Africa and east of most of South America. It divided newly claimed overseas lands between two Iberian powers rather than marking a modern national border. Identify this historical boundary or treaty.",
+        "answer": "The Treaty of Tordesillas line",
+        "clean_answers": [
+          "The Treaty of Tordesillas line"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This unlabeled map of the Indian subcontinent shows a partition boundary drawn through the northwest and northeast, separating two regions from the main body of the subcontinent. For 10 points, identify this historical boundary or line.",
+        "answer": "The Radcliffe Line",
+        "clean_answers": [
+          "The Radcliffe Line"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This unlabeled regional map shows a nearly horizontal survey line running westward from the Atlantic coast and stopping near the Appalachian frontier. It became a famous colonial boundary later associated with a cultural divide in American history. Identify this historical boundary or line.",
+        "answer": "The Mason\u2013Dixon Line",
+        "clean_answers": [
+          "The Mason\u2013Dixon Line"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-JKzbXbLotS8SBmmMOJUg",
+    "title": "Google Editing Suite Menus",
+    "leadin": "Google's productivity suite includes editors for documents, spreadsheets, presentations, and more \u2014 each with a distinct menu structure. Given a screenshot or description of a menu bar, identify which Google app it belongs to.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Google docs",
+        "clean_answers": [
+          "Google docs"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Google sheets",
+        "clean_answers": [
+          "Google sheets"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Google slides",
+        "clean_answers": [
+          "Google slides"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-4LZja6b3chGQMaE0m3fu",
+    "title": "Kid's Meal Toys",
+    "leadin": "Each fast food restaurant has its own version of the 'kids' meal'; frequently, these meals also come with plastic toys or trinkets for kids to take home. For 10 points each, identify the fast food restaurant based on the kids' meal toy description.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "McDonald's",
+        "clean_answers": [
+          "McDonald's"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This chain's kids' meal toys never achieved the same collector frenzy as its primary competitor's, but a 2023 social media moment in which an adult unboxed a childhood set of these trinkets went viral and briefly drove the chain's app downloads to a single-week record.",
+        "answer": "Wendy's",
+        "clean_answers": [
+          "Wendy's"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The collectibles shown here tie this chain to one of the longest-running animated franchises in American television history \u2014 a mystery-themed Great Dane who first aired in 1969 and has since appeared in this chain's kids' meal promotions across multiple decades.",
+        "answer": "Burger King",
+        "clean_answers": [
+          "Burger King"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-PwecFuqz9PkW7w9i3h89",
+    "title": "Most popular song on album",
+    "leadin": "Bands and Artists alike output a variety of albums, and usually one song or a select few really click with the audience. For 10 points each, after being provided a screenshot of part of a musical album and its description, say the name of the most-streamed song on the album.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Breakup kiss-off to a self-absorbed ex who used his fame to get into clubs, hated his friends, tried to change him, and still calls after the split.",
+        "answer": "Love Yourself",
+        "clean_answers": [
+          "Love Yourself"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "About the intoxicating, almost spiritual effect that a person has on you \u2014 their love makes you feel high, weightless, chosen.",
+        "answer": "Hymn for the Weekend",
+        "clean_answers": [
+          "Hymn for the Weekend"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A demand for total, undivided romantic attention \u2014 Rihanna isn't asking to be loved; she's laying out exactly how she expects to be loved.",
+        "answer": "Only Girl (In the World)",
+        "clean_answers": [
+          "Only Girl (In the World)"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-nbgvUfl5c6bosMHTpTEI",
+    "title": "Type of Coffee",
+    "leadin": "Coffee comes in many different varieties, with various ingredients and proportions. For 10 points each, given the following images of coffee components, identify the kind of coffee in the image.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Capuccino",
+        "clean_answers": [
+          "Capuccino"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Americano",
+        "clean_answers": [
+          "Americano"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "",
+        "answer": "Flat white",
+        "clean_answers": [
+          "Flat white"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-9WzmiSe6YUFAFljrubkF",
+    "title": "Animals",
+    "leadin": "For 10 points, you will be given a left image that depicts a country that the animal is named after and an image on the right of the region in which the animal is actually from. Guess the animal.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This rodent can be found in every populated continent in densely packed cities.",
+        "answer": "Norway rat",
+        "clean_answers": [
+          "Norway rat"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This cute rodent can be found in the homes of millions across the U.S.",
+        "answer": "guinea pig",
+        "clean_answers": [
+          "guinea pig"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This bird is the national bird of four different U.S states and considered a staple of U.S culture.",
+        "answer": "Turkey",
+        "clean_answers": [
+          "Turkey"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000023.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000021.png",
+      "bonus/images/000022.png",
+      "bonus/images/000023.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000020.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-tDd5rVIqTXVxBJLadeWp",
+    "title": "Political Cartoons",
+    "leadin": "For each of the following political cartoons, identify the U.S. conflict most closely associated with the issues depicted.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In this cartoon, these two figures are resisting an emergency system that hasn't been invoked again since what event?",
+        "answer": "Vietnam War",
+        "clean_answers": [
+          "Vietnam War"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This political cartoon depicts which U.S event as a dog fight?",
+        "answer": "Civil War",
+        "clean_answers": [
+          "Civil War"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This modern political cartoon is mocking what?",
+        "answer": "Iraq War",
+        "clean_answers": [
+          "Iraq War"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000027.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000025.png",
+      "bonus/images/000026.png",
+      "bonus/images/000027.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000024.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-gOnh0BaPNHev67IEDmFl",
+    "title": "physics and music",
+    "leadin": "Given will be an image that represents a person's contribution to science and another image of an instrument (or multiple instruments) that they played. Name the scientist!",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This physicist is represented by the diagram at left and also played the bongos shown at right. Name him.",
+        "answer": "Richard Feynman",
+        "clean_answers": [
+          "Richard Feynman"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This physicist explained the microscopic motion suggested by the image at left and often played the violin shown at right, which he called Lina. Name him.",
+        "answer": "Albert Einstein",
+        "clean_answers": [
+          "Albert Einstein"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This astronomer discovered the planet obscured above and was also an oboist, organist, and composer. Name him.",
+        "answer": "William Herschel",
+        "clean_answers": [
+          "William Herschel"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000031.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000029.png",
+      "bonus/images/000030.png",
+      "bonus/images/000031.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000028.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-QhxKV9V9gkaGoY3XajGy",
+    "title": "Leaders",
+    "leadin": "For 10 points each, given two historical leaders, you will identify which leader served a term between the term of the two leaders pictured.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Known for succeeding in conquest despite physical limitations, which emperor served between the two pictured?",
+        "answer": "Claudius",
+        "clean_answers": [
+          "Claudius"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Which leader also served as an emperor between these two pictured?",
+        "answer": "Puyi",
+        "clean_answers": [
+          "Puyi"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Which leader, who hid in exile by leaving their country disguised as a football player, served between these two pictured leaders?",
+        "answer": "Thabo Mbeki",
+        "clean_answers": [
+          "Thabo Mbeki"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000034.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000035.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000033.png",
+      "bonus/images/000034.png",
+      "bonus/images/000035.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000032.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-P6C5mz8x6Z4d7hhm29Z3",
+    "title": "Colleges and Famous Buildings",
+    "leadin": "For 10 points each, you will be shown an image of an American university or college building. Without abbreviations, name the university or college where that building is located.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This Brutalist academic building is marked by distinctive square, protruding cement blocks, which shares a nickname with this small LA county college's mascot.",
+        "answer": "Harvey Mudd College",
+        "clean_answers": [
+          "Harvey Mudd College"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This historical building named after a famous English Renaissance architect belongs to which school?",
+        "answer": "College of William and Mary",
+        "clean_answers": [
+          "College of William and Mary"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This painted-over dome, mimicking Star Wars character R2D2, seen here is located at what school?",
+        "answer": "Massachusetts Institute of Technology",
+        "clean_answers": [
+          "Massachusetts Institute of Technology"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000039.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000037.png",
+      "bonus/images/000038.png",
+      "bonus/images/000039.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000036.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-QoQBrjxPW5Rvb2L6fFQB",
+    "title": "Operas",
+    "leadin": "For 10 points each, identify which opera is being hinted at in the image.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This Verdi opera was based on La Dame aux cam\u00e9lias, whose title flower is suggested by the image. Name this opera centered on Violetta.",
+        "answer": "La traviata",
+        "clean_answers": [
+          "La traviata"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The image shows the CD covers for one of the famous numbers of this Opera.",
+        "answer": "Turandot",
+        "clean_answers": [
+          "Turandot"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The image depicts features of the main character of this Opera.",
+        "answer": "Carmen",
+        "clean_answers": [
+          "Carmen"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000041.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000043.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000041.png",
+      "bonus/images/000042.png",
+      "bonus/images/000043.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000040.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-5TP90iSsw4rkTsMF4oGI",
+    "title": "Korean Architecture",
+    "leadin": "For 10 points each, identify which Korean architectural work is being hinted at in the image.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This 123-story Seoul skyscraper is named for a company whose name comes from Charlotte in The Sorrows of Young Werther. Name this tower, whose upper floors include a luxury hotel.",
+        "answer": "Lotte World Tower",
+        "clean_answers": [
+          "Lotte World Tower"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The generated image hints at the phone and semiconductor company headquartered in this Seoul office complex. Name this corporate site.",
+        "answer": "Samsung Town [accept Samsung Seocho Town]",
+        "clean_answers": [
+          "Samsung Town [accept Samsung Seocho Town]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The fortress shown here was built by King Jeongjo of Joseon, partly to honor his father, Crown Prince Sado. Name this Suwon fortress.",
+        "answer": "Hwaseong Fortress",
+        "clean_answers": [
+          "Hwaseong Fortress"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000045.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000047.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000045.png",
+      "bonus/images/000046.png",
+      "bonus/images/000047.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000044.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-KbD9Q2kqmTfqG4N0mMkB",
+    "title": "Biblical Figures",
+    "leadin": "For 10 points each, identify the biblical figure depicted in each image.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this Genesis figure traditionally placed in the garden shown here and formed from dust.",
+        "answer": "Adam",
+        "clean_answers": [
+          "Adam"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name this Genesis figure associated with the many-colored garment suggested by the image.",
+        "answer": "Joseph [accept Joseph son of Jacob]",
+        "clean_answers": [
+          "Joseph [accept Joseph son of Jacob]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this figure who curses the fruit of this tree in the Gospels, as suggested by the fruit shown here.",
+        "answer": "Jesus",
+        "clean_answers": [
+          "Jesus"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000049.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000051.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000049.png",
+      "bonus/images/000050.png",
+      "bonus/images/000051.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000048.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-qdCUlmDzT4TMxNjhewdp",
+    "title": "Linux kernel",
+    "leadin": "Answer these questions about the Linux kernel.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The Linux kernel is not this type of kernel.",
+        "answer": "microkernel",
+        "clean_answers": [
+          "microkernel"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Code for the Linux kernel can be written in this language.",
+        "answer": "Rust",
+        "clean_answers": [
+          "Rust"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Patches to the Linux kernel coming from this institution are to be automatically rejected.",
+        "answer": "University of Minnesota",
+        "clean_answers": [
+          "University of Minnesota"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000053.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000055.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000053.png",
+      "bonus/images/000054.png",
+      "bonus/images/000055.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000052.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-27fTybfQpqS2jHuBGUS3",
+    "title": "Composers",
+    "leadin": "For 10 points each: Guess the composer from close-up image.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Known for his playful characters in operas.",
+        "answer": "Mozart",
+        "clean_answers": [
+          "Mozart"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Wrote pieces depicting shifting moods of nature across the year.",
+        "answer": "Vivaldi",
+        "clean_answers": [
+          "Vivaldi"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "He wrote emotional music for soft dance.",
+        "answer": "Tchaikovsky",
+        "clean_answers": [
+          "Tchaikovsky"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000059.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000057.png",
+      "bonus/images/000058.png",
+      "bonus/images/000059.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000056.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-lakRBjQNxYPIm34I5v5P",
+    "title": "20,000 Leagues Under the Sea",
+    "leadin": "In the well-stocked library of this place, a novel\u2019s protagonist hears an organ-playing man cry \u201cAlmighty God! Enough! Enough!\u201d For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this electricity-powered place, which is mistaken for an animal and followed by the Abraham Lincoln at the beginning of a novel.",
+        "answer": "the _Nautilus_",
+        "clean_answers": [
+          "the _Nautilus_"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The Nautilus is captained by this man in Jules Verne\u2019s Twenty Thousand Leagues Under the Sea.",
+        "answer": "Captain _Nemo_",
+        "clean_answers": [
+          "Captain _Nemo_"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Aronnax escapes the Nautilus when it is caught in this at the end of the novel. Part of the title of a Poe short story, a man\u2019s hair turns white in it.",
+        "answer": "Maelstrom (do not accept whirlpool)",
+        "clean_answers": [
+          "Maelstrom (do not accept whirlpool)"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000063.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000061.png",
+      "bonus/images/000062.png",
+      "bonus/images/000063.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000060.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-s6w3jBy4L5XdERgBD3Q5",
+    "title": "Chabon Comics",
+    "leadin": "Description acceptable. The artist---as portrayed here in an opera---inspires one of these characters, a sub-basement librarian who is electrocuted.  For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name these general types of characters, one of which is inducted into the League of the Golden Key and is depicted punching Hitler in the jaw.",
+        "answer": "_comic book_ characters [accept super_hero_es]",
+        "clean_answers": [
+          "_comic book_ characters [accept super_hero_es]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The character pictured here appears in this novel about Sam and Joe.",
+        "answer": "The _Amazing Adventures of Kavalier and Clay_",
+        "clean_answers": [
+          "The _Amazing Adventures of Kavalier and Clay_"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The comic here depicts a scene from another novel by American author Michael Chabon set west of Brooklyn and considers the mysteries connected with organized crime.",
+        "answer": "The _Yiddish Policeman's Union_",
+        "clean_answers": [
+          "The _Yiddish Policeman's Union_"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000065.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000067.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000065.png",
+      "bonus/images/000066.png",
+      "bonus/images/000067.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000064.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-1j4d3lJUXVn2rNeT3Xrd",
+    "title": "Inauguration",
+    "leadin": "At one of these events, a man was prevented from reading by the glare of the sun, so he recited something from memory instead. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this type of event, at which \u201cThe deed of gift was many deeds of war\u201d was said.",
+        "answer": "inauguration",
+        "clean_answers": [
+          "inauguration"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "She recited \u201cWe will rise from the gold-limned hills of the West\u201d \u201cfor there is always light\u201d in \u201cThe Hill We Climb\u201d.",
+        "answer": "Amanda _Gorman_",
+        "clean_answers": [
+          "Amanda _Gorman_"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This poet recited \u201ca rock, a river, a tree\u2026marked the mastodon\u201d.",
+        "answer": "Maya _Angelou_",
+        "clean_answers": [
+          "Maya _Angelou_"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000069.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000071.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000069.png",
+      "bonus/images/000070.png",
+      "bonus/images/000071.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000068.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-9X9vNhMfNIXdhqQkaCiH",
+    "title": "MacGuffin",
+    "leadin": "The man seen here popularized a name for objects of this type, which includes one that is stolen in Constantinople. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The plot-motivating but ultimately valueless object seen here is often cited as an example of what type of object?",
+        "answer": "MacGuffin",
+        "clean_answers": [
+          "MacGuffin"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "An everyday MacGuffin led to the destruction of a building in what film?",
+        "answer": "Office Space",
+        "clean_answers": [
+          "Office Space"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A missing document was the MacGuffin in what film set in LA?",
+        "answer": "Who Framed Roger Rabbit?",
+        "clean_answers": [
+          "Who Framed Roger Rabbit?"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000073.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000075.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000073.png",
+      "bonus/images/000074.png",
+      "bonus/images/000075.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000072.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Ds73TVNCf40b540Eb8jf",
+    "title": "Tess of the D'Urbervilles",
+    "leadin": "A woman in this place requests that her husband marry her sister after she dies. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this place, where a woman wakes up and tells a group of sixteen men \u201cI am ready.\u201d",
+        "answer": "Stonehenge",
+        "clean_answers": [
+          "Stonehenge"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This character wanders to Stonehenge and after sleeping on an altar is captured being executed for the murder of her rapist.",
+        "answer": "_Tess_ Durbeyfield [accept Tess of the D\u2019Urbervilles]",
+        "clean_answers": [
+          "_Tess_ Durbeyfield [accept Tess of the D\u2019Urbervilles]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This author of Tess of the D\u2019Urbervilles wrote Jude the Obscure.",
+        "answer": "Thomas _Hardy_",
+        "clean_answers": [
+          "Thomas _Hardy_"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000077.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000079.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000077.png",
+      "bonus/images/000078.png",
+      "bonus/images/000079.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000076.png"
+    },
+    "num_images": 4
+  }
+]

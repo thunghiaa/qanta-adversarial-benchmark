@@ -1,0 +1,113 @@
+qid,answerline,plays,human_first_buzz_count,human_first_buzz_avg,human_first_buzz_std,human_first_buzz_accuracy,ai_first_buzz_count,ai_first_buzz_avg,ai_first_buzz_std,ai_first_buzz_accuracy_count,ai_first_buzz_accuracy
+advvqa-packet1-t-5PMM62rTZCur1sGVOjE4,<b>__**French**__ or __**français**__</b>,5,1,52.000,0.000,1.000000,5,14.600,3.878,5,0.000000
+advvqa-packet1-t-5bTYZUD1fC8LxDPNbeBz,<b>Hill Valley</b>,5,0,,,,5,21.200,8.328,5,0.600000
+advvqa-packet1-t-6EaYU85nVBNW6DcPqaA5,<b>Singapore</b>,5,5,47.800,2.400,1.000000,5,18.200,5.600,5,0.800000
+advvqa-packet1-t-8JAFUITLrwZCMFkrmP6L,<b>_Apollo_ Mission</b>,5,4,65.500,22.820,1.000000,5,18.200,0.980,5,0.200000
+advvqa-packet1-t-Em8Ctxhz4bo7N65jONWg,<b>London</b>,5,4,66.500,8.201,0.500000,5,28.000,18.547,5,0.200000
+advvqa-packet1-t-Gwbxzd0ChGS4KynANjU5,<b>Thirty-six Views of Mount _Fuji_</b>,5,3,55.333,3.300,0.666667,5,28.400,10.111,5,0.400000
+advvqa-packet1-t-GzYzrmbzHeXtPnp56Z10,<b>New Jersey</b>,5,3,63.333,5.558,0.666667,5,23.600,0.800,5,0.000000
+advvqa-packet1-t-I2QtfMpPDixkYknKBme8,"<b>Washington, D.C.</b>",5,3,33.667,13.671,0.666667,4,22.250,4.763,4,0.750000
+advvqa-packet1-t-LcvtxyoXMR6SDbyJhf4B,<b>Groundhog Day</b>,5,3,44.000,8.165,0.666667,5,13.200,0.980,5,0.600000
+advvqa-packet1-t-MEpRrGXZymdGUYb2wAfM,<b>Cholera</b>,5,2,60.500,11.500,1.000000,5,17.000,2.449,5,1.000000
+advvqa-packet1-t-NpuyoBsTcOckEOeIVITg,<b>Chinatown (accept equivalents)</b>,5,3,48.333,8.654,0.666667,4,23.000,16.748,4,0.000000
+advvqa-packet1-t-Pv4vwLpJWiSpu6CJVx1x,<b>Disney World</b>,5,3,46.333,22.216,0.666667,5,13.000,3.098,5,0.000000
+advvqa-packet1-t-RymSumAaUKDKnumFbZLb,<b>_Around the World in 80 Days_ or _Le Tour du monde en quatre-vingts jours_</b>,5,3,42.333,5.907,1.000000,5,22.000,12.247,5,0.000000
+advvqa-packet1-t-WWi7fNWTDIPJe3p9Pi2c,<b>Battle of Waterloo</b>,5,4,41.750,3.031,1.000000,5,16.400,1.960,5,0.600000
+advvqa-packet1-t-dqshJgJWfziosu0GhtIh,<b>New York City</b>,5,4,25.750,18.713,0.250000,5,17.000,6.000,5,0.200000
+advvqa-packet1-t-hXDm3m6AEpv2TxJ0HKdZ,<b>Lithuania</b>,5,3,45.333,15.628,0.333333,5,21.200,12.671,5,0.600000
+advvqa-packet1-t-vgzdaVOKiGQUuC8gSLqa,<b>University of _Illinois_ Champaign-Urbana</b>,5,2,61.000,4.000,0.500000,5,19.400,10.229,5,0.200000
+advvqa-packet1-t-w1r2V5nR5q9pBrSgEi82,<b>Alexander von __Humboldt__</b>,5,3,52.333,0.471,1.000000,5,19.800,10.759,5,0.600000
+advvqa-packet1-t-w2mhA0hWqQ93KzBmqmec,<b>Berlin</b>,5,2,14.500,0.500,1.000000,4,10.500,3.500,4,0.500000
+advvqa-packet1-t-xXVg1KHjxl7PR2ueDO1C,<b>France</b>,5,3,97.667,1.886,1.000000,5,27.600,12.627,5,0.000000
+advvqa-packet2-t-3SJwpETiqeXeVQQeSL2C,<b>Spain</b>,5,1,42.000,0.000,1.000000,5,22.800,0.980,5,0.400000
+advvqa-packet2-t-3gSnEnS3UTlqHBknG8pf,<b>Self-Actualization</b>,5,3,41.333,19.482,0.333333,5,12.600,6.859,5,0.600000
+advvqa-packet2-t-5UqzxUX4qK1CA2UYOByP,<b>Catch-22</b>,5,2,58.500,6.500,0.500000,5,16.800,12.205,5,0.000000
+advvqa-packet2-t-BeLRIWMr4JXTcHOWxyUy,<b>Sherlock Holmes</b>,5,4,51.250,12.891,1.000000,5,15.600,2.059,5,1.000000
+advvqa-packet2-t-EKY1UGSc5TChPU33ARyw,<b>Matsuo Basho</b>,5,3,44.667,6.018,1.000000,5,21.400,10.800,5,0.400000
+advvqa-packet2-t-EmsEd0XimlqZJSW20BPk,<b>Oscar Wilde</b>,5,5,46.200,2.561,0.800000,5,7.800,1.600,5,0.000000
+advvqa-packet2-t-FoIIY3NZ2zlaiM8m5ssY,<b>predators AND prey</b>,5,5,34.400,6.468,0.800000,5,19.000,4.147,5,0.000000
+advvqa-packet2-t-JSgtsRTgAWKoKskUdk5c,<b>rabbits [accept bunnies; accept hares]</b>,5,4,49.000,7.517,0.750000,5,12.800,4.956,5,0.000000
+advvqa-packet2-t-LNSFjAxXvMVnSAcBfA2j,<b>Rhinoceros</b>,5,3,59.667,6.848,1.000000,5,19.800,4.956,5,0.000000
+advvqa-packet2-t-NXltSnhuRcd4K2l1mZHE,<b>Mexico</b>,5,5,24.000,16.000,1.000000,5,14.000,0.000,5,1.000000
+advvqa-packet2-t-OPpqTfpP7LdBBFrDeJAO,<b>Zimbabwe</b>,5,3,47.333,3.771,1.000000,5,20.800,12.968,5,0.000000
+advvqa-packet2-t-RtTjMY8PLfkYYn0C74ri,<b>Soviet Union [or the U.S.S.R.]</b>,5,5,17.400,5.352,1.000000,4,14.000,1.000,4,0.000000
+advvqa-packet2-t-WcEaILk7JG20ddfSX9JM,<b>Hamlet</b>,5,5,53.800,8.471,0.400000,5,19.800,2.926,5,0.000000
+advvqa-packet2-t-XgvmgXLeD6vauaKksUTm,<b>Falklands War</b>,5,3,55.667,8.219,0.333333,5,24.600,8.845,5,0.800000
+advvqa-packet2-t-ZBkYl7ZwedkrrhTlkylv,<b>The Great Gatsby</b>,5,5,31.800,3.429,1.000000,5,12.600,2.800,5,0.000000
+advvqa-packet2-t-bM0YFWPHlm9W4BbTBPcT,<b>hexagon</b>,5,5,43.000,6.928,0.800000,5,12.000,4.195,5,0.400000
+advvqa-packet2-t-lTRxMAHr44dPaBWARrv6,<b>yellow</b>,5,5,45.000,19.504,1.000000,5,21.800,5.600,5,0.200000
+advvqa-packet2-t-nWa9M3JHZkZUkh4tvZzv,<b>American Flags</b>,5,5,23.400,7.940,0.800000,4,17.000,5.196,4,0.000000
+advvqa-packet2-t-qpQRWF7dpNQAkyozTnz7,<b>Catholicism</b>,5,5,53.800,12.544,1.000000,5,16.400,10.032,5,0.200000
+advvqa-packet2-t-tvjdNWhB4uGKe6y8at2B,<b>Metropolis</b>,5,4,29.500,15.108,1.000000,5,13.200,4.534,5,0.400000
+advvqa-packet3-t-4p672NRbIAIVCFIsFihp,<b>Apple TV</b>,5,4,58.250,15.287,0.250000,5,10.200,0.980,5,0.000000
+advvqa-packet3-t-5gmjQXFfMhDfYWopYPRR,<b>Ali Baba and the 40 Thieves</b>,5,1,38.000,0.000,1.000000,5,21.400,9.499,5,0.000000
+advvqa-packet3-t-8UwxzTV1MdoVkBXntfOe,<b>Foundation</b>,5,3,72.000,0.816,0.000000,5,26.000,14.000,5,0.600000
+advvqa-packet3-t-AJdjjhtK8PcFCMebETh5,<b>Peter Pan</b>,5,1,54.000,0.000,1.000000,5,7.000,0.000,5,0.000000
+advvqa-packet3-t-AqgleduJLHjpBkkvNkhC,<b>Journey to the West</b>,5,3,59.333,9.534,1.000000,5,24.600,4.630,5,0.400000
+advvqa-packet3-t-FSlPn89xy82DPpP8gMJD,<b>She-Hulk: Attorney at Law</b>,5,5,42.600,18.216,0.600000,5,15.600,3.200,5,1.000000
+advvqa-packet3-t-Hc46kNNIrL0CrjR6kddu,"<b>Le Petit Prince, The Little Prince</b>",5,3,41.000,2.944,1.000000,5,39.200,3.311,5,0.000000
+advvqa-packet3-t-IPrurnAQ4gUyv58ITNHx,<b>Andy Warhol</b>,5,1,54.000,0.000,1.000000,5,15.600,9.222,5,0.400000
+advvqa-packet3-t-LB2uc5AFzP7RRrDwahoJ,<b>Guernica</b>,5,4,55.250,11.777,0.500000,5,38.800,7.782,5,0.200000
+advvqa-packet3-t-OZBuu5dExz2bWouyhXCX,<b>Sand Timer</b>,5,3,87.667,48.176,1.000000,5,21.800,18.126,5,0.400000
+advvqa-packet3-t-Wg8cJ7C4f7kEHLehSKAu,<b>Kama Sutra</b>,5,3,65.000,9.201,1.000000,5,22.200,10.284,5,0.600000
+advvqa-packet3-t-Z1PH5PnkeCAYIm1b7Ynk,<b>The Dark Knight</b>,5,4,35.750,0.433,0.750000,5,17.200,9.988,5,0.400000
+advvqa-packet3-t-ZqmYznzm1ets28jyV66W,<b>Lady Gaga</b>,5,3,63.000,1.414,1.000000,5,18.600,5.200,5,0.000000
+advvqa-packet3-t-cW8GwQmlfOm4TCbVMrVt,<b>1984</b>,5,2,24.000,0.000,1.000000,5,19.200,0.980,5,1.000000
+advvqa-packet3-t-fD7iPA1popZRRUN4eZE1,<b>italian job</b>,5,2,56.500,6.500,0.500000,5,16.800,6.013,5,0.800000
+advvqa-packet3-t-hzl498g9RffsMQpA1sRa,<b>Donald Glover</b>,5,4,41.750,10.779,1.000000,5,16.400,4.409,5,0.000000
+advvqa-packet3-t-lgOxKPam6BGiv3xhocdG,<b>The Jackbox Party Pack</b>,5,4,22.750,14.669,0.750000,5,5.000,0.000,5,0.000000
+advvqa-packet3-t-lmJujW41V3etZ89PTHFz,<b>Friday</b>,5,5,43.400,16.632,1.000000,5,9.800,3.429,5,1.000000
+advvqa-packet3-t-o4nZbIcZSX4boHBjTZVn,<b>Don Quixote</b>,5,3,83.000,56.780,1.000000,5,8.400,2.800,5,0.600000
+advvqa-packet3-t-zlBPTJtFek9Wy05AaPTD,<b>After Hours</b>,5,2,36.500,14.500,0.500000,5,17.000,5.060,5,0.000000
+advvqa-packet4-t-8eOnJExgG3MFgY747W8t,<b>Burj Khalifa</b>,5,4,49.500,9.605,0.750000,5,16.800,13.422,5,0.000000
+advvqa-packet4-t-DJPSA5ZzDdNpt5oakqVQ,<b>Santiago</b>,5,2,28.500,9.500,1.000000,5,10.000,0.000,5,1.000000
+advvqa-packet4-t-Ef0Iqz1ZONhttNfXlfLp,<b>Church</b>,5,4,33.750,7.361,0.750000,5,22.800,9.304,5,0.200000
+advvqa-packet4-t-EpS4cHZdIsGK9tbAVLF5,<b>The Sound of Music</b>,5,5,51.200,15.955,0.800000,5,13.800,6.400,5,0.400000
+advvqa-packet4-t-KZEeKW9mDbCCJPWEBVnm,<b>Germany</b>,5,2,33.000,1.000,0.000000,5,16.000,0.000,5,0.000000
+advvqa-packet4-t-Ln23r1ukl5brDWMdHGR0,<b>The Night Watch</b>,5,5,29.800,11.889,1.000000,3,18.000,0.000,3,1.000000
+advvqa-packet4-t-O1yyRkTLvQdrlqua3V0c,<b>Johann Wolfgang von Goethe</b>,5,4,24.250,16.694,1.000000,3,15.000,12.728,3,0.333333
+advvqa-packet4-t-REYC2yK3nFZQvvqkNrXa,<b>sea</b>,5,3,60.000,5.888,0.666667,5,16.400,1.200,5,0.800000
+advvqa-packet4-t-SthSdFIXXygj3uduwLeK,"<b>Washington, D.C.</b>",5,4,59.500,10.500,0.500000,5,11.000,0.000,5,0.000000
+advvqa-packet4-t-SxqSqGQ1LYJ59RO4htDQ,<b>The Rite of Spring</b>,5,4,20.250,4.710,1.000000,3,14.000,9.899,3,0.333333
+advvqa-packet4-t-U423cT3kEZQrNXlsHNZU,<b>egg</b>,5,2,49.000,1.000,0.500000,5,12.200,3.487,5,0.000000
+advvqa-packet4-t-amzwpECJchH2gf3azeJh,<b>Mexico</b>,5,4,58.000,4.301,0.750000,5,9.600,5.200,5,0.000000
+advvqa-packet4-t-atvPnPQcM0FFyFz6oRh5,<b>Antonio Canova</b>,5,3,27.333,19.602,0.666667,4,14.250,5.804,4,1.000000
+advvqa-packet4-t-ftLJXrWhRtZa9W5sPFwP,<b>Gustave Eiffel/Alexandre Gustave Eiffel</b>,5,3,53.000,5.354,0.666667,5,11.400,8.800,5,0.000000
+advvqa-packet4-t-lFtMblSONntfsqyh20ka,<b>Jamaica</b>,5,5,74.400,13.306,1.000000,5,51.800,9.495,5,0.400000
+advvqa-packet4-t-lhD7XUa6TEodN6cfFSzb,<b>John Conway</b>,5,4,71.000,23.356,0.500000,5,35.600,14.221,5,0.000000
+advvqa-packet4-t-nDlQGIq6PEEQEOIiSbAf,<b>Rosalind Franklin</b>,5,4,43.000,10.368,1.000000,5,22.600,7.473,5,1.000000
+advvqa-packet4-t-r059KXaLJFhyH037WaXB,<b>Joseph Stalin</b>,5,4,26.250,5.449,0.750000,5,16.000,9.295,5,0.200000
+advvqa-packet4-t-t5g7AuUI7qtpnK9CXh0l,<b>Viola</b>,5,4,37.750,19.097,0.750000,5,24.200,3.311,5,0.200000
+advvqa-packet4-t-xeQ0nXBIAAoLs1okPf4V,<b>The Magic Flute</b>,5,4,18.500,2.872,0.750000,5,8.400,0.800,5,0.000000
+advvqa-packet5-t-CRNC5oHzpTDjvGonwNdA,<b>statistics</b>,1,1,60.000,0.000,0.000000,0,,,0,
+advvqa-packet5-t-Hmv1RMq59r9VklABzrzn,"<b>Hubble parameter, Hubble constant</b>",1,1,33.000,0.000,0.000000,0,,,0,
+advvqa-packet5-t-I0jty1iDUrUB5cMFgdCH,<b>Pushdown automaton</b>,1,1,15.000,0.000,0.000000,0,,,0,
+advvqa-packet5-t-VzrCumSBX87JnIf8ehKt,<b>sea level</b>,1,1,98.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-bYtiJRSNQ0xjAFD4lUgH,<b>hemoglobin</b>,1,1,89.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-dYpC7okqKycOB2sUgCQR,<b>faults</b>,1,1,65.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-f2gHTH1m7ERBnpnPaa3e,<b>Black-body radiation</b>,1,1,44.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-piMkTxcl7hSIErHXzovZ,<b>Enigma machine</b>,1,1,22.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-tfFfPpV8sVyypYyIyUP9,<b>temperature</b>,1,1,12.000,0.000,1.000000,0,,,0,
+advvqa-packet5-t-ypEHZxOKGVgBppK2k6fr,"<b>attention, self-attention</b>",1,1,51.000,0.000,0.000000,0,,,0,
+advvqa-packet6-t-2qjNtyR0Nu4o5kUO7P0k,<b>Jennie</b>,5,3,48.000,21.417,0.000000,5,18.000,4.427,5,0.000000
+advvqa-packet6-t-5MatyK477236dIHxYPSC,<b>tennis</b>,5,1,104.000,0.000,1.000000,5,31.000,11.243,5,0.000000
+advvqa-packet6-t-687RrcGKj8sUW5ucnqkC,<b>stratovolcano [accept composite volcano]</b>,3,3,27.000,3.266,0.333333,3,11.667,3.300,2,0.000000
+advvqa-packet6-t-7fSYRXUZbKhUkEWY9aga,<b>Rocky Mountains</b>,5,4,39.500,2.062,1.000000,5,13.600,3.499,5,0.800000
+advvqa-packet6-t-7lEmcHUoKZakQUJVaZfQ,<b>Aida</b>,5,4,36.250,1.090,1.000000,5,16.400,1.960,5,1.000000
+advvqa-packet6-t-FH8JGUILacKWX2nTefaD,<b>The Super Mario Bros. Movie [accept The Mario Movie]</b>,5,4,31.000,18.221,0.750000,4,24.750,6.220,3,0.000000
+advvqa-packet6-t-IyVlOlpQxcH0o6V9tLJ7,<b>The Korean War</b>,5,5,36.000,19.432,0.600000,4,14.250,2.165,4,0.750000
+advvqa-packet6-t-MeeiRlMyb74tgdkmcKNJ,<b>_birth_ (accept equivalents) of _Tristram Shandy_ (prompt on partial answers)</b>,5,4,86.500,18.822,1.000000,5,27.600,6.248,5,0.000000
+advvqa-packet6-t-MtrAEuaV9YGgWcrVaHpi,<b>1790s</b>,5,2,56.500,0.500,0.000000,5,30.400,16.415,5,0.200000
+advvqa-packet6-t-OQitnm4abxopSfLNgZpP,<b>United States currency [accept U.S. currency; accept American money; prompt on money]</b>,5,3,30.000,11.314,0.333333,5,16.000,6.356,4,0.000000
+advvqa-packet6-t-OxmlN1vTMijiBk9MXGrL,<b>Pablo Neruda</b>,5,2,48.000,0.000,1.000000,5,27.200,7.600,5,0.800000
+advvqa-packet6-t-SBW85thuNDNcjSEc5z0p,<b>A</b>,5,5,28.000,12.570,0.400000,5,10.400,2.871,5,0.000000
+advvqa-packet6-t-Wt0lB9TAUrX6lkLBO7Ch,<b>(A / the) _mousetrap_</b>,5,3,42.333,8.957,0.333333,5,22.200,10.572,5,0.000000
+advvqa-packet6-t-bbfutiLB4UxcCjKPDntu,<b>_proposals_ in _Pride and Prejudice_</b>,5,5,87.200,36.663,0.600000,5,33.800,12.828,4,0.000000
+advvqa-packet6-t-cBnkwWk4N0WYLp9ghhTm,<b>Gettysburg</b>,5,3,52.667,24.527,1.000000,4,33.250,4.493,4,0.750000
+advvqa-packet6-t-e9ft3dxutgQQP1r5YXeP,<b>_Battle Royale_ or _Batoru Rowaiaru_</b>,5,4,91.750,34.903,0.750000,5,23.800,5.600,5,0.000000
+advvqa-packet6-t-eEXaeXtF1jreFOdMlv1X,<b>Sabzi Polo</b>,3,2,48.000,15.000,0.000000,3,16.667,7.760,2,1.000000
+advvqa-packet6-t-eoJ4tiogYH1fYAlH4ghT,<b>stuttering</b>,5,4,40.250,4.323,0.750000,5,24.600,15.474,5,0.200000
+advvqa-packet6-t-iwVeaRx4m9Ax9WsPkiFf,<b>George R. R. Martin [accept George Raymond Richard Martin]</b>,5,4,75.500,16.039,0.750000,5,13.800,6.112,5,0.000000
+advvqa-packet6-t-j6r5ZXhduCYbTErR2WNr,<b>The picture of Dorian Gray</b>,2,1,18.000,0.000,1.000000,2,22.500,6.500,2,0.500000
+advvqa-packet6-t-nJHFoCbxeqkSt1XnTniM,<b>Gray's Anatomy</b>,2,2,31.000,0.000,1.000000,2,20.000,1.000,2,0.500000
+advvqa-packet6-t-zpnh32LsV6bUokglaDgS,<b>International Radiotelephony Spelling Alphabet [accept International Civil Aviation Organization Spelling Alphabet; accept NATO phonetic alphabet]</b>,5,3,24.000,5.354,0.666667,5,11.600,3.774,5,0.000000

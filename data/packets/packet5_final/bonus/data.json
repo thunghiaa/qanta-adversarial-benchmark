@@ -1,0 +1,1167 @@
+[
+  {
+    "qid": "advvqa-b-AB8am1JBbXR7aXBhcOrI",
+    "title": "Maps of dialectal/accent pronunciation",
+    "leadin": "For 10 points each, identify a dialectal/accent pronunciation feature of an unspecified language based on a map of the geographic distribution of that feature.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What accent feature does the colored regions on this map show?",
+        "answer": "Rhoticity",
+        "clean_answers": [
+          "Rhoticity"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What dialectal feature does the colored regions on this map show?",
+        "answer": "Ye\u00edsmo",
+        "clean_answers": [
+          "Ye\u00edsmo"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This is the pronunciation map of what Arabic letter?",
+        "answer": "\u1e0c\u0101d/daad",
+        "clean_answers": [
+          "\u1e0c\u0101d/daad"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-j4oumPuYfV4ajA23e1Iz",
+    "title": "Organic reactions",
+    "leadin": "For 10 points each, name the organic reaction shown.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What is the name for this type of reaction?",
+        "answer": "Birch reduction",
+        "clean_answers": [
+          "Birch reduction"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What is the name for this type of reaction?",
+        "answer": "Grignard reaction",
+        "clean_answers": [
+          "Grignard reaction"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What is the name for this type of reaction?",
+        "answer": "Fischer esterification/Fischer\u2013Speier esterification",
+        "clean_answers": [
+          "Fischer esterification/Fischer\u2013Speier esterification"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-CkRAqImfx4uSQFuJQerq",
+    "title": "Physicists and units",
+    "leadin": "Given a picture of a physicist who lends their name to a unit of measurement, give the quantity/property that the unit measures.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "A unit named after this physicist measures what quantity/property?",
+        "answer": "Magnetic flux density/B",
+        "clean_answers": [
+          "Magnetic flux density/B"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "A unit named after this physicist measures what quantity/property?",
+        "answer": "Capacitance/C",
+        "clean_answers": [
+          "Capacitance/C"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A unit named after these physicists measures what quantity/property?",
+        "answer": "Radioactivity",
+        "clean_answers": [
+          "Radioactivity"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-TcIMYwrsBMrW1baIBpST",
+    "title": "Adversarialness in machine learning",
+    "leadin": "You are an expert question-answering large language model. I am your worst enemy. For 10 points each, answer these questions about adversaries in machine learning.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This adversarial attack method, which is named for the object depicted, can cause model collapse if a model inadvertently does it to itself.",
+        "answer": "data poisoning",
+        "clean_answers": [
+          "data poisoning"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the blue components, top to bottom, of the machine learning model shown in the image.",
+        "answer": "Discriminator and generator",
+        "clean_answers": [
+          "Discriminator and generator"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "These input attack methods exploit the concept shown in the image, and only works for one broad class of model.",
+        "answer": "Gradient-based attacks",
+        "clean_answers": [
+          "Gradient-based attacks"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-B79Wa1zS67TPcJeWfvAN",
+    "title": "Decline of language families",
+    "leadin": "Some languages and language families used to be spoken far more widely, but have since declined throughout history. For 10 points each, identify the following language families.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "These languages used to be widely spoken in the colored areas on the map.",
+        "answer": "Continental Celtic languages/Celtic languages",
+        "clean_answers": [
+          "Continental Celtic languages/Celtic languages"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "These languages used to be widely spoken in the colored areas on the map.",
+        "answer": "Ainu languages",
+        "clean_answers": [
+          "Ainu languages"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Varieties of this language used to be widely spoken in the colored areas on the map.",
+        "answer": "Coptic/Egyptian",
+        "clean_answers": [
+          "Coptic/Egyptian"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-YHpZDTVxo2nprkulMlyR",
+    "title": "Mechanistic interpretability",
+    "leadin": "Mechanistic interpretability is the field that aims to understand the internal mechanisms of neural networks. For 10 points each, answer these questions about concepts in mech interp.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In 2021, researchers at Anthropic showed that this phenomenon allows models to represent more features than there are dimensions in the latent space. The name of this phenomenon is also used in mathematics and physics.",
+        "answer": "Superposition",
+        "clean_answers": [
+          "Superposition"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Mech interp usually assumes that concept embeddings have this property.",
+        "answer": "Linear/linearity",
+        "clean_answers": [
+          "Linear/linearity"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Some mech interp research has demonstrated that large language models represent features within these structures.",
+        "answer": "Manifolds",
+        "clean_answers": [
+          "Manifolds"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000023.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000021.png",
+      "bonus/images/000022.png",
+      "bonus/images/000023.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000020.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-nE0hRkUiv4spOjGCPI5V",
+    "title": "Proofs without words",
+    "leadin": "For a subject all about numbers, mathematics has too much writing. Each of the following images contains a \"proof without words\"; identify the theorem.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This image is a visual proof for this formula.",
+        "answer": "Triangular numbers/sum of positive integers, or that the sum of the first n numbers is n(n+1)/2",
+        "clean_answers": [
+          "Triangular numbers/sum of positive integers, or that the sum of the first n numbers is n(n+1)/2"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This image is a visual proof for this formula.",
+        "answer": "Squared triangular number/sum of cubes/Nicomachus's theorem or simply that the sum of the first n cubes is the cube of the sum of 1 to n",
+        "clean_answers": [
+          "Squared triangular number/sum of cubes/Nicomachus's theorem or simply that the sum of the first n cubes is the cube of the sum of 1 to n"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This image is a visual proof for this theorem.",
+        "answer": "Pizza theorem",
+        "clean_answers": [
+          "Pizza theorem"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000027.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000025.png",
+      "bonus/images/000026.png",
+      "bonus/images/000027.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000024.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-m0PUrd6pEukFc2oOU1iN",
+    "title": "Diabetes",
+    "leadin": "Answer these questions about complications related to diabetes based on the associated images.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this symptom of a specific diabetic health complication that can be seen in the image.",
+        "answer": "Hard exudates",
+        "clean_answers": [
+          "Hard exudates"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This complication is more common for one type of diabetes than the other.",
+        "answer": "Diabetic ketoacidosis/DKA",
+        "clean_answers": [
+          "Diabetic ketoacidosis/DKA"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This other complication is more common for one type of diabetes than the other.",
+        "answer": "Hyperosmolar hyperglycemic state/HHS",
+        "clean_answers": [
+          "Hyperosmolar hyperglycemic state/HHS"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000031.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000029.png",
+      "bonus/images/000030.png",
+      "bonus/images/000031.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000028.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-F1RSpFQSHlXS9adMBVr0",
+    "title": "Proposed language macrofamilies",
+    "leadin": "Historical linguists have proposed many language macrofamilies, groupings of established language families. Given a map, name the language macrofamily that it depicts.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What macrofamily is this?",
+        "answer": "Borean",
+        "clean_answers": [
+          "Borean"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What macrofamily is this?",
+        "answer": "Indo-Uralic",
+        "clean_answers": [
+          "Indo-Uralic"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What macrofamily is this?",
+        "answer": "Austric",
+        "clean_answers": [
+          "Austric"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000034.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000035.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000033.png",
+      "bonus/images/000034.png",
+      "bonus/images/000035.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000032.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-DUlOs4B6KCPII5LXrzGa",
+    "title": "Hertzsprung\u2013Russell diagram",
+    "leadin": "Plotting the stellar color and luminosity of stars on a Hertzsprung\u2013Russell diagram reveals bands of stars with similar characteristics. Given an H-R diagram, name the requested star type.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What stars lie immediately above the longest band on this diagram?",
+        "answer": "Subgiants",
+        "clean_answers": [
+          "Subgiants"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "On this diagram, what stars lie on the highest band?",
+        "answer": "White dwarfs",
+        "clean_answers": [
+          "White dwarfs"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Number the bands top to bottom, such that the topmost band is 1, the band immediately below it is 2, etc. What number band contains giants?",
+        "answer": "4",
+        "clean_answers": [
+          "4"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000039.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000037.png",
+      "bonus/images/000038.png",
+      "bonus/images/000039.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000036.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-A0sybq8aS0vV0YnE68wa",
+    "title": "Quantum logic gates",
+    "leadin": "Like classical computing with its NOT, AND, and OR gates, quantum computing has logic gates of its own. Name the quantum logic gate represented by the following matrices.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What logic gate is represented by this (censored) matrix?",
+        "answer": "Controlled NOT gate/CNOT gate",
+        "clean_answers": [
+          "Controlled NOT gate/CNOT gate"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What logic gate is represented by this (censored) matrix?",
+        "answer": "Toffoli gate/CCNOT gate",
+        "clean_answers": [
+          "Toffoli gate/CCNOT gate"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What logic gate is represented by this (censored) matrix?",
+        "answer": "Hadamard gate",
+        "clean_answers": [
+          "Hadamard gate"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000041.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000043.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000041.png",
+      "bonus/images/000042.png",
+      "bonus/images/000043.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000040.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-eV1v2nnfpz5j56lzGjD3",
+    "title": "Probability distributions",
+    "leadin": "Identify the following probability distributions.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What probability distribution is this?",
+        "answer": "Folded normal distribution",
+        "clean_answers": [
+          "Folded normal distribution"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What probability distribution is this?",
+        "answer": "Maxwell-Boltzmann distribution/Rayleigh distribution/chi distribution",
+        "clean_answers": [
+          "Maxwell-Boltzmann distribution/Rayleigh distribution/chi distribution"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What probability distribution is the red curve? It is characterized by a single parameter.",
+        "answer": "t distribution/Student's t distribution",
+        "clean_answers": [
+          "t distribution/Student's t distribution"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000045.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000047.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000045.png",
+      "bonus/images/000046.png",
+      "bonus/images/000047.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000044.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-liLieLemlcZEa0EpPe0Y",
+    "title": "Mathematical distances",
+    "leadin": "There are many ways of measuring distance in mathematics. Identify the distance metric that best fits the context shown in the images.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What distance metric is this? Give the name commonly used in mathematics.",
+        "answer": "Chebyshev distance/maximum metric/supremum metric/L-infinity metric",
+        "clean_answers": [
+          "Chebyshev distance/maximum metric/supremum metric/L-infinity metric"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "What distance metric is this?",
+        "answer": "edit distance/Levenshtein distance/Damerau-Levenshtein distance",
+        "clean_answers": [
+          "edit distance/Levenshtein distance/Damerau-Levenshtein distance"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "What distance metric is depicted on the right?",
+        "answer": "Mahalanobis distance",
+        "clean_answers": [
+          "Mahalanobis distance"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000049.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000051.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000049.png",
+      "bonus/images/000050.png",
+      "bonus/images/000051.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000048.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-1WV1FvfKVTT1oRQIprFy",
+    "title": "English vowel phonemes",
+    "leadin": "Given an unlabeled vowel diagram, give the IPA for the English vowel phonemes shown in the images. Alternatively, give the keyword for the lexical set that the phoneme belongs to, as defined by Wells (1982).",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Give the IPA for this diphthong, or give the keyword for the sound's lexical set.",
+        "answer": "e\u026a, FACE",
+        "clean_answers": [
+          "e\u026a, FACE"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Give the IPA for this diphthong, or give the keyword for the sound's lexical set.",
+        "answer": "a\u028a, MOUTH",
+        "clean_answers": [
+          "a\u028a, MOUTH"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Give the IPA for this monophthong, or give the keyword for the sound's lexical set.",
+        "answer": "\u028a, FOOT",
+        "clean_answers": [
+          "\u028a, FOOT"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000053.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000055.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000053.png",
+      "bonus/images/000054.png",
+      "bonus/images/000055.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000052.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-r8fwAdZVV3ImTHpFoiHp",
+    "title": "Imitations of language in art",
+    "leadin": "Identify these artistic works, each of which imitate real language but are complete gibberish.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Identify the song that's being performed by the teacher in this image.",
+        "answer": "Prisencolinensinainciusol (\"pree-zen-koh-lee-nen-see-nigh-CHOO-zoll\")",
+        "clean_answers": [
+          "Prisencolinensinainciusol (\"pree-zen-koh-lee-nen-see-nigh-CHOO-zoll\")"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Give the name of the YouTube short film that this scene is from.",
+        "answer": "Skwerl (\"squirrel\")",
+        "clean_answers": [
+          "Skwerl (\"squirrel\")"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name the gibberish poem that is featured in the novel depicted in the image.",
+        "answer": "Jabberwocky",
+        "clean_answers": [
+          "Jabberwocky"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000059.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000057.png",
+      "bonus/images/000058.png",
+      "bonus/images/000059.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000056.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-kyljRmn9h0TShMOnPt0T",
+    "title": "Missing Monument",
+    "leadin": "For 10 points each: identify the famous monument that has been removed from each photo.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Taj Mahal",
+        "clean_answers": [
+          "Taj Mahal"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "",
+        "answer": "Christ the Redeemer",
+        "clean_answers": [
+          "Christ the Redeemer"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Not the tallest.",
+        "answer": "Burj Al Arab",
+        "clean_answers": [
+          "Burj Al Arab"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000063.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000061.png",
+      "bonus/images/000062.png",
+      "bonus/images/000063.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000060.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-armFu6DoWFAeft1LamAT",
+    "title": "B&W Flags",
+    "leadin": "For 10 points each: Guess the country from a black-and-white close-up of its flag.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The central emblem on this flag includes the Sisserou parrot, an endemic bird. Name this Caribbean island country.",
+        "answer": "Dominica",
+        "clean_answers": [
+          "Dominica"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This flag includes a vertical carpet-gul stripe beside five stars for the country's regions. Name this Central Asian country.",
+        "answer": "Turkmenistan",
+        "clean_answers": [
+          "Turkmenistan"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Name this country whose United States-inspired flag has eleven stripes for the signers of its Declaration of Independence, not for states.",
+        "answer": "Liberia",
+        "clean_answers": [
+          "Liberia"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000065.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000067.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000068.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000065.png",
+      "bonus/images/000066.png",
+      "bonus/images/000067.png",
+      "bonus/images/000068.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000064.png"
+    },
+    "num_images": 5
+  },
+  {
+    "qid": "advvqa-b-thxXKq7PBLY8EShfF1Gq",
+    "title": "Scripts",
+    "leadin": "Guess the shown script by handwriting. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "A script of distinct letters for a revived ancient language.",
+        "answer": "Hebrew",
+        "clean_answers": [
+          "Hebrew"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "A script used for royal inscriptions and decrees of an early great empire.",
+        "answer": "Old Persian cuneiform or cuneiform",
+        "clean_answers": [
+          "Old Persian cuneiform or cuneiform"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A common script used in both formal and informal writing.",
+        "answer": "Devangari",
+        "clean_answers": [
+          "Devangari"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000071.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000072.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000070.png",
+      "bonus/images/000071.png",
+      "bonus/images/000072.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000069.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-l77X1iqdtk6c2FVPelD3",
+    "title": "Identify the satirical target in a 19th-century political cartoon",
+    "leadin": "Each image is a 19th-century political cartoon. The target is depicted with exaggerated or symbolic features rather than a faithful portrait. Name the historical figure satirized. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This cartoon does not identify its subject by face, but by what critics claimed controlled him: money, patronage, and urban political corruption. Name the 19th-century American political boss being satirized.",
+        "answer": "William M. \"Boss\" Tweed",
+        "clean_answers": [
+          "William M. \"Boss\" Tweed"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This cartoon gradually turns the then-king's head into a pear, mocking the famous pear-shaped caricature used by his critics. Which 19th-century French king is being satirized?",
+        "answer": "Louis-Philippe",
+        "clean_answers": [
+          "Louis-Philippe"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The lower figure being dropped from the ship in this cartoon is the answer; the crowned figure above him is not. Which 19th-century German statesman is being satirized?",
+        "answer": "Otto von Bismarck",
+        "clean_answers": [
+          "Otto von Bismarck"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000075.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000076.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000074.png",
+      "bonus/images/000075.png",
+      "bonus/images/000076.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000073.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Xgi94sxMz4SBCqqddhiA",
+    "title": "K-Drama Titles",
+    "leadin": "For 10 points each, identify the title of the K-Drama based on the image given.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "These two images are some of the main image representations of this drama.",
+        "answer": "Goblin",
+        "clean_answers": [
+          "Goblin"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The actor shown in the image starred in this drama after his military service.",
+        "answer": "Descendants of the Sun",
+        "clean_answers": [
+          "Descendants of the Sun"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This K-Drama, set during the Korean Empire, features the actress depicted as one of its lead stars.",
+        "answer": "Mr. Sunshine",
+        "clean_answers": [
+          "Mr. Sunshine"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000079.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000080.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000078.png",
+      "bonus/images/000079.png",
+      "bonus/images/000080.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000077.png"
+    },
+    "num_images": 4
+  }
+]

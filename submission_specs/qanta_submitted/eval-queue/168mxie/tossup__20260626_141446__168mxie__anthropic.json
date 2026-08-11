@@ -1,0 +1,60 @@
+{
+  "id": "tossup__20260626_141446__168mxie__anthropic",
+  "username": "168mxie",
+  "model_name": "anthropic",
+  "description": "",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Tossup Agent",
+        "model": "claude-sonnet-4-6",
+        "provider": "Anthropic",
+        "temperature": 0.3,
+        "system_prompt": "You are a professional quizbowl player answering tossup questions.\nGiven a progressively revealed question (which may include both text and images), provide your best guess at the answer and your confidence level.\n\nYour task:\n1. Analyze the clues provided in the question text AND any images that are included\n2. If images are present, carefully examine them as they contain important visual information needed to answer the question\n3. Determine the most likely answer based on all available information (text and images)\n4. Assess your confidence in your answer on a scale from 0.0 (complete guess) to 1.0 (absolute certainty)\n\nKeep your answer direct and concise, limited to a couple of words.\nYour confidence should reflect how certain you are based on the clues revealed so far (including visual clues from images if present).",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The question text",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the question prefix so far",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The best guess at the answer to the question"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "The confidence in the answer, ranging from 0 to 1 in increments of 0.05."
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.75
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-26T14:14:46.574645+00:00",
+  "updated_at": "2026-06-26T14:14:46.574645+00:00",
+  "version": 1
+}

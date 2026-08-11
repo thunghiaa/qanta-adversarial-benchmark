@@ -1,0 +1,15 @@
+{
+  "id": "bonus__hf__20260616_053152__nttruong1007__qb-qwen25-1_5b",
+  "username": "nttruong1007",
+  "model_name": "qb-qwen25-1_5b",
+  "description": "Qwen2.5-1.5B-Instruct baseline adapted for QANTA Quizbowl.",
+  "competition_type": "bonus",
+  "submission_type": "hf_pipeline",
+  "workflow": null,
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-16T05:31:52.877949+00:00",
+  "updated_at": "2026-06-16T05:31:52.877949+00:00",
+  "version": 1
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bonus__hf__20260619_164802__nttruong1007__qb-granite31-8b",
+  "username": "nttruong1007",
+  "model_name": "qb-granite31-8b",
+  "description": "IBM Granite 3.1 8B is an instruction-tuned model designed for reliable structured outputs and strong general knowledge performance. This submission adapts Granite to the Quizbowl format with confidence-based buzzing and bonus answering.",
+  "competition_type": "bonus",
+  "submission_type": "hf_pipeline",
+  "workflow": null,
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-19T16:48:02.077109+00:00",
+  "updated_at": "2026-06-19T16:48:02.077109+00:00",
+  "version": 1
+}

@@ -1,0 +1,74 @@
+{
+  "id": "bonus__20260608_174612__nirjharami108__qanta41_bonus_v1",
+  "username": "nirjharami108",
+  "model_name": "QANTA41_Bonus_V1",
+  "description": "GPT-4.1 bonus agent using leadin-aware multimodal reasoning with emphasis on exact answer selection, scientific reasoning, and concise evidence-based explanations.",
+  "competition_type": "bonus",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "leadin",
+      "part",
+      "leadin_images",
+      "part_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence",
+      "explanation": "A.explanation"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Bonus Agent",
+        "model": "gpt-4.1",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are a world-class QANTA 2026 Bonus Round agent.\n\nGoal:\nMaximize exact answer accuracy for each bonus part.\n\nInputs:\n\n* leadin\n* part\n* leadin_images\n* part_images\n\nCore policy:\n\n* Use leadin, part text, and images together.\n* The leadin strongly narrows the answer family, theme, or operation.\n* The specific part determines the exact answer.\n* Always provide the most specific correct answer possible.\n* There is no penalty for guessing. Never leave an answer blank.\n\nReasoning policy:\n\n* First determine whether the leadin defines:\n\n  * a theme/category,\n  * an exact operation,\n  * or a shared relationship.\n* Use the leadin strongly, but let the specific part determine the final answer.\n\nExact reasoning:\n\n* For relational, spatial, diagram, grid, symmetry, midpoint, ordering, transformation, counting, path, or structural questions, solve the exact relationship before answering.\n* For structured systems (periodic table, timelines, maps, taxonomies, coordinate grids, scientific diagrams, charts, graphs), reason using the actual structure rather than approximate intuition.\n* Do NOT use \u201croughly between\u201d or semantically similar answers when an exact relationship is implied.\n* Verify that the final answer satisfies all constraints exactly.\n\nScience and mathematics:\n\n* Use formal scientific reasoning.\n* Prioritize arithmetic, structure, and verification over similarity.\n* Do not rely on isolated numbers or approximate intuition.\n\nImages:\n\n* Treat images as evidence.\n* Use OCR text, diagrams, equations, maps, scientific structures, graphs, visual layout, artworks, and distinctive features when relevant.\n* If a structured visual defines the relationship, reason over the structure rather than guessing from appearance.\n\nAnswering policy:\n\n* Prefer exact named entities over broad categories.\n* If nearby entities are plausible, choose the one best supported by BOTH leadin and part clues.\n* Prefer distinctive evidence over thematic similarity.\n* Verify the answer before committing.\n\nConfidence:\n\n* Confidence means probability the exact answer is correct.\n* High confidence only when evidence strongly converges on one answer.\n* Lower confidence if nearby alternatives remain plausible.\n\nExplanation:\n\n* Keep explanations concise and evidence-based.\n* Briefly state the strongest clue or exact reasoning used.\n\nOutput format exactly:\n\nanswer: [exact short answer]\nconfidence: [0.00-1.00]\nexplanation: [one short evidence-based sentence]\n",
+        "input_fields": [
+          {
+            "name": "question_leadin",
+            "description": "The leadin text for the bonus question",
+            "variable": "leadin"
+          },
+          {
+            "name": "question_part",
+            "description": "The specific part text to answer",
+            "variable": "part"
+          },
+          {
+            "name": "leadin_images",
+            "description": "Images associated with the bonus leadin",
+            "variable": "leadin_images"
+          },
+          {
+            "name": "part_images",
+            "description": "Images associated with the current bonus part",
+            "variable": "part_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The predicted answer"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Confidence in the answer (0-1)"
+          },
+          {
+            "name": "explanation",
+            "description": "Short explanation for the answer"
+          }
+        ]
+      }
+    ]
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-08T17:46:12.313631+00:00",
+  "updated_at": "2026-06-08T17:46:12.313631+00:00",
+  "version": 1
+}

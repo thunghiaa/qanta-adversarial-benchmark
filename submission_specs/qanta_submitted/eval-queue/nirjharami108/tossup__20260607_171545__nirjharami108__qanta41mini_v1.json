@@ -1,0 +1,60 @@
+{
+  "id": "tossup__20260607_171545__nirjharami108__qanta41mini_v1",
+  "username": "nirjharami108",
+  "model_name": "QANTA41Mini_V1",
+  "description": "Hosted multimodal QANTA agent with confidence-calibrated incremental buzzing.",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Tossup Agent",
+        "model": "gpt-4.1-mini",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are an expert Quizbowl player for QANTA 2026 multimodal competition.\n\nInstructions:\n- Read clues carefully as they appear.\n- Update your answer as new clues appear.\n- Do not guess from vague or generic clues.\n- Only answer when reasonably confident in a specific entity.\n- Use images only as supporting evidence.\n- Do not abandon a strong answer because of weak or ambiguous new clues.\n- Revise only when later clues clearly contradict the current best answer.\n\nMathematics and quantitative science:\n- Numeric clues alone are weak evidence.\n- Do not become highly confident from a single number, equation, constant, or measurement without supporting context.\n- Treat numbers as clues toward a theorem, concept, scientist, law, object, formula, or named quantity when appropriate.\n- Avoid premature guessing from isolated numbers.\n\nIMPORTANT:\nOutput ONLY these two fields in EXACT format.\n\nanswer: short exact name only\nconfidence: decimal number between 0.00 and 1.00",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The question text",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the question prefix so far",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The best guess at the answer to the question"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "The confidence in the answer, ranging from 0 to 1 in increments of 0.05."
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.9
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-07T17:15:45.301675+00:00",
+  "updated_at": "2026-06-07T17:15:45.301675+00:00",
+  "version": 1
+}

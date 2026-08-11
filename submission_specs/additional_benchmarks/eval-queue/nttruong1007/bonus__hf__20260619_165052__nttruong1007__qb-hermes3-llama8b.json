@@ -1,0 +1,15 @@
+{
+  "id": "bonus__hf__20260619_165052__nttruong1007__qb-hermes3-llama8b",
+  "username": "nttruong1007",
+  "model_name": "qb-hermes3-llama8b",
+  "description": "Hermes 3 is a Llama-based model known for clean instruction following and well-calibrated responses. I adapted it to the QANTA Quizbowl setting with confidence-aware buzzing and bonus question support.",
+  "competition_type": "bonus",
+  "submission_type": "hf_pipeline",
+  "workflow": null,
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-19T16:50:52.156398+00:00",
+  "updated_at": "2026-06-19T16:50:52.156398+00:00",
+  "version": 1
+}

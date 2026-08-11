@@ -1,0 +1,116 @@
+{
+  "id": "tossup__20260430_061332__divyagoyal6224__divya6224",
+  "username": "divyagoyal6224",
+  "model_name": "Divya6224",
+  "description": "This submission presents a modular, cost-efficient Quizbowl agent that combines text understanding with optional image reasoning to improve answer prediction. The pipeline takes question_text and question_images, extracts useful signals from images when available, and integrates them with a low-temperature LLM for stable, consistent outputs.\n\nThe system is built with clear input/output structure (answer, confidence), which allows reliable evaluation and supports early buzzing based on confidence rather than waiting for the full question. The design intentionally stays lightweight (~$1/1k prefixes) while maintaining strong performance through structured prompting and deterministic decoding.\n\nOverall, the focus is on building a simple, extensible pipeline that balances accuracy, cost, and reproducibility while leaving room for easy iteration and improvement.",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence"
+    },
+    "steps": [
+      {
+        "id": "C",
+        "name": "Image Analyst",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are an image and text analyst for a trivia competition. Analyze ALL images and texts provided for hints progressively to guess the answer.\noutput ONLY valid JSON, no other text: {\n  \"objects\": [list of specific objects identified],\n  \"text_in_image\": [exact text visible in images],\n\"text\": \"text from the text hint\"\n  \"famous_references\": [specific franchises, works,famous personality, place,object],\n  \"visual_style\": \"e.g. animated, black-and-white, cartoon, diagram, sheet music, pixelated\",\n  \"likely_answer_hint\": \"specific and detailed, based on both text or/and image hint e.g. 'Breaking Bad logo + Walt Whitman poem = Breaking Bad TV show'\"\n}\nRULES: - If NO images provided: return \n{\n\"objects\": [], \n\"text_in_image\": [], \n\"text\": \"text from the text hint\"\n\"famous_references\": [],\n \"visual_style\": \"none\", \n \"likely_answer_hint\": \"specific and detailed, based on both text or/and image hint e.g. 'Breaking Bad logo + Walt Whitman poem = Breaking Bad TV show'\"\n} \nRead and describe ALL text visible in images exactly logos, signs, labels, poems, numbers ,scenario- Numbers on birthday cakes = likely ages (33+111 = Bilbo+Frodo = Lord of the Rings) - Bee logo + prison number + Walt Whitman poem = Breaking Bad - Pixelated/progressively revealed images = wait, describe what IS visible - Be maximally specific: \"Los Pollos Hermanos sign\" beats \"a restaurant sign\"",
+        "input_fields": [
+          {
+            "name": "images",
+            "description": "The images as hint for answer to the question",
+            "variable": "question_images"
+          },
+          {
+            "name": "text",
+            "description": "The text as hint for answer to the question",
+            "variable": "question_text"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "image_text_analysis",
+            "description": "Structured JSON analysis of all images and texts"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "Evidence Accumulator",
+        "model": "gpt-4o-mini",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are an evidence tracker for a quiz bowl competition. Your job is to classify each incoming hint and maintain a cumulative evidence JSON.\n\nYou receive: \n- question_text: the text clues revealed SO FAR (grows each call) \n- image_analysis: structured JSON from the image and text analyst \n- previous_evidence: the evidence JSON from the previous call (may be empty on first call)\n\nYour output must be ONLY valid JSON, no other text: {\n  \"hint_count\": <total hints processed so far>,\n  \"hint_type\": \"text_only | image_only | both\",\n  \"text_clues\": [\n    {\"clue\": \" \", \"implication\": \"what this suggests\"}\n  ],\n  \"image_clues\": [\n    {\"observation\": \" \", \"implication\": \"what this suggests\"}\n  ],\n  \"category\": \"(e.g. literature, music, film, sport, science, religion, math, animation, art)\",\n  \"category_confidence\": <0.0-1.0>,\n  \"leading_hypothesis\": \"(best guess at answer so far)\",\n  \"hypothesis_support\": [list of clues that support this hypothesis],\n  \"hypothesis_against\": [list of clues that contradict it],\n  \"alternative_hypotheses\": [other possible answers with brief reasoning],\n  \"evidence_strength\": \"none | weak | moderate | strong | certain\",\n  \"reasoning_chain\": \"(one paragraph connecting all clues so far)\"\n}\nCLASSIFICATION RULES: - hint_type = \"image_only\" if image_analysis has non-empty objects/references AND text is just 1-3 words - hint_type = \"text_only\" if image_analysis is empty/blank - hint_type = \"both\" if both have meaningful content\nACCUMULATION RULES: - ALWAYS carry forward ALL clues from previous_evidence - Only ADD new clues, never remove old ones - Update leading_hypothesis only if new evidence is stronger - If new clue contradicts leading_hypothesis, add to hypothesis_against and consider alternatives - evidence_strength guide:\n  * none: no meaningful clues yet\n  * weak: 1 vague clue\n  * moderate: 2-3 clues pointing same direction\n  * strong: multiple clues + image confirmation\n  * certain: definitive identification (e.g. text in image names the answer)\n\nCATEGORY DETECTION: Detect question category early, it changes how you interpret clues: \n- math: numbers, formulas, roman numerals, geometric shapes \n- music: sheet music, instruments, composers, musical terms \n- animation: cartoon characters, animated style \n- film/TV: actors, directors, studio logos, scene stills \n- literature: books, authors, illustrated characters \n- religion: religious symbols, places of worship, denominational clues \n- sport: athletes, stadiums, equipment \n- art: paintings, sculptures, artistic styles",
+        "input_fields": [
+          {
+            "name": "question_text",
+            "description": "Text clues revealed so far",
+            "variable": "question_text"
+          },
+          {
+            "name": "image_text_analysis",
+            "description": "Image and text analyst output JSON",
+            "variable": "C.image_text_analysis"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "evidence_json",
+            "description": "Cumulative evidence JSON updated with latest hint"
+          }
+        ]
+      },
+      {
+        "id": "A",
+        "name": "Answer Predictor",
+        "model": "gpt-4o-mini",
+        "provider": "OpenAI",
+        "temperature": 0.15,
+        "system_prompt": "You are an expert quizbowl answer predictor.\nYou receive: - question_text: all text clues revealed so far - image_analysis: latest image analysis JSON - evidence_json: a cumulative evidence object built across ALL previous hints\nYour job: output the single best answer and a calibrated confidence score.\nSTEP 1 \u2014 Read evidence_json carefully:\n  - What is the leading_hypothesis?\n  - How strong is evidence_strength?\n  - Are there strong hypothesis_support clues?\n  - Are there hypothesis_against clues that weaken it?\n\nSTEP 2 \u2014 Cross-check with question_text and image_analysis directly.\n  If image_analysis has famous_references, those are high-confidence signals.\n  If text_in_image contains a specific name or title, that is near-certain.\n\nSTEP 3 \u2014 Set confidence using this scale:\n  evidence_strength = \"none\"     \u2192 confidence 0.10\n  evidence_strength = \"weak\"     \u2192 confidence 0.15-0.25\n  evidence_strength = \"moderate\" \u2192 confidence 0.35-0.55\n  evidence_strength = \"strong\"   \u2192 confidence 0.65-0.80\n  evidence_strength = \"certain\"  \u2192 confidence 0.85-0.95\n\nMODIFIERS:\n  - hypothesis_against has entries \u2192 subtract 0.10 from confidence\n  - alternative_hypotheses has 2+ strong options \u2192 subtract 0.10\n  - text_in_image directly names the answer \u2192 add 0.15 (cap at 0.95)\n  - category = \"math\" \u2192 show calculation steps before giving answer\n\nSINGLE IMAGE GUARD: If image_count = 1 and no text clues yet \u2192 max confidence 0.50\nFALLBACK RULE:\n  If evidence_json is empty or evidence_strength = \"none\":\n  \u2192 answer: \"unknown\", confidence: 0.10\n\nMATHEMATICAL QUESTIONS:\n  If category = \"math\", extract numbers and compute before answering.\n  Roman numerals: I=1, V=5, X=10, L=50, C=100, D=500, M=1000\n  Show calculation internally. Output only the final result.\n\nOUTPUT FORMAT \u2014 two lines only:\n  answer: <specific name, work, person, or concept>\n  confidence: <decimal 0.05-0.95>",
+        "input_fields": [
+          {
+            "name": "question_text",
+            "description": "All text clues so far",
+            "variable": "question_text"
+          },
+          {
+            "name": "image_analysis",
+            "description": "Latest image analysis from Image Analyst",
+            "variable": "C.image_text_analysis"
+          },
+          {
+            "name": "evidence_json",
+            "description": "Cumulative evidence JSON from Evidence Accumulator",
+            "variable": "B.evidence_json"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "Best answer to the question"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Confidence from 0.05 to 0.95 in increments of 0.05"
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.8
+    }
+  },
+  "code": null,
+  "status": "submitted",
+  "created_at": "2026-04-30T06:13:32.250751+00:00",
+  "updated_at": "2026-04-30T06:13:32.250751+00:00",
+  "version": 1
+}

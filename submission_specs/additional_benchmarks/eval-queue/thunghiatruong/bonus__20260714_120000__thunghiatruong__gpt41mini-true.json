@@ -1,0 +1,247 @@
+{
+  "id": "bonus__20260714_120000__thunghiatruong__gpt41mini-true",
+  "username": "thunghiatruong",
+  "model_name": "gpt41mini-true",
+  "description": "Backbone sweep: ileygreg bonus workflow prompts verbatim, every step swapped to OpenAI/gpt-4.1-mini-true. Buzzer fixed to confidence>=0.75 (AND, no logprob gate) to match thunghiatruong/claude-heavyweight.",
+  "competition_type": "bonus",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "leadin",
+      "part",
+      "leadin_images",
+      "part_images"
+    ],
+    "outputs": {
+      "answer": "C.answer",
+      "confidence": "C.confidence",
+      "explanation": "C.explanation"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Bonus Evidence Builder",
+        "model": "gpt-4.1-mini-true",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are an elite quizbowl bonus evidence analyst.\nYou receive one bonus leadin and one complete bonus part. The leadin establishes the shared context for the bonus, while the part contains the specific clues for the answer. Images may appear with either the leadin or the part.\n\nYour task:\n1. Identify the likely category, theme, and answer type.\n2. Extract concrete clues from the part, keeping them separate from leadin context.\n3. Use the leadin only to narrow the answer space. Do not answer from the leadin alone unless the part explicitly asks for that subject.\n4. For images, classify each as artwork/photo, map, diagram, scientific plot, table, object, or text-heavy image, and describe only visible evidence: labels, OCR text, people, objects, geography, diagram structure, artwork identity, or scientific features.\n5. List answer-form constraints, including whether a person, work, event, place, term, title, or other entity is required.\n6. Identify ambiguity, traps, near misses, visual uncertainty, and tempting but unsupported leadin-based answers.\n\nProcess this part independently. Do not assume access to other parts of the bonus. Do not give a final answer; build a precise evidence packet.",
+        "input_fields": [
+          {
+            "name": "question_leadin",
+            "description": "The leadin text for the bonus question",
+            "variable": "leadin"
+          },
+          {
+            "name": "question_part",
+            "description": "The specific bonus part text to answer",
+            "variable": "part"
+          },
+          {
+            "name": "leadin_images",
+            "description": "Images associated with the bonus leadin",
+            "variable": "leadin_images"
+          },
+          {
+            "name": "part_images",
+            "description": "Images associated with the current bonus part",
+            "variable": "part_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "category",
+            "description": "The likely quizbowl category"
+          },
+          {
+            "name": "theme",
+            "description": "The leadin-derived context or theme for this bonus"
+          },
+          {
+            "name": "answer_type",
+            "description": "The expected type of answer for this part"
+          },
+          {
+            "name": "part_clues",
+            "description": "Concrete text clues from the part, separated from leadin context"
+          },
+          {
+            "name": "visual_evidence",
+            "description": "Concrete observations from leadin and part images"
+          },
+          {
+            "name": "answer_constraints",
+            "description": "Constraints on the canonical answer form"
+          },
+          {
+            "name": "ambiguity_flags",
+            "description": "Traps, near misses, visual uncertainty, and unresolved ambiguities"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "Bonus Candidate Generator",
+        "model": "gpt-4.1-mini-true",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are a world-class quizbowl bonus specialist generating answer hypotheses.\nUnlike a tossup, there is no need to buzz early. You have the full leadin, the full text of this part, and any available images. The team can discuss before deciding whether to use your answer, so prioritize correctness, canonical answer form, and transparent uncertainty over speed.\n\nYour task:\n1. Generate 3 to 5 plausible canonical candidate answers for this part.\n2. Rank candidates by how well they match the part clues, visual evidence, and leadin context.\n3. For each strong candidate, cite the exact clue support in concise terms.\n4. Explicitly test close alternatives and explain what clue favors or rejects them.\n5. Note answer-normalization risks such as last name vs full name, alternate titles, translations, pluralization, prompts, or whether a more specific answer is required.\n\nFavor the answer that best satisfies the specific part. The leadin narrows the field, but the part controls the final answer.",
+        "input_fields": [
+          {
+            "name": "question_leadin",
+            "description": "The leadin text for the bonus question",
+            "variable": "leadin"
+          },
+          {
+            "name": "question_part",
+            "description": "The specific bonus part text to answer",
+            "variable": "part"
+          },
+          {
+            "name": "category",
+            "description": "The likely quizbowl category",
+            "variable": "A.category"
+          },
+          {
+            "name": "theme",
+            "description": "The leadin-derived context or theme for this bonus",
+            "variable": "A.theme"
+          },
+          {
+            "name": "answer_type",
+            "description": "The expected type of answer for this part",
+            "variable": "A.answer_type"
+          },
+          {
+            "name": "part_clues",
+            "description": "Concrete text clues from the part",
+            "variable": "A.part_clues"
+          },
+          {
+            "name": "visual_evidence",
+            "description": "Concrete observations from leadin and part images",
+            "variable": "A.visual_evidence"
+          },
+          {
+            "name": "answer_constraints",
+            "description": "Constraints on the canonical answer form",
+            "variable": "A.answer_constraints"
+          },
+          {
+            "name": "ambiguity_flags",
+            "description": "Traps, near misses, visual uncertainty, and unresolved ambiguities",
+            "variable": "A.ambiguity_flags"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "candidate_answers",
+            "description": "Ranked list of 3 to 5 plausible canonical answers"
+          },
+          {
+            "name": "clue_support",
+            "description": "Evidence supporting the top candidates"
+          },
+          {
+            "name": "rejected_alternatives",
+            "description": "Close alternatives and why they are weaker"
+          },
+          {
+            "name": "answer_form_risks",
+            "description": "Canonicalization, prompt, or acceptability risks"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "name": "Final Bonus Answer Verifier",
+        "model": "gpt-4.1-mini-true",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are a strict quizbowl bonus answer verifier and explainer.\nYou receive the leadin, one complete bonus part, image evidence, and candidate analysis. Pick the single best answer for this part only. Confidence means the probability that this exact answer would be accepted by a moderator for the completed bonus part.\n\nVerification rules:\n1. The part is complete; do not apply tossup buzzing thresholds.\n2. Use the leadin as context, but require the final answer to be supported by the part or by concrete part image evidence.\n3. Prefer the most specific canonical answer that would be accepted.\n4. Penalize confidence for wrong answer type, overbroad answers, unresolved close alternatives, OCR/visual uncertainty, or answer-form uncertainty.\n5. If the best answer is uncertain, still provide the best answer with a calibrated low confidence and explain the uncertainty.\n6. The explanation should justify the answer from the leadin, part clues, and visual evidence when relevant. Mention decisive clues and briefly note any important rejected alternative.\n\nCalibration:\n- 0.25 or lower: no reliable candidate.\n- 0.40 to 0.55: category or theme is known, but the specific answer is weak.\n- 0.60 to 0.75: plausible answer with one meaningful clue, but alternatives remain.\n- 0.80 to 0.90: strong part clue support and leadin context fit, with most alternatives rejected.\n- 0.90 or higher: multiple clues, a uniquely identifying clue, or decisive visual evidence points to the same canonical answer and answer form is clear.\n\nOutput only the final fields: a concise canonical answer, a confidence score from 0.0 to 1.0, and a detailed but compact explanation.",
+        "input_fields": [
+          {
+            "name": "question_leadin",
+            "description": "The leadin text for the bonus question",
+            "variable": "leadin"
+          },
+          {
+            "name": "question_part",
+            "description": "The specific bonus part text to answer",
+            "variable": "part"
+          },
+          {
+            "name": "category",
+            "description": "The likely quizbowl category",
+            "variable": "A.category"
+          },
+          {
+            "name": "theme",
+            "description": "The leadin-derived context or theme for this bonus",
+            "variable": "A.theme"
+          },
+          {
+            "name": "answer_type",
+            "description": "The expected type of answer for this part",
+            "variable": "A.answer_type"
+          },
+          {
+            "name": "part_clues",
+            "description": "Concrete text clues from the part",
+            "variable": "A.part_clues"
+          },
+          {
+            "name": "visual_evidence",
+            "description": "Concrete observations from leadin and part images",
+            "variable": "A.visual_evidence"
+          },
+          {
+            "name": "answer_constraints",
+            "description": "Constraints on the canonical answer form",
+            "variable": "A.answer_constraints"
+          },
+          {
+            "name": "candidate_answers",
+            "description": "Ranked list of plausible canonical answers",
+            "variable": "B.candidate_answers"
+          },
+          {
+            "name": "clue_support",
+            "description": "Evidence supporting the top candidates",
+            "variable": "B.clue_support"
+          },
+          {
+            "name": "rejected_alternatives",
+            "description": "Close alternatives and why they are weaker",
+            "variable": "B.rejected_alternatives"
+          },
+          {
+            "name": "answer_form_risks",
+            "description": "Canonicalization, prompt, or acceptability risks",
+            "variable": "B.answer_form_risks"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The predicted answer"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Confidence score from 0.0 to 1.0"
+          },
+          {
+            "name": "explanation",
+            "description": "Detailed justification for the answer"
+          }
+        ]
+      }
+    ]
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-07-14T12:00:00.000000+00:00",
+  "updated_at": "2026-07-14T12:00:00.000000+00:00",
+  "version": 1
+}

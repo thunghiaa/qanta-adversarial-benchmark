@@ -1,0 +1,111 @@
+{
+  "id": "tossup__20260618_032256__ileygreg__qanta_41mini_v3",
+  "username": "ileygreg",
+  "model_name": "QANTA_41mini_V3",
+  "description": "more evidence before buzzing",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "B.answer",
+      "confidence": "B.confidence"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Candidate Generator",
+        "model": "gpt-4.1-mini",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are an expert quizbowl tossup player.\n\nYou receive the currently revealed prefix of a tossup question. It may include text, images, or both. Images are primary evidence.\n\nProduce the best current answer, close alternatives, and an initial confidence.\n\nInternal process:\n1. Identify the answer type: person, work, place, event, concept, object, organism, organization, etc.\n2. Analyze all revealed text clues.\n3. Analyze all images carefully, including visible text, labels, maps, artworks, people, objects, diagrams, symbols, setting, style, and relationships.\n4. Consider nearby answers that could be confused with the best answer.\n5. Give the best current answer.\n\nConfidence means: probability that this answer would be accepted if buzzing right now.\n\nKeep confidence below 0.75 if the clues only identify a shared book, franchise, family, surname, setting, visual category, or broad context.\n\nOutput concise fields only.\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The tossup question text revealed so far",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the revealed tossup prefix",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "Best current guess"
+          },
+          {
+            "name": "close_alternatives",
+            "description": "Nearby plausible wrong answers, separated by commas; use none if no close alternatives"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Initial confidence from 0.0 to 1.0"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "Buzz Calibrator",
+        "model": "gpt-4.1-mini",
+        "provider": "OpenAI",
+        "temperature": 0.0,
+        "system_prompt": "You are a conservative quizbowl buzz calibrator.\n\nYou receive:\n- the revealed tossup text\n- any images\n- a proposed answer\n- close alternatives\n- an initial confidence\n\nYour job is to output the final answer and final confidence. Do not replace a plausible proposed answer unless it is clearly wrong. Your main job is to prevent premature buzzes while still buzzing once the exact answer is distinguished.\n\nThe external buzzer buzzes at confidence >= 0.75. A wrong buzz is costly.\n\nCritical confidence cap:\nIf the revealed evidence does not distinguish the exact proposed answer from close alternatives, confidence must be 0.70 or lower.\n\nThis cap is not a general penalty. If the evidence distinguishes the proposed answer from the listed alternatives, do not keep confidence below 0.75 just for caution. If close alternatives are absent, contradicted, or no longer fit the revealed clues, preserve an initial confidence above the buzz threshold unless there is a concrete reason to lower it.\n\nBuzz sufficiency check: Confidence >= 0.75 requires enough revealed evidence for an expert to name the proposed answer, not merely a clue that is compatible with it.\nBefore buzzing, require one of: - at least two independent direct clues that both point to the proposed answer - one unmistakable identifier, such as a unique name, title, label, quote, equation, image text, map label, portrait, artwork, symbol, object, or relationship that directly identifies the proposed answer\nIf there is only one weak or generic association, or if the answer is mainly inferred from topic, genre, setting, chronology, visual style, elimination, or \"best fit,\" confidence must be 0.70 or lower.\n\nApply this especially to:\n- characters from the same work\n- people with the same surname\n- author vs narrator vs protagonist vs title character\n- family members\n- place vs work set in that place\n- event vs participant\n- visually similar artworks, flags, maps, organisms, buildings, diagrams, or symbols\n\nFor fictional characters, confidence >= 0.75 requires evidence that distinguishes the exact character. Shared setting, family, surname, species, object, journey, book, or franchise is not enough.\n\nFor images, confidence >= 0.75 is allowed only when the image uniquely identifies the exact answer. If it identifies only a setting, category, work, family, or franchise, cap at 0.70.\n\nWhen the exact answer is distinguished but not certain, prefer calibrated buzz-level confidence around 0.75-0.82 instead of waiting for near certainty. This applies only after the buzz sufficiency check is satisfied.\n\nConfidence scale:\n- 0.95-1.00: exact answer is uniquely identified\n- 0.80-0.90: exact answer is strongly distinguished\n- 0.75: barely enough to buzz, but exact answer is distinguished\n- 0.70: best guess, but close alternatives still fit\n- 0.55-0.65: plausible but underdetermined\n- 0.50 or lower: weak or generic clue match\n\nOutput only the final answer and final confidence.\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The tossup question text revealed so far",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the revealed tossup prefix",
+            "variable": "question_images"
+          },
+          {
+            "name": "proposed_answer",
+            "description": "Candidate answer from step A",
+            "variable": "A.answer"
+          },
+          {
+            "name": "close_alternatives",
+            "description": "Close alternatives from step A",
+            "variable": "A.close_alternatives"
+          },
+          {
+            "name": "initial_confidence",
+            "description": "Initial confidence from step A",
+            "variable": "A.confidence"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "Final answer"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Final calibrated confidence from 0.0 to 1.0"
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.75,
+      "prob_threshold": 0.65
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-18T03:22:56.815681+00:00",
+  "updated_at": "2026-06-18T03:22:56.815681+00:00",
+  "version": 1
+}

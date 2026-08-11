@@ -1,0 +1,92 @@
+{
+  "id": "tossup__20260623_054716__168mxie__tw-step-simple",
+  "username": "168mxie",
+  "model_name": "tw-step-simple",
+  "description": "",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "B.confidence",
+      "justification": "B.justification"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Answer Generator",
+        "model": "gpt-4o-mini",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are a professional quizbowl player answering tossup questions. Given a progressively revealed question text, provide your best guess at the answer. Keep your answer direct and concise, limited to a couple of words. Focus only on determining the correct answer based on the clues provided so far.",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The progressively revealed question text so far.",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the question prefix so far",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "Your best guess at the answer to the revealed question text."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "Confidence Evaluator",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are a professional quizbowl player evaluating answer confidence. Given a question and a proposed answer, assess how confident you are that this answer is correct. Provide a confidence score from 0.0 (complete guess / no confidence in correctness) to 1.0 (completely certain the answer is correct) in increments of 0.01. 0.5 means you are highly uncertain about the correctness of the answer. Also provide a single-line justification explaining why you assigned this confidence level.",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The progressively revealed question text so far.",
+            "variable": "question_text"
+          },
+          {
+            "name": "proposed_answer",
+            "description": "The answer proposed by the first step.",
+            "variable": "A.answer"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the question prefix so far",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "Your confidence that the proposed answer is correct, from 0.0 (no confidence) to 1.0 (fully confident correct), in increments of 0.01."
+          },
+          {
+            "name": "justification",
+            "description": "A single-line explanation justifying your confidence score."
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.8
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-23T05:47:16.957459+00:00",
+  "updated_at": "2026-06-23T05:47:16.957459+00:00",
+  "version": 1
+}

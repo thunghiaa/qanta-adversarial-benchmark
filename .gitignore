@@ -1,0 +1,30 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+.env
+.cache/
+.hf/
+
+# Model weights and caches are reproducible downloads, not source artifacts.
+*.safetensors
+*.bin
+*.gguf
+*.db
+*.db-shm
+*.db-wal
+
+# Full packet images are obtained from the canonical dataset snapshot.
+# JSON metadata and the checksummed manifest remain versioned here.
+data/packets/**/images/
+
+# Local inference scratch space.
+local_outputs/
+model_artifacts/
+tmp_*/

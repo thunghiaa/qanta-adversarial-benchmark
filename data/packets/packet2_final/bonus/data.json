@@ -1,0 +1,1162 @@
+[
+  {
+    "qid": "advvqa-b-fSvWgAZNctiri89Hu7YT",
+    "title": "Lit 3",
+    "leadin": "An Art Nouveau-inspired illustration was made to accompany a story by this author. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this author of the story that accompanied the illustration seen here.",
+        "answer": "Edgar Allan Poe",
+        "clean_answers": [
+          "Edgar Allan Poe"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Harry Clarke's illustration for this Poe story depicts a bound man sentenced to a horrific death during the Spanish Inquisition.",
+        "answer": "The Pit and the Pendulum",
+        "clean_answers": [
+          "The Pit and the Pendulum"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The Clarke illustration seen here accompanies this five-word exclamation from the climax of a Poe story.",
+        "answer": "For the love of God!",
+        "clean_answers": [
+          "For the love of God!"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-TUBSaSaCWhsEkCcYg8od",
+    "title": "Lit 2",
+    "leadin": "An illustration by Gustave Dor\u00e9 depicts this location. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this location, on which it is inscribed \"Before me there were no created things.\"",
+        "answer": "the Gate of Hell",
+        "clean_answers": [
+          "the Gate of Hell"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This narrator of The Divine Comedy, depicted here by Dor\u00e9, passes through the Gate of Hell.",
+        "answer": "Dante Alighieri [accept Dante]",
+        "clean_answers": [
+          "Dante Alighieri [accept Dante]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Seen here is Dor\u00e9's illustration of the punishment of these sinners in the Inferno.",
+        "answer": "thieves",
+        "clean_answers": [
+          "thieves"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-dmJw487o6olYqnozXGtf",
+    "title": "Lit 1",
+    "leadin": "The title location of a collection by this poet is seen on these covers. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The location indicated by the arrow names another collection by what poet?",
+        "answer": "Robert Frost",
+        "clean_answers": [
+          "Robert Frost"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Robert Frost, the author of the collections Mountain Internal and North of Boston, wrote a poem titled for one of these paths \"Not Taken.\"",
+        "answer": "roads",
+        "clean_answers": [
+          "roads"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "An object seen here leads to the death of a boy in this Frost poem.",
+        "answer": "Out, Out",
+        "clean_answers": [
+          "Out, Out"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-pOAjFMEpaeJRwOm4iYiA",
+    "title": "Chem",
+    "leadin": "For 10 points each, answer the following about molecular geometries, as determined by VSEPR theory:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "In the gas phase, this binary compound adopts the AX2 geometry shown here, though its solid form contains chloride-bridged chains because the central atom is electron deficient.",
+        "answer": "beryllium chloride [accept BeCl2]",
+        "clean_answers": [
+          "beryllium chloride [accept BeCl2]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This geometry is possessed by a molecule depicted here, with steric number 3 and no lone pairs of electrons.",
+        "answer": "trigonal planar",
+        "clean_answers": [
+          "trigonal planar"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "An example of the more complex linear geometry seen here this anion, composed of three molecules of the same element.",
+        "answer": "triiodide",
+        "clean_answers": [
+          "triiodide"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-MAB7UJUemEjHoda8aW3o",
+    "title": "Map 2",
+    "leadin": "Seen here is a map of this country. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this country whose ten provinces and three territories are illustrated on the map.",
+        "answer": "Canada",
+        "clean_answers": [
+          "Canada"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The black line on the map, representing the Trans-Canada Highway, has its western terminus at this provincial capital.",
+        "answer": "Victoria",
+        "clean_answers": [
+          "Victoria"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The northern branch of the Trans-Canada, shown with a black line, shares this name with a pass through the Rocky Mountains.",
+        "answer": "Yellowhead Highway [or Yellowhead Pass]",
+        "clean_answers": [
+          "Yellowhead Highway [or Yellowhead Pass]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-LrBoBxSjQm3FcWsgeUbQ",
+    "title": "Map 1",
+    "leadin": "This is the two-word name that has been obscured in a map showing part of South America. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Give this name, which reflects an area known for its production of iron ore, lithium, and emeralds.",
+        "answer": "Minas Gerais",
+        "clean_answers": [
+          "Minas Gerais"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The map illustrates the states of this country.",
+        "answer": "Brazil",
+        "clean_answers": [
+          "Brazil"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The name of this city has been obscured in a different map of Brazil showcasing the country's urban centers and waterways.",
+        "answer": "Brasilia",
+        "clean_answers": [
+          "Brasilia"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000023.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000021.png",
+      "bonus/images/000022.png",
+      "bonus/images/000023.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000020.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-yVSP2w7uG2t93ZoZRLqz",
+    "title": "Writing",
+    "leadin": "As seen in a small portrait, this Frenchman was blinded in an accident at the age of three. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Give this namesake of a system of writing for the blind that uses a matrix of raised dots.",
+        "answer": "Louis Braille",
+        "clean_answers": [
+          "Louis Braille"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Name the three-letter word depicted here in Braille writing.",
+        "answer": "fun",
+        "clean_answers": [
+          "fun"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Creating Braille using a punch stylus requires moving right to left, similar to this style of writing employed in Leonardo da Vinci's notebooks.",
+        "answer": "mirror writing",
+        "clean_answers": [
+          "mirror writing"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000027.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000025.png",
+      "bonus/images/000026.png",
+      "bonus/images/000027.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000024.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-tyKtCAGg2dI9ZyYhZrcn",
+    "title": "Chess",
+    "leadin": "This piece, visualized here, is common in endgame situations. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The arrows represent the field of movement of what piece?",
+        "answer": "rook",
+        "clean_answers": [
+          "rook"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Shown here, after White's second move, is what opening familiar to readers of a popular Walter Tevis novel?",
+        "answer": "The Queen's Gambit",
+        "clean_answers": [
+          "The Queen's Gambit"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "In usual algebraic notation, give Black's most common second move in the Queen's Gambit Declined, when Black chooses not to take the White pawn on c4.",
+        "answer": "e6",
+        "clean_answers": [
+          "e6"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000031.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000029.png",
+      "bonus/images/000030.png",
+      "bonus/images/000031.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000028.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Y1HNUojkbmGvcmuLbJzy",
+    "title": "Flags",
+    "leadin": "This country adopted a monogreen flag under Muammar Gaddafi. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this north African country whose current flag is depicted here.",
+        "answer": "Libya",
+        "clean_answers": [
+          "Libya"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Obscured from the flag of an African country seen here are three things: a book, a hoe, and this item.",
+        "answer": "AK-47 [accept machine gun; prompt on gun]",
+        "clean_answers": [
+          "AK-47 [accept machine gun; prompt on gun]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Obscured on a different African national flag is a depiction of one of these birds.",
+        "answer": "cranes [or grey crowned cranes]",
+        "clean_answers": [
+          "cranes [or grey crowned cranes]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000034.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000035.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000033.png",
+      "bonus/images/000034.png",
+      "bonus/images/000035.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000032.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-9VjQ9lBNO6rmQJmE7ftC",
+    "title": "Art",
+    "leadin": "This man is shown on the left hand side of a painting by Michelangelo. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this man whose \"Creation\" is the subject of a fresco on the Sistine Chapel ceiling.",
+        "answer": "Adam",
+        "clean_answers": [
+          "Adam"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This artist's fresco seen here is in the Brancacci Chapel.",
+        "answer": "Masaccio",
+        "clean_answers": [
+          "Masaccio"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Seen here is a depiction of a gaunt Adam from this other Renaissance artwork.",
+        "answer": "Ghent Altarpiece [or The Adoration of the Mystic Lamb]",
+        "clean_answers": [
+          "Ghent Altarpiece [or The Adoration of the Mystic Lamb]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000039.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000037.png",
+      "bonus/images/000038.png",
+      "bonus/images/000039.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000036.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-CXdipkpdbYPo7ZbFSHfU",
+    "title": "Music",
+    "leadin": "This three-stringed instrument is pictured here. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this instrument featured in \"Lara's Theme\" from a film score by Maurice Jarre.",
+        "answer": "balalaika",
+        "clean_answers": [
+          "balalaika"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "A different Russian creation, the bayan, is a \"button\" one of these instruments similar to concertinas.",
+        "answer": "accordions",
+        "clean_answers": [
+          "accordions"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Yet another Russian musical instrument, the Svistulka, is a clay whistle, but, unlike the example seen here, is most often crafted into the shape of one of these things.",
+        "answer": "birds",
+        "clean_answers": [
+          "birds"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000041.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000043.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000041.png",
+      "bonus/images/000042.png",
+      "bonus/images/000043.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000040.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-N4ReI7qsJK7zvmJDICG3",
+    "title": "Art 3",
+    "leadin": "This mythological figure is depicted here. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "A pair of statues from the Roman Era depict what hero who completed twelve labors?",
+        "answer": "Heracles [or Hercules]",
+        "clean_answers": [
+          "Heracles [or Hercules]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The statue of Heracles seen here is a Roman copy based on a Greek original by this sculptor.",
+        "answer": "Lysippos",
+        "clean_answers": [
+          "Lysippos"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "In the Farnese Hercules, the hero holds behind his back this type of object, a nod to Hercules's eleventh labor.",
+        "answer": "apple [or Golden Apple of the Hesperides]",
+        "clean_answers": [
+          "apple [or Golden Apple of the Hesperides]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000045.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000047.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000045.png",
+      "bonus/images/000046.png",
+      "bonus/images/000047.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000044.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-ITg3iLtqet63qneCW3ZB",
+    "title": "Coffee",
+    "leadin": "For 10 points each, answer the following about logos of coffee companies:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The siren shown here and in the lead-in image are iconic logos of what company?",
+        "answer": "Starbucks",
+        "clean_answers": [
+          "Starbucks"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This word has been obscured in the logo of a coffee chain seen here.",
+        "answer": "Caribou",
+        "clean_answers": [
+          "Caribou"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A silver can with red and white letters is a classic visual logo of this company, named for its founder, the man who invented the first instant expresso machine.",
+        "answer": "Illy",
+        "clean_answers": [
+          "Illy"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000049.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000051.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000049.png",
+      "bonus/images/000050.png",
+      "bonus/images/000051.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000048.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-phDW0Nb5YWdZDLUID6Uc",
+    "title": "Art 2",
+    "leadin": "A painting depicts the coronation of this ruler. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this emperor depicted in the painting shown here by Jacques-Louis David.",
+        "answer": "Napoleon Bonaparte",
+        "clean_answers": [
+          "Napoleon Bonaparte"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "A David painting depicts Napoleon in his study at this place.",
+        "answer": "Tuileries",
+        "clean_answers": [
+          "Tuileries"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Kehinde Wiley added this generic surname to the indicated position on the rock in his reimagined painting Napoleon Leading the Army over the Alps.",
+        "answer": "Williams",
+        "clean_answers": [
+          "Williams"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000053.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000055.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000053.png",
+      "bonus/images/000054.png",
+      "bonus/images/000055.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000052.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-kToIbZ1PdvoDXK63Gq3C",
+    "title": "Numerals",
+    "leadin": "For 10 points each, answer the following about numeral systems in Mesoamerica and beyond:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Seen here is the Inca Quipu, a system of braided knots that was used to represent numerals using this base, which is commonly used in standard numerals.",
+        "answer": "10",
+        "clean_answers": [
+          "10"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The Mayan numeral shown here has two dots in the twenties place above a group worth thirteen, representing this number in decimal notation.",
+        "answer": "53",
+        "clean_answers": [
+          "53"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "In Aztec numerals, 8000 was represented by one of these objects, as contrasted with the flags, feathers, and dots also depicted here.",
+        "answer": "bags [or sacks; accept xiquipilli]",
+        "clean_answers": [
+          "bags [or sacks; accept xiquipilli]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000059.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000057.png",
+      "bonus/images/000058.png",
+      "bonus/images/000059.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000056.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-uMQ0IEOXrY2U4EoBpm1M",
+    "title": "China",
+    "leadin": "The death of Hu Yaobang, pictured here, triggered 1989 protests at this location. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The death of Hu Yaobang helped trigger 1989 demonstrations at this site, whose Monument to the People's Heroes was a focal point for protesters.",
+        "answer": "Tiananmen Square",
+        "clean_answers": [
+          "Tiananmen Square"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Protesters at Tiananmen put up this papier-m\u00e2ch\u00e9 statue, which was levelled by Chinese troops.",
+        "answer": "Goddess of Democracy [or Spirit of Democracy; or Spirit of Liberty]",
+        "clean_answers": [
+          "Goddess of Democracy [or Spirit of Democracy; or Spirit of Liberty]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Protestors also wanted the reinstatement of a policy known in English by the three-word name of the object seen here.",
+        "answer": "iron rice bowl",
+        "clean_answers": [
+          "iron rice bowl"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000063.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000061.png",
+      "bonus/images/000062.png",
+      "bonus/images/000063.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000060.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-E5t10mzhOkAY7T9MNEYL",
+    "title": "Greece",
+    "leadin": "Ancient Greeks wielded a wide array of weapons into combat. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Shown here is an example of this weapon with a Greek name, commonly used by ancient cavalry.",
+        "answer": "Kopis",
+        "clean_answers": [
+          "Kopis"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "These citizen-soldiers of ancient Greece, who take their name from a Greek word meaning \"tool\" or \"weapon.\"",
+        "answer": "Hoplites",
+        "clean_answers": [
+          "Hoplites"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Seen here is a replica of a helmet worn by troops from this Greek city-state.",
+        "answer": "Sparta",
+        "clean_answers": [
+          "Sparta"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000065.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000067.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000065.png",
+      "bonus/images/000066.png",
+      "bonus/images/000067.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000064.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Hk3eje8dauAH8GChRZ0r",
+    "title": "West",
+    "leadin": "The person shown here popularized this phrase. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this phrase of advice. It is sometimes presented as part of a larger quote saying that the capital of the country depicted here is not a suitable place to live.",
+        "answer": "Go west, young man",
+        "clean_answers": [
+          "Go west, young man"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This other four-word phrase came from a discredited theory holding that precipitation was followed by the activity depicted here.",
+        "answer": "Rain follows the plow",
+        "clean_answers": [
+          "Rain follows the plow"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Aphorisms about the old west, such as \"Never run a bluff with a six-gun\" and \"Shoot first and never miss,\" are attributed to this lawman, sportswriter, and boxing enthusiast.",
+        "answer": "Bat Masterson",
+        "clean_answers": [
+          "Bat Masterson"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000069.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000071.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000069.png",
+      "bonus/images/000070.png",
+      "bonus/images/000071.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000068.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-MvloRivBZY8ZBMJpTOKh",
+    "title": "WWII",
+    "leadin": "The photograph shown here depicts this battle. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this battle depicted in the image here.",
+        "answer": "Battle of Iwo Jima",
+        "clean_answers": [
+          "Battle of Iwo Jima"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The image depicted here censors this general, who was depicted in a famous WW2 photograph near Leyte.",
+        "answer": "Douglas MacArthur [accept MacArthur]",
+        "clean_answers": [
+          "Douglas MacArthur [accept MacArthur]"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Another photograph shows U.S. troops at this battle. A sound nicknamed \"The Slot\" was heavily contesting during this battle.",
+        "answer": "Battle of Guadalcanal",
+        "clean_answers": [
+          "Battle of Guadalcanal"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000073.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000075.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000073.png",
+      "bonus/images/000074.png",
+      "bonus/images/000075.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000072.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-MsnPvfQ1GANWnPJKPBkf",
+    "title": "Am Hist",
+    "leadin": "Modern editing has been used to enhance images of this man, often called the most-photographed man of the 19th century. For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Name this author of an 1845 autobiography, who used formal studio portraits to counter racist caricatures of Black Americans.",
+        "answer": "Frederick Douglass",
+        "clean_answers": [
+          "Frederick Douglass"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Douglass is seen here in a double portrait alongside this man, who gave the name \"Timbuctoo\" to a settlement for free Blacks that he promoted.",
+        "answer": "John Brown",
+        "clean_answers": [
+          "John Brown"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "A different photograph shows Douglass alongside Eva Pitts, and this woman, whose interracial marriage to him caused public controversy.",
+        "answer": "Helen Pitts [accept Helen; accept Pitts; do not accept Douglass]",
+        "clean_answers": [
+          "Helen Pitts [accept Helen; accept Pitts; do not accept Douglass]"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000077.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000079.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000077.png",
+      "bonus/images/000078.png",
+      "bonus/images/000079.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000076.png"
+    },
+    "num_images": 4
+  }
+]

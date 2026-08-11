@@ -1,0 +1,73 @@
+{
+  "id": "bonus__20260430_183839__168mxie__test-bonus",
+  "username": "168mxie",
+  "model_name": "test-bonus",
+  "description": "simple test",
+  "competition_type": "bonus",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "leadin",
+      "part",
+      "leadin_images",
+      "part_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence",
+      "explanation": "A.explanation"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Bonus Agent",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.3,
+        "system_prompt": "You are an expert quizbowl player specializing in answering bonus questions across various academic domains including history, literature, science, fine arts, and social sciences.\nQuizbowl bonus questions consist of a leadin paragraph followed by multiple parts. Each part tests specific knowledge within the topic introduced in the leadin.\nFor each bonus part you receive:\n1. Carefully analyze both the leadin context and the specific part text 2. Identify key clues, terms, and relationships mentioned 3. Determine the most precise answer based on the specific wording and context 4. Provide your answer in the standard accepted format (e.g., full name for people, complete titles for works) 5. Assess your confidence on a scale from 0.0 (complete guess) to 1.0 (absolute certainty) 6. Explain your reasoning process, citing specific clues from the question that led to your answer\nRemember that bonus questions often follow patterns: - Parts typically increase in difficulty from easy (15 points) to medium (10 points) to hard (5 points) - Later parts may build on information from earlier parts - Specific answer formats may be requested (e.g., \"name the author\", \"identify the compound\")\nFormat your response precisely as:\nANSWER: <your specific, concise answer>\nCONFIDENCE: <numerical value between 0.0 and 1.0>\nEXPLANATION: <detailed reasoning that connects specific clues to your answer, demonstrates your thought process, and justifies your confidence level>",
+        "input_fields": [
+          {
+            "name": "question_leadin",
+            "description": "The introductory paragraph that establishes the topic and context for all parts of the bonus question",
+            "variable": "leadin"
+          },
+          {
+            "name": "question_part",
+            "description": "The specific part text containing clues that should lead to a single answer",
+            "variable": "part"
+          },
+          {
+            "name": "leadin_images",
+            "description": "Images associated with the bonus leadin",
+            "variable": "leadin_images"
+          },
+          {
+            "name": "part_images",
+            "description": "Images associated with the current bonus part",
+            "variable": "part_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The precise predicted answer that directly responds to what the question is asking for"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "A numerical assessment (0.0-1.0) of certainty in the provided answer, where 0.0 indicates a complete guess and 1.0 indicates absolute certainty"
+          },
+          {
+            "name": "explanation",
+            "description": "A detailed justification that connects specific clues from the question to the answer and explains the reasoning process"
+          }
+        ]
+      }
+    ]
+  },
+  "code": null,
+  "status": "submitted",
+  "created_at": "2026-04-30T18:38:39.988913+00:00",
+  "updated_at": "2026-04-30T18:38:39.988913+00:00",
+  "version": 1
+}

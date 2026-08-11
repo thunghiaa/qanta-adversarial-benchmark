@@ -1,0 +1,1272 @@
+[
+  {
+    "qid": "advvqa-b-lxSUo6ZNbRaa4LqQL4lh",
+    "title": "College Athletics Conferences",
+    "leadin": "I'll show you a map of an athletic conference, you give me the name of the conference.  For example, if I show you these schools, you would say \"Big 10\".",
+    "parts": [
+      {
+        "number": 1,
+        "question": "One of its founding members (who came from the Big Eight) rejoined this league in 2024.",
+        "answer": "Big 12",
+        "clean_answers": [
+          "Big 12"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Despite this conference's name, two California rivals joined in 2024.",
+        "answer": "Atlantic Coast Conference (ACC)",
+        "clean_answers": [
+          "Atlantic Coast Conference (ACC)"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This conference only began sponsoring football in the 21st century.",
+        "answer": "Sun Belt",
+        "clean_answers": [
+          "Sun Belt"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000001.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000002.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000003.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000001.png",
+      "bonus/images/000002.png",
+      "bonus/images/000003.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000000.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-L70hk4QrJWj64qPc4c56",
+    "title": "Blank Canvas 7",
+    "leadin": "Given the route of an historic ocean voyage, give the name of the ship for 10 points each ...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This journey took 101 days and had a man overboard three months in.",
+        "answer": "Kon-Tiki",
+        "clean_answers": [
+          "Kon-Tiki"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The first and third voyages of this craft were less famous, but all of its voyages took it to the southern hemisphere.",
+        "answer": "HMS _Beagle_",
+        "clean_answers": [
+          "HMS _Beagle_"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This Cunard Line ship sank in the North Atlantic.",
+        "answer": "RMS _Lusitania_",
+        "clean_answers": [
+          "RMS _Lusitania_"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000005.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000006.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000007.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000005.png",
+      "bonus/images/000006.png",
+      "bonus/images/000007.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000004.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-vkojuf092xAWYMRJcyHk",
+    "title": "City Parks",
+    "leadin": "Given a map of a city park, name the city the park is in for 10 points each.  For example, if I showed you this map, you'd say New York City.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "It's not Bryant Park, but this city's main park pictured here is named after a writer and journalist.  Unlike Bryant park, it sits on a river.",
+        "answer": "Moscow",
+        "clean_answers": [
+          "Moscow"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This map does not make it clear if this city has a designated location for confections in case of precipitation.",
+        "answer": "Los Angeles",
+        "clean_answers": [
+          "Los Angeles"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Confusingly, this city's park shown here takes its name from a garden in France, which took its name from a city in Italy.",
+        "answer": "Copenhagen",
+        "clean_answers": [
+          "Copenhagen"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000009.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000010.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000011.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000009.png",
+      "bonus/images/000010.png",
+      "bonus/images/000011.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000008.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-JCjgMXNkKeHqdl8iPsDN",
+    "title": "Airlines",
+    "leadin": "Given the flight map of an airline, identify the airline.  For 10 points each ...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Even in coach, you'll get something sweet.",
+        "answer": "Swiss",
+        "clean_answers": [
+          "Swiss"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "In 2026, this airline will begin flying to Las Vegas, which Raymond will appreciate.",
+        "answer": "Qantas",
+        "clean_answers": [
+          "Qantas"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This map is no longer up to date due to a death in Malaysia.",
+        "answer": "Air _Koryo_ (prompt on \"North Korea\")",
+        "clean_answers": [
+          "Air _Koryo_ (prompt on \"North Korea\")"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000013.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000014.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000015.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000013.png",
+      "bonus/images/000014.png",
+      "bonus/images/000015.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000012.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-jfGHO7KW8eoeGTv50xz7",
+    "title": "Museum Maps",
+    "leadin": "Given a museum map, identify the museum.  For 10 points each ...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "This museum represents the slow descent of contemporary art.",
+        "answer": "_Guggenheim_ New York",
+        "clean_answers": [
+          "_Guggenheim_ New York"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Not all art has a point, but the art at this museum does.",
+        "answer": "Louvre",
+        "clean_answers": [
+          "Louvre"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "This museum is a little top heavy, but still worth a visit.",
+        "answer": "_Vasa_ Museum",
+        "clean_answers": [
+          "_Vasa_ Museum"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000017.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000018.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000019.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000020.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000021.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000022.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000017.png",
+      "bonus/images/000018.png",
+      "bonus/images/000019.png",
+      "bonus/images/000020.png",
+      "bonus/images/000021.png",
+      "bonus/images/000022.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000016.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-0SeXVHLwDmbtOYEld4kE",
+    "title": "Video Game Maps",
+    "leadin": "Given a map of a video game, identify the game it comes from.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "I was a cartographer like you until I took a paper cut in the thumb.",
+        "answer": "_Elder Scrolls V_: _Skyrim_ (Accept either underlined part)",
+        "clean_answers": [
+          "_Elder Scrolls V_: _Skyrim_ (Accept either underlined part)"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Despite their overrepresentation, this game is not set in Serbia.",
+        "answer": "_Grand Theft Auto IV_: Liberty City (accept _GTA4_, prompt on _Liberty City_)",
+        "clean_answers": [
+          "_Grand Theft Auto IV_: Liberty City (accept _GTA4_, prompt on _Liberty City_)"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This game has you meet four interesting animals.",
+        "answer": "Zelda: _Breath of the Wild_",
+        "clean_answers": [
+          "Zelda: _Breath of the Wild_"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000024.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000025.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000026.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000024.png",
+      "bonus/images/000025.png",
+      "bonus/images/000026.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000023.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-nnHuwWxHdkNpcqGIeNvj",
+    "title": "Blank Canvas 6",
+    "leadin": "Given a region of the world with national flags, identify the flag that is wrong.  You don't need to say what other flag it's been replaced with.  E.g., on this map you'd say that the US flag is wrong, you don't need to say it's been replaced by Liberia'.  For 10 points each ...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Ivan Mazepa would be confused by this switch.",
+        "answer": "Sweden",
+        "clean_answers": [
+          "Sweden"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This mixup probably happened when both of these countries participated in a Sinai peacekeeping force.",
+        "answer": "Indonesia",
+        "clean_answers": [
+          "Indonesia"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "They both have the same approximate area, but the polity whose flag has replaced this nation has more people and swagger.",
+        "answer": "Chile",
+        "clean_answers": [
+          "Chile"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000028.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000029.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000030.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000031.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000032.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000033.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000028.png",
+      "bonus/images/000029.png",
+      "bonus/images/000030.png",
+      "bonus/images/000031.png",
+      "bonus/images/000032.png",
+      "bonus/images/000033.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000027.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-1yNiVz7Urt147ll9mJRl",
+    "title": "Two Letter Capitals",
+    "leadin": "I will show you a map of a region, and you tell me the only capital of the visible countries that has two (not necessarily distinct) vowels in the official UN romanization, excluding \"y\".  For example, if I showed you this map, you would answer Rome.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "With nine letters (ten if you count the space) this capital has particularly low vowel density.",
+        "answer": "Phnom Penh",
+        "clean_answers": [
+          "Phnom Penh"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "It's not Nusantara, but it became it's nation's capital in the 21st century.",
+        "answer": "Dili",
+        "clean_answers": [
+          "Dili"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "Be careful with this one as the former capital also had two vowels before moving here.",
+        "answer": "Abuja",
+        "clean_answers": [
+          "Abuja"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000035.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000036.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000037.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000038.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000039.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000040.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000035.png",
+      "bonus/images/000036.png",
+      "bonus/images/000037.png",
+      "bonus/images/000038.png",
+      "bonus/images/000039.png",
+      "bonus/images/000040.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000034.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-IZATmmP6lpKFKDkc9MEB",
+    "title": "Pulitzer Prize Books",
+    "leadin": "Given a locations in a Pulitzer Prize winning book, identify the book.  For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "A genetic disorder causes the protagonist to have the title characteristic which he comes to terms with after leaving his hometown.",
+        "answer": "Middlesex",
+        "clean_answers": [
+          "Middlesex"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The protagonist moves west to be with a distant relative before getting himself into trouble again, causing the protagonist of this novel to die despite the best efforts of nonprofit lawyers.",
+        "answer": "Executioner's Song",
+        "clean_answers": [
+          "Executioner's Song"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "The fat protagonist of this work works variously as a hot dog vendor and in a pants factory.",
+        "answer": "A Confederacy of Dunces",
+        "clean_answers": [
+          "A Confederacy of Dunces"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000042.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000043.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000044.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000042.png",
+      "bonus/images/000043.png",
+      "bonus/images/000044.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000041.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Q8OEIjk5e00HUt7qls1u",
+    "title": "Official Languages",
+    "leadin": "Given a map of a subset of countries that use a language officially, identify the language.  For example, given this map, you would respond Arabic.  For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Both of the African nations shown here that speak this language have approximately the same population, although only one has oil.",
+        "answer": "Portuguese",
+        "clean_answers": [
+          "Portuguese"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The largest country pictured to speak this language began when the English gained control of what is now New York.",
+        "answer": "Dutch",
+        "clean_answers": [
+          "Dutch"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Of the two most populous countries indicated here, this language is a shared official language.",
+        "answer": "English",
+        "clean_answers": [
+          "English"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000046.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000047.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000048.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000046.png",
+      "bonus/images/000047.png",
+      "bonus/images/000048.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000045.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-x7QBIDWtVZGo2Z996dJE",
+    "title": "Capitol to Largest City",
+    "leadin": "Given a map of the capital city of a state, name the largest city by population in that state.  For example, if I showed you Sacramento, you'd say Los Angeles.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The river pictured here flows south to this largest city in the state.  The interstate next to the river is also a Boeing plane type.",
+        "answer": "New York City",
+        "clean_answers": [
+          "New York City"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The bodies of water pictured here start with M, as does the much larger body of water that this largest city lies on.",
+        "answer": "Milwaukee",
+        "clean_answers": [
+          "Milwaukee"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Both the city pictured here and this state's largest city's names originate in a non-English European language.",
+        "answer": "New Orleans",
+        "clean_answers": [
+          "New Orleans"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000050.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000051.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000052.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000050.png",
+      "bonus/images/000051.png",
+      "bonus/images/000052.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000049.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-Cpw2itPWaf5wzgqdBbuo",
+    "title": "Blank Canvas 5",
+    "leadin": "Given a literary work, name the author or work that the map is describing.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The locations shown are across Salinas and Monterey County, including Doc's Laboratories and a road whose name titles a 1945 novel by this author.",
+        "answer": "John _Steinbeck_ [accept _Steinbeck_]",
+        "clean_answers": [
+          "John _Steinbeck_ [accept _Steinbeck_]"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This novel about a main character's \"hundred\" takes place in the jurisdiction shown here and shares a character with an earlier 1929 novel whose title comes from Macbeth.",
+        "answer": "Absalom, Absalom",
+        "clean_answers": [
+          "Absalom, Absalom"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "The map seen here appears in this Robert Louis Stevenson novel, whose original title, The Sea Cook, referred to Long John Silver and a search for buried treasure.",
+        "answer": "Treasure Island",
+        "clean_answers": [
+          "Treasure Island"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000054.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000055.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000056.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000057.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000058.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000059.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000054.png",
+      "bonus/images/000055.png",
+      "bonus/images/000056.png",
+      "bonus/images/000057.png",
+      "bonus/images/000058.png",
+      "bonus/images/000059.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000053.png"
+    },
+    "num_images": 7
+  },
+  {
+    "qid": "advvqa-b-W17Ks8EjNHFPE9YOOIjb",
+    "title": "Blank Canvas 4",
+    "leadin": "Given a map in a film, identify the film.  For example, given this image you would reply Dr. Strangelove.  For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "By all accounts, the race seen here to get to the palace doesn't make sense.",
+        "answer": "The Emperor's New Groove",
+        "clean_answers": [
+          "The Emperor's New Groove"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "The protagonist of this film is heading to a high elevation to meet with the daughter of his former mentor.",
+        "answer": "Indiana Jones and the _Raiders of the Lost Ark_",
+        "clean_answers": [
+          "Indiana Jones and the _Raiders of the Lost Ark_"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "Here's looking at the route taken by the motley collection of itinerants in the title locale; just before, we saw a title credit sequence over a map of another continent.",
+        "answer": "Casablanca",
+        "clean_answers": [
+          "Casablanca"
+        ],
+        "image_idx": 3
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000061.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000062.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000063.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000064.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000061.png",
+      "bonus/images/000062.png",
+      "bonus/images/000063.png",
+      "bonus/images/000064.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000060.png"
+    },
+    "num_images": 5
+  },
+  {
+    "qid": "advvqa-b-rBVTER0aClahEXpwAMQm",
+    "title": "Blank Canvas 3",
+    "leadin": "North by Northwest.  I will show you a city, you tell me the *next* country you'll reach if you go directly North Northwest (i.e. 337.5 degrees).",
+    "parts": [
+      {
+        "number": 1,
+        "question": "",
+        "answer": "Canada",
+        "clean_answers": [
+          "Canada"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Embarking from this city, you may find a city that many think is mythical in this modern day nation.",
+        "answer": "Mali",
+        "clean_answers": [
+          "Mali"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Starting from the capital seen here, you want to be careful in your heading to avoid a particularly arid and featureless region in this nation.",
+        "answer": "Saudi Arabia",
+        "clean_answers": [
+          "Saudi Arabia"
+        ],
+        "image_idx": 3
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000066.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000067.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000068.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000069.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000070.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000066.png",
+      "bonus/images/000067.png",
+      "bonus/images/000068.png",
+      "bonus/images/000069.png",
+      "bonus/images/000070.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000065.png"
+    },
+    "num_images": 6
+  },
+  {
+    "qid": "advvqa-b-Qdb1qVk8sQdta9OwFiiN",
+    "title": "Biggest in Triangle",
+    "leadin": "I'll give you three cities, and you tell me the largest city inside the triangle defined by those points.  For 10 points each:",
+    "parts": [
+      {
+        "number": 1,
+        "question": "Santa Ana, Miami, and Easter Island",
+        "answer": "Mexico City",
+        "clean_answers": [
+          "Mexico City"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Vladivostok, Jeju, and Honolulu",
+        "answer": "Tokyo",
+        "clean_answers": [
+          "Tokyo"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Helsinki, Berlin, Tashkent",
+        "answer": "Moscow",
+        "clean_answers": [
+          "Moscow"
+        ],
+        "image_idx": 3
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000072.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000073.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000074.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000075.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000076.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000072.png",
+      "bonus/images/000073.png",
+      "bonus/images/000074.png",
+      "bonus/images/000075.png",
+      "bonus/images/000076.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000071.png"
+    },
+    "num_images": 6
+  },
+  {
+    "qid": "advvqa-b-jD5KSAX5YOrDSojl9lEu",
+    "title": "Blank Canvas 2",
+    "leadin": "Given a map connecting two airports, give the common letters in their airport codes.  For example, SAN and SFO only share S, while DEN and CID only share D.  For 10 points each ...",
+    "parts": [
+      {
+        "number": 1,
+        "question": "You might listen to Rhaposdy in Blue on this hub to hub flight.",
+        "answer": "D (ORD and IAD)",
+        "clean_answers": [
+          "D (ORD and IAD)"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "For the return trip, you'll travel northwest but fly Southwest between two focus cities.",
+        "answer": "W (BWI and MDW)",
+        "clean_answers": [
+          "W (BWI and MDW)"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Fed up with domestic travel, you then travel on Air China.  We do these things not because they are easy, but because we are locked into Star Alliance.",
+        "answer": "K (JFK and PEK)",
+        "clean_answers": [
+          "K (JFK and PEK)"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000078.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000079.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000080.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000078.png",
+      "bonus/images/000079.png",
+      "bonus/images/000080.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000077.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-roeIVsFOmO5aMN36AV6Q",
+    "title": "Blank Canvas 1",
+    "leadin": "Given a map of a ski resort, give the name of the country it is in.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "The only ski resort in this nation, you can see peaks from two other nations on its slopes.",
+        "answer": "Liechtenstein",
+        "clean_answers": [
+          "Liechtenstein"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "About 90 miles from the capital and 250 miles from the Atlantic, this nation's ski resort, pictured here, was named for an indigenous belief that it shook.",
+        "answer": "Canada",
+        "clean_answers": [
+          "Canada"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "Named for a battlement, this nation's ski resort pictured here is in the north of this country.",
+        "answer": "Italy",
+        "clean_answers": [
+          "Italy"
+        ],
+        "image_idx": 3
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000082.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000083.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000084.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000085.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000086.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000082.png",
+      "bonus/images/000083.png",
+      "bonus/images/000084.png",
+      "bonus/images/000085.png",
+      "bonus/images/000086.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000081.png"
+    },
+    "num_images": 6
+  },
+  {
+    "qid": "advvqa-b-uxtYBnMflHjdtukTCogD",
+    "title": "Zip Codes",
+    "leadin": "Given a map of cities in the US, give the digit of the zip code that they share.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "One of the white dots here includes Beverly Hills.",
+        "answer": "9",
+        "clean_answers": [
+          "9"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "As it happens, this prefix also corresponds to the number of states highlighted here.",
+        "answer": "4",
+        "clean_answers": [
+          "4"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This prefix is not contiguous because ZIP code 10001, corresponding to Midtown Manhattan, lies between two parts of this prefix.",
+        "answer": "0",
+        "clean_answers": [
+          "0"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000088.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000089.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000090.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000088.png",
+      "bonus/images/000089.png",
+      "bonus/images/000090.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000087.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-fPFqEVUWBAK4x0xycyA7",
+    "title": "River Swap",
+    "leadin": "I'm going to show you a map where the names of two rivers have been swapped.  You need to tell me the city that lies at their confluence.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "For our gateway question, show me which American city lies at where two rivers have been swapped on this map.",
+        "answer": "St. Louis",
+        "clean_answers": [
+          "St. Louis"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "This city is the capital of a region that shares its name with one of the swapped rivers and was briefly named for the other of the swapped rivers.",
+        "answer": "Manaus",
+        "clean_answers": [
+          "Manaus"
+        ],
+        "image_idx": 1
+      },
+      {
+        "number": 3,
+        "question": "This city is where the swapped river nearly vertically hits a larger river.",
+        "answer": "Chongqing",
+        "clean_answers": [
+          "Chongqing"
+        ],
+        "image_idx": 2
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000092.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000093.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000094.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000092.png",
+      "bonus/images/000093.png",
+      "bonus/images/000094.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000091.png"
+    },
+    "num_images": 4
+  },
+  {
+    "qid": "advvqa-b-bVLhSOrl0rOBuoOxwKA4",
+    "title": "What's wrong with this map?",
+    "leadin": "What's wrong with this map?  Given a map, explain what is wrong with it given the state of the world in June 2026.",
+    "parts": [
+      {
+        "number": 1,
+        "question": "What country is missing from this map, leading to two other countries being mislabeled?",
+        "answer": "Belarus",
+        "clean_answers": [
+          "Belarus"
+        ],
+        "image_idx": 0
+      },
+      {
+        "number": 2,
+        "question": "Two provinces were merged in this map.  Of those two, this is the province with the smaller population.",
+        "answer": "Madhya Pradesh",
+        "clean_answers": [
+          "Madhya Pradesh"
+        ],
+        "image_idx": 2
+      },
+      {
+        "number": 3,
+        "question": "This map represents an alternate universe where this region and Heligoland remained British and Zanzibar did not.",
+        "answer": "_Caprivi_ strip or _Caprivi_zipfel [also accept _Itenge_ or _Okavango_ Panhandle]",
+        "clean_answers": [
+          "_Caprivi_ strip or _Caprivi_zipfel [also accept _Itenge_ or _Okavango_ Panhandle]"
+        ],
+        "image_idx": 4
+      }
+    ],
+    "part_images": [
+      {
+        "bytes": null,
+        "path": "bonus/images/000096.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000097.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000098.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000099.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000100.png"
+      },
+      {
+        "bytes": null,
+        "path": "bonus/images/000101.png"
+      }
+    ],
+    "image_paths": [
+      "bonus/images/000096.png",
+      "bonus/images/000097.png",
+      "bonus/images/000098.png",
+      "bonus/images/000099.png",
+      "bonus/images/000100.png",
+      "bonus/images/000101.png"
+    ],
+    "leadin_image": {
+      "bytes": null,
+      "path": "bonus/images/000095.png"
+    },
+    "num_images": 7
+  }
+]

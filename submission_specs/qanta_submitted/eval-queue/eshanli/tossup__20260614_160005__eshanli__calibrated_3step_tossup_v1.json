@@ -1,0 +1,113 @@
+{
+  "id": "tossup__20260614_160005__eshanli__calibrated_3step_tossup_v1",
+  "username": "eshanli",
+  "model_name": "calibrated_3step_tossup_v1",
+  "description": "Three-step gpt-4o tossup agent: question analyzer, answer generator, and a strict calibration judge. AND buzzer needs confidence >= 0.75 and answer token probability >= 0.5 for calibrated buzzing on multimodal questions.",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text"
+    ],
+    "outputs": {
+      "answer": "B.answer",
+      "confidence": "C.confidence",
+      "justification": "C.justification"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Question Analyzer",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.2,
+        "system_prompt": "You are an expert quizbowl player analyzing a tossup question that is revealed clue by clue and may include images (photographs, diagrams, artworks, maps, or scientific figures).\nDo not answer yet. Break down what has been revealed so far.\n1. Name the category and subcategory (for example: literature, history, biology, fine arts).\n2. List the concrete clues and named entities in the text, and describe anything important shown in any images.\n3. State precisely what the question is asking for (a person, a work, a place, a term, or an event).\nKeep it to a few short lines. If little has been revealed, say what is still ambiguous.\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The progressively revealed question text so far.",
+            "variable": "question_text"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "analysis",
+            "description": "A short structured analysis of the category, clues, image content, and what is being asked."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "Answer Generator",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are a championship quizbowl player giving your single best answer to a tossup question that is revealed clue by clue and may include images.\nUse the question text, any images, and the provided analysis.\nGive the answer in canonical quizbowl form:\nPeople give the full name (for example, \"Gabriel Garcia Marquez\", not \"Marquez\"). Works give the complete title. Science and math give the full technical term.\nRespond with only the answer itself, a few words at most, and no explanation.\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The progressively revealed question text so far.",
+            "variable": "question_text"
+          },
+          {
+            "name": "analysis",
+            "description": "The structured analysis from the previous step.",
+            "variable": "A.analysis"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "Your single best guess at the answer, in canonical quizbowl form."
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "name": "Confidence Evaluator",
+        "model": "gpt-4o",
+        "provider": "OpenAI",
+        "temperature": 0.1,
+        "system_prompt": "You are a strict calibration judge for a quizbowl tossup. You are given the question revealed so far, any images, and a proposed answer. Judge only how likely the proposed answer is correct given what has actually been revealed.\nOutput a confidence from 0.0 to 1.0 in increments of 0.01 that represents the true probability the answer is correct.\nCalibration rules:\nBuzzing with a wrong answer loses points, so do not inflate confidence.\nEarly, generic, or ambiguous clues that fit many possible answers justify low confidence (often 0.2 to 0.5), even when the answer is plausible.\nGive 0.85 or higher only when a specific identifying clue points almost uniquely to this answer.\nIf the clues so far would fit several different answers, keep confidence below 0.6.\nAlso give a one line justification that names the specific clue driving your score.\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The progressively revealed question text so far.",
+            "variable": "question_text"
+          },
+          {
+            "name": "proposed_answer",
+            "description": "The answer proposed by the answer generator.",
+            "variable": "B.answer"
+          },
+          {
+            "name": "analysis",
+            "description": "The structured analysis from the first step.",
+            "variable": "A.analysis"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "The calibrated probability from 0.0 to 1.0 that the proposed answer is correct given the clues revealed so far."
+          },
+          {
+            "name": "justification",
+            "description": "A one line explanation naming the specific clue that drives the confidence score."
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.75,
+      "prob_threshold": 0.5
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-14T16:00:05.335690+00:00",
+  "updated_at": "2026-06-14T16:00:05.335690+00:00",
+  "version": 1
+}

@@ -1,0 +1,61 @@
+{
+  "id": "tossup__20260622_221139__sidS216__sid_tossup_agent",
+  "username": "sidS216",
+  "model_name": "Sid_Tossup_Agent",
+  "description": "",
+  "competition_type": "tossup",
+  "submission_type": "simple_workflow",
+  "workflow": {
+    "inputs": [
+      "question_text",
+      "question_images"
+    ],
+    "outputs": {
+      "answer": "A.answer",
+      "confidence": "A.confidence"
+    },
+    "steps": [
+      {
+        "id": "A",
+        "name": "Tossup Agent",
+        "model": "gpt-4.1",
+        "provider": "OpenAI",
+        "temperature": 0.3,
+        "system_prompt": "You are an expert quizbowl player with encyclopedic knowledge across \nliterature, history, science, math, art, music, mythology, philosophy, \ngeography, and pop culture.\n\nYou will receive a progressively revealed tossup question with text \nand/or images. Your sole goal is to identify the correct answer.\n\nFor text clues:\n- Read every word carefully\n- Note specific names, dates, locations, and relationships\n- Early clues are obscure but highly specific; later clues confirm\n- Do not anchor to an early guess \u2014 revise freely as new clues arrive\n\nFor image clues:\n- Images may be literal OR symbolic/puzzle-like\n- Ask: what number, name, concept, or reference does this encode?\n- Images may be rebuses, mathematical diagrams, maps, artworks, or \n  visual wordplay\n- For math diagrams: perform the calculation shown explicitly\n- Decode each image before combining with text clues\n\nFor math or counting questions:\n- Work through calculations step by step\n- For geometric figures: identify the shape, extract measurements, \n  compute the relevant property (angles, area, perimeter)\n- For counting questions: count methodically, account for hidden \n  or reflected elements\n- Show your reasoning before giving the final numeric answer\n\nIntegration:\n- Text and images together form the full clue \u2014 never ignore either\n- If text and images seem contradictory, the images usually resolve it\n- \"For 10 points\" signals the final confirming clue\n- Answers are always a specific person, place, work, number, or concept\n\nKeep answers as short as possible \u2014 1-3 words maximum.\nNever include show names, article titles, or extra context.\nJust the core answer word(s).\n\nOutput:\n- confidence: 0.0 to 1.0\n  - Only exceed 0.5 if multiple independent clues \n    ALL point to the same answer\n  - Only exceed 0.7 if you can name at least 3 specific \n    clues that uniquely identify this answer\n  - Only exceed 0.85 if you are certain no other answer \n    fits all the clues\n  - When in doubt, report 0.4 or lower\n",
+        "input_fields": [
+          {
+            "name": "question",
+            "description": "The question text",
+            "variable": "question_text"
+          },
+          {
+            "name": "question_images",
+            "description": "Images associated with the question prefix so far",
+            "variable": "question_images"
+          }
+        ],
+        "output_fields": [
+          {
+            "name": "answer",
+            "description": "The best guess at the answer to the question"
+          },
+          {
+            "name": "confidence",
+            "type": "float",
+            "description": "The confidence in the answer, ranging from 0 to 1 in increments of 0.05."
+          }
+        ]
+      }
+    ],
+    "buzzer": {
+      "confidence_threshold": 0.86,
+      "prob_threshold": 0.3
+    }
+  },
+  "code": null,
+  "docker": null,
+  "status": "submitted",
+  "created_at": "2026-06-22T22:11:39.841594+00:00",
+  "updated_at": "2026-06-22T22:11:39.841594+00:00",
+  "version": 1
+}
