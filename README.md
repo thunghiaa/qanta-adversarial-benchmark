@@ -97,6 +97,21 @@ python scripts/run_models.py \
 Use `--cohort additional_benchmark` for models we benchmark ourselves. The
 runner rejects a model if its cohort or task does not match the registry.
 
+### Frontier open-weight models
+
+The 2026 frontier track is registered separately inside `additional_benchmark`.
+Its exact checkpoint revisions, hardware feasibility, and GitHub-first CPU
+entrypoint are documented in [`docs/frontier_models.md`](docs/frontier_models.md).
+The first CPU-capable target is Poolside's official Laguna-S-2.1 Q4 GGUF:
+
+```bash
+scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
+```
+
+This command clones the public repository and runs from that clone. Model
+weights and builds remain in disposable scratch space; only reproducible output
+artifacts are exported.
+
 ## Layout
 
 ```text
