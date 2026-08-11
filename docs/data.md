@@ -4,6 +4,7 @@
 
 - Submission JSON specifications.
 - Packet question JSON and human/adversarialness statistics.
+- De-identified human buzz observations used by the strict and PEDANT fits.
 - Model response JSONL, including both raw and PEDANTS-rescored variants.
 - Derived CSVs required to reproduce published figures.
 - Checksums for packet files and all migrated results.

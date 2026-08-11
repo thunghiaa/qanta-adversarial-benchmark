@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import asdict
 from pathlib import Path
 
 from qanta_bench.registry import load_registry
@@ -23,9 +24,30 @@ def _list_models(args: argparse.Namespace) -> None:
 def _plot(args: argparse.Namespace) -> None:
     from qanta_bench.plots import generate_adversarialness_figures
 
-    outputs = generate_adversarialness_figures(args.input_dir, args.output_dir)
+    root = _repo_root()
+    input_dir = args.input_dir
+    if input_dir is None:
+        input_dir = root / "analysis_inputs"
+        if args.scoring != "strict":
+            input_dir = input_dir / args.scoring
+    output_dir = args.output_dir or root / "figures"
+    outputs = generate_adversarialness_figures(input_dir, output_dir, args.scoring)
     for output in outputs:
         print(output)
+
+
+def _build_analysis(args: argparse.Namespace) -> None:
+    from qanta_bench.adversarialness import build_adversarialness_tables
+
+    root = args.root
+    output_dir = args.output_dir
+    if output_dir is None:
+        output_dir = root / "analysis_inputs"
+        if args.scoring != "strict":
+            output_dir = output_dir / args.scoring
+    summary = build_adversarialness_tables(root, args.scoring, output_dir)
+    for key, value in asdict(summary).items():
+        print(f"{key}={value}")
 
 
 def _validate(args: argparse.Namespace) -> None:
@@ -47,9 +69,18 @@ def build_parser() -> argparse.ArgumentParser:
     list_parser.set_defaults(handler=_list_models)
 
     plot_parser = subcommands.add_parser("plot-adversarialness", help="rebuild paper figures")
-    plot_parser.add_argument("--input-dir", type=Path, default=root / "analysis_inputs")
-    plot_parser.add_argument("--output-dir", type=Path, default=root / "figures")
+    plot_parser.add_argument("--scoring", choices=("strict", "pedant"), default="strict")
+    plot_parser.add_argument("--input-dir", type=Path)
+    plot_parser.add_argument("--output-dir", type=Path)
     plot_parser.set_defaults(handler=_plot)
+
+    build_analysis_parser = subcommands.add_parser(
+        "build-analysis", help="fit submitted-model adversarialness tables"
+    )
+    build_analysis_parser.add_argument("--scoring", choices=("strict", "pedant"), required=True)
+    build_analysis_parser.add_argument("--root", type=Path, default=root)
+    build_analysis_parser.add_argument("--output-dir", type=Path)
+    build_analysis_parser.set_defaults(handler=_build_analysis)
 
     validate_parser = subcommands.add_parser("validate", help="validate registry and JSONL outputs")
     validate_parser.add_argument("--root", type=Path, default=root)

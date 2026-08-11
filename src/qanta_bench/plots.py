@@ -244,12 +244,17 @@ def plot_adversarialness_histogram(items_csv: Path, output: Path) -> None:
     plt.close(figure)
 
 
-def generate_adversarialness_figures(input_dir: Path, output_dir: Path) -> list[Path]:
+def generate_adversarialness_figures(
+    input_dir: Path, output_dir: Path, scoring: str = "strict"
+) -> list[Path]:
+    if scoring not in {"strict", "pedant"}:
+        raise ValueError(f"Unknown scoring regime: {scoring}")
     configure_style()
+    marker = "" if scoring == "strict" else f"_{scoring}"
     outputs = [
-        output_dir / "qanta_fig1_theta_ladder_paper.png",
-        output_dir / "qanta_fig2_difficulty_curves_paper.png",
-        output_dir / "qanta_fig3_delta_hist_paper.png",
+        output_dir / f"qanta_fig1_theta_ladder{marker}_paper.png",
+        output_dir / f"qanta_fig2_difficulty_curves{marker}_paper.png",
+        output_dir / f"qanta_fig3_delta_hist{marker}_paper.png",
     ]
     plot_theta_ladder(input_dir / "qanta_ai_theta.csv", outputs[0])
     plot_difficulty_curves(input_dir / "qanta_fig_mean_curves.csv", outputs[1])

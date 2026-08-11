@@ -27,6 +27,21 @@ class PlotTest(unittest.TestCase):
             )
             self.assertTrue(all(path.stat().st_size > 10_000 for path in outputs))
 
+    def test_pedant_paper_figures_render(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            outputs = generate_adversarialness_figures(
+                ROOT / "analysis_inputs" / "pedant", Path(temp_dir), "pedant"
+            )
+            self.assertEqual(
+                [path.name for path in outputs],
+                [
+                    "qanta_fig1_theta_ladder_pedant_paper.png",
+                    "qanta_fig2_difficulty_curves_pedant_paper.png",
+                    "qanta_fig3_delta_hist_pedant_paper.png",
+                ],
+            )
+            self.assertTrue(all(path.stat().st_size > 10_000 for path in outputs))
+
 
 if __name__ == "__main__":
     unittest.main()

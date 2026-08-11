@@ -45,8 +45,31 @@ The last command regenerates:
 - `figures/qanta_fig2_difficulty_curves_paper.png`
 - `figures/qanta_fig3_delta_hist_paper.png`
 
-Neither figure path imports or runs compIRT. The versioned CSVs under
+The plotting path does not import or run compIRT. The versioned CSVs under
 `analysis_inputs/` are the scientific inputs to the plotting layer.
+
+### PEDANT-scored analysis
+
+The PEDANT variant is fitted independently from the submitted systems under
+`results/qanta_submitted/**/Tossup_pedant/`; it never mixes in later benchmark
+models. Rebuild its scientific tables and figures with:
+
+```bash
+qanta-bench build-analysis --scoring pedant
+qanta-bench plot-adversarialness --scoring pedant
+```
+
+This writes `analysis_inputs/pedant/` and three non-destructive figure variants:
+
+- `figures/qanta_fig1_theta_ladder_pedant_paper.png`
+- `figures/qanta_fig2_difficulty_curves_pedant_paper.png`
+- `figures/qanta_fig3_delta_hist_pedant_paper.png`
+
+The de-identified `data/human/human_buzz_observations.csv` contains the human
+bridge used by both scoring regimes. `scripts/build_human_observations.py` can
+recreate it from the public QANTA game logs without publishing player names.
+See [`docs/adversarialness.md`](docs/adversarialness.md) for scoring semantics,
+the PEDANT backfill command, and the strict-vs-PEDANT comparison.
 
 ## Run models
 
