@@ -49,15 +49,15 @@
     {"id": "local/pixtral-12b", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "local_vlm", "artifact": "nttruong1007/qb-pixtral-12b"},
     {"id": "local/qwen25-vl-3b", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "local_vlm", "artifact": "nttruong1007/qb-qwen25-vl-3b"},
     {"id": "local/smolvlm500", "cohort": "additional_benchmark", "tasks": ["tossup"], "kind": "local_vlm", "status": "partial", "artifact": "nttruong1007/qb-smolvlm500"},
-    {"id": "Qwen/Qwen3.5-397B-A17B-FP8", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "Qwen/Qwen3.5-397B-A17B-FP8"},
-    {"id": "tencent/Hy3-FP8", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "tencent/Hy3-FP8"},
-    {"id": "deepseek-ai/DeepSeek-V4-Pro", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "deepseek-ai/DeepSeek-V4-Pro"},
-    {"id": "MiniMaxAI/MiniMax-M3", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "MiniMaxAI/MiniMax-M3"},
-    {"id": "zai-org/GLM-5.2", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "zai-org/GLM-5.2"},
-    {"id": "thinkingmachines/Inkling", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "thinkingmachines/Inkling"},
-    {"id": "Motif-Technologies/Motif-3-Beta", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "Motif-Technologies/Motif-3-Beta"},
-    {"id": "poolside/Laguna-S-2.1", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "complete_cpu_q4_text_only", "artifact": "poolside/Laguna-S-2.1-GGUF"},
-    {"id": "upstage/Solar-Open2-250B", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "upstage/Solar-Open2-250B"},
-    {"id": "moonshotai/Kimi-K3", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "moonshotai/Kimi-K3"}
+    {"id": "Qwen/Qwen3.5-397B-A17B-FP8", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "Qwen/Qwen3.5-397B-A17B-FP8"},
+    {"id": "tencent/Hy3-FP8", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "tencent/Hy3-FP8"},
+    {"id": "deepseek-ai/DeepSeek-V4-Pro", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "deepseek-ai/DeepSeek-V4-Pro"},
+    {"id": "MiniMaxAI/MiniMax-M3", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "MiniMaxAI/MiniMax-M3"},
+    {"id": "zai-org/GLM-5.2", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "zai-org/GLM-5.2"},
+    {"id": "thinkingmachines/Inkling", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "thinkingmachines/Inkling"},
+    {"id": "Motif-Technologies/Motif-3-Beta", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "Motif-Technologies/Motif-3-Beta"},
+    {"id": "poolside/Laguna-S-2.1", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "complete_cpu_q4_text_only_gpu_recipe_ready", "artifact": "poolside/Laguna-S-2.1-GGUF"},
+    {"id": "upstage/Solar-Open2-250B", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "upstage/Solar-Open2-250B"},
+    {"id": "moonshotai/Kimi-K3", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "gpu_recipe_ready_not_run", "artifact": "moonshotai/Kimi-K3"}
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "cohort": "additional_benchmark",
-  "verified_at": "2026-08-11",
+  "verified_at": "2026-08-12",
   "policy": {
     "submitted_models_are_excluded": true,
     "pin_every_checkpoint_revision": true,
@@ -35,7 +35,7 @@
       "modalities": ["text"],
       "checkpoint_revision": "b5968e9190ef611bbf34a7229255be88a0e937c1",
       "weight_bytes": 864721029744,
-      "format": "safetensors-bf16",
+      "format": "safetensors-native-fp4-fp8-mixed",
       "cpu_status": "blocked_no_official_cpu_runtime",
       "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -47,6 +47,11 @@
       "weight_bytes": 854176398808,
       "format": "safetensors-bf16",
       "cpu_status": "blocked_no_official_cpu_runtime",
+      "official_author_gpu_quantization": {
+        "id": "MiniMaxAI/MiniMax-M3-MXFP8",
+        "revision": "c5454eb03678d8710e54a4e0fc681b9f3b4a3dba",
+        "weight_bytes": 443749077256
+      },
       "official_gpu_quantization": {
         "id": "nvidia/MiniMax-M3-NVFP4",
         "revision": "901464083161bf8612a29ff7ad29914cd4ab4a85",
@@ -62,6 +67,11 @@
       "weight_bytes": 1506667387408,
       "format": "safetensors-bf16",
       "cpu_status": "blocked_exceeds_host_memory",
+      "official_author_gpu_quantization": {
+        "id": "zai-org/GLM-5.2-FP8",
+        "revision": "ba978f7d347eaf65d22f1a86833408afdb953541",
+        "weight_bytes": 755632050320
+      },
       "official_gpu_quantization": {
         "id": "nvidia/GLM-5.2-NVFP4",
         "revision": "aec724e8c7b8ee9db3b48c01c320f63f9cdaf8aa",

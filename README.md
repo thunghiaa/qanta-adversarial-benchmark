@@ -99,10 +99,41 @@ runner rejects a model if its cohort or task does not match the registry.
 
 ### Frontier open-weight models
 
-The 2026 frontier track is registered separately inside `additional_benchmark`.
-Its exact checkpoint revisions, hardware feasibility, and GitHub-first CPU
-entrypoint are documented in [`docs/frontier_models.md`](docs/frontier_models.md).
-The first CPU-capable target is Poolside's official Laguna-S-2.1 Q4 GGUF:
+The ten requested 2026 frontier models are registered separately inside
+`additional_benchmark`; none is presented as a submitted QANTA system. Every
+served checkpoint, pinned revision, runtime, hardware floor, official recipe,
+and launch command is versioned in
+[`configs/frontier_gpu.json`](configs/frontier_gpu.json).
+
+On a GPU terminal, start here:
+
+```bash
+git pull --ff-only
+python scripts/frontier_gpu.py list
+python scripts/frontier_gpu.py plan hy3
+python scripts/frontier_gpu.py serve hy3 --dry-run
+```
+
+Then follow the two-terminal smoke/full workflow in the
+**[GPU quick start](docs/gpu_quickstart.md)**. The launcher checks visible GPU
+count and VRAM before it downloads weights, pins the model revision, keeps the
+Hugging Face cache outside Git, and writes a provenance manifest for successful
+benchmark runs.
+
+The configured targets are Qwen3.5-397B-A17B, Hy3, DeepSeek-V4-Pro,
+MiniMax-M3, GLM-5.2, Inkling, Motif-3-Beta, Laguna-S-2.1,
+Solar-Open2-250B, and Kimi-K3. The common comparison track is currently
+text-only even for multimodal-capable models; no image/video/audio benchmark is
+claimed yet.
+
+Raw weights are intentionally not mirrored to GitHub. They range from hundreds
+of gigabytes to more than a terabyte, remain governed by their upstream
+licenses, and are reproducibly downloaded from the pinned official checkpoint
+into GPU scratch storage.
+
+The broader model inventory and CPU feasibility notes are in
+[`docs/frontier_models.md`](docs/frontier_models.md). The completed CPU baseline
+uses Poolside's official Laguna-S-2.1 Q4 GGUF:
 
 ```bash
 scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
