@@ -1,0 +1,587 @@
+Cloning into '/tmp/qanta-frontier.uZ1vP7/repo'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /tmp/qanta-frontier.uZ1vP7/llama.cpp/.git/
+From https://github.com/poolsideai/llama.cpp
+ * branch            06f8cebd7fe728687be3d19f8bdedb70d75883af -> FETCH_HEAD
+HEAD is now at 06f8ceb Merge pull request #3 from rpw/patch-1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+xnat 0.6.2 requires importlib-metadata~=6.8, but you have importlib-metadata 8.8.0 which is incompatible.
+xnat 0.6.2 requires pydicom~=2.3, but you have pydicom 3.0.2 which is incompatible.
+xnat 0.6.2 requires python-dateutil~=2.8.2, but you have python-dateutil 2.9.0.post0 which is incompatible.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/sw/apps/ubuntu24/x86_64/fsl/6.0.7.22/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/sw/apps/ubuntu24/x86_64/fsl/6.0.7.22/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMAKE_BUILD_TYPE=Release
+-- Found Git: /usr/bin/git (found version "2.43.0")
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/sw/apps/ubuntu24/x86_64/fsl/6.0.7.22/bin/cc
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- ggml version: 0.16.0
+-- ggml commit:  06f8ceb
+-- Found OpenSSL: /opt/sw/apps/ubuntu24/x86_64/fsl/6.0.7.22/lib/libcrypto.so (found version "3.6.2")
+-- Performing Test OPENSSL_VERSION_SUPPORTED
+-- Performing Test OPENSSL_VERSION_SUPPORTED - Success
+-- OpenSSL found: 3.6.2
+-- Generating embedded license file for target: llama-app
+-- Configuring done (2.0s)
+-- Generating done (0.2s)
+-- Build files have been written to: /tmp/qanta-frontier.uZ1vP7/llama.cpp/build
+[  1%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[  1%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  1%] Building CXX object tools/ui/CMakeFiles/llama-ui-embed.dir/embed.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[  3%] Building CXX object vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/httplib.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[  5%] Building CXX object common/CMakeFiles/llama-common-base.dir/build-info.cpp.o
+[  5%] Linking CXX static library libllama-common-base.a
+[  5%] Built target llama-common-base
+[  5%] Linking CXX executable llama-ui-embed
+[  5%] Built target llama-ui-embed
+[  5%] Provisioning UI assets
+-- UI: npm not found, skipping npm build
+-- UI: downloading from b1: https://huggingface.co/buckets/ggml-org/llama-ui/resolve/b1/dist.tar.gz
+-- UI: download dist.tar.gz from b1 failed: "HTTP response code said error"
+-- UI: downloading from latest: https://huggingface.co/buckets/ggml-org/llama-ui/resolve/latest/dist.tar.gz
+-- UI: archive verified and extracted
+-- UI: HF download succeeded, stamp updated (latest)
+-- UI: gzip compression applied (/tmp/qanta-frontier.uZ1vP7/llama.cpp/build/tools/ui/dist/_gzip)
+embed: write output file /tmp/qanta-frontier.uZ1vP7/llama.cpp/build/tools/ui/ui.h
+embed: write output file /tmp/qanta-frontier.uZ1vP7/llama.cpp/build/tools/ui/ui.cpp
+[  5%] Built target llama-ui-assets
+[  7%] Building CXX object tools/ui/CMakeFiles/llama-ui.dir/ui.cpp.o
+[  7%] Linking CXX shared library ../../bin/libggml-base.so
+[  7%] Built target ggml-base
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  9%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 11%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[ 13%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[ 13%] Linking CXX static library libllama-ui.a
+[ 13%] Built target llama-ui
+[ 13%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 13%] Built target ggml-cpu
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[ 13%] Linking CXX shared library ../../bin/libggml.so
+[ 13%] Built target ggml
+[ 13%] Building CXX object src/CMakeFiles/llama.dir/llama.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/llama.dir/llama-context.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-cparams.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/llama.dir/llama-io.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache-dsv4.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-memory-hybrid-iswa.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache-dsa.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-model-saver.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-model.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/llama.dir/llama-sampler.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/llama.dir/unicode.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/arcee.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/apertus.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/afmoe.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/arctic.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/arwkv7.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/llama.dir/models/baichuan.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/bert.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/bailingmoe.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/bailingmoe2.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/bitnet.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/bloom.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/chameleon.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/llama.dir/models/chatglm.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/codeshell.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/cogvlm.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/cohere2.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/command-r.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/cohere2moe.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/llama.dir/models/deci.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/llama.dir/models/dbrx.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/llama.dir/models/deepseek.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/llama.dir/models/deepseek2.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/llama.dir/models/deepseek2ocr.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/llama.dir/models/deepseek32.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/llama.dir/models/deepseek4.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/llama.dir/models/delta-net-base.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/llama.dir/models/dflash.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/llama.dir/models/dots1.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/llama.dir/models/dream.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/eagle3.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/ernie4-5-moe.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/ernie4-5.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/eurobert.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/exaone-moe.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/llama.dir/models/exaone.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/llama.dir/models/exaone4.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/llama.dir/models/falcon-h1.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/llama.dir/models/falcon.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/llama.dir/models/gemma-embedding.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/llama.dir/models/gemma.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/llama.dir/models/gemma2.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/llama.dir/models/gemma3.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/llama.dir/models/gemma3n.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/llama.dir/models/gemma4-assistant.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/glm-dsa.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/gemma4.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/glm4-moe.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/glm4.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/gpt2.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/gptneox.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/models/granite-hybrid.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/llama.dir/models/granite-moe.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/llama.dir/models/granite.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/hunyuan-moe.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/grok.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/grovemoe.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/hunyuan-dense.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/hunyuan-vl.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/hy-v3.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/internlm2.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/models/jais.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/jais2.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/jamba.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/jina-bert-v2.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/jina-bert-v3.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/kimi-linear.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/models/laguna.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/llama.dir/models/lfm2.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/llama.dir/models/lfm2moe.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/llama.dir/models/llada-moe.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/llama.dir/models/llada.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/llama.dir/models/llama-embed.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/llama.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/llama4.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/maincoder.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/mamba-base.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/mamba2.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/llama.dir/models/mamba.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/llama.dir/models/mellum.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/llama.dir/models/mimo2.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/llama.dir/models/minicpm.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/llama.dir/models/minicpm3.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/llama.dir/models/minimax-m2.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/llama.dir/models/mistral3.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/llama.dir/models/mistral4.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/llama.dir/models/mpt.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/llama.dir/models/modern-bert.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/llama.dir/models/nemotron-h-moe.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/nemotron-h.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/nemotron.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/nomic-bert-moe.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/neo-bert.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/olmo.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/llama.dir/models/nomic-bert.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/llama.dir/models/olmo2.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/llama.dir/models/openai-moe.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/llama.dir/models/olmoe.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/llama.dir/models/openelm.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/llama.dir/models/orion.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/paddleocr.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/pangu-embed.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/phi2.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/phimoe.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/phi3.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/llama.dir/models/plamo.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/llama.dir/models/plamo2.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/llama.dir/models/plamo3.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/llama.dir/models/plm.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/llama.dir/models/qwen2.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/llama.dir/models/qwen.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/llama.dir/models/qwen2moe.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/llama.dir/models/qwen3.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/llama.dir/models/qwen2vl.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/llama.dir/models/qwen35.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/qwen3moe.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/qwen3next.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/qwen35moe.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/qwen3vl.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/refact.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/qwen3vlmoe.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/llama.dir/models/rnd1.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/llama.dir/models/rwkv6-base.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/llama.dir/models/rwkv6.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/llama.dir/models/rwkv6qwen2.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/llama.dir/models/rwkv7-base.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/llama.dir/models/rwkv7.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/seed-oss.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/smallthinker.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/smollm3.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/stablelm.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/starcoder.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/llama.dir/models/starcoder2.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/llama.dir/models/step35.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/llama.dir/models/t5.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/llama.dir/models/t5encoder.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/llama.dir/models/talkie.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/llama.dir/models/wavtokenizer-dec.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/llama.dir/models/xverse.cpp.o
+[ 71%] Linking CXX static library libcpp-httplib.a
+[ 71%] Built target cpp-httplib
+[ 71%] Linking CXX shared library ../bin/libllama.so
+[ 71%] Built target llama
+[ 71%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/mtmd-audio.cpp.o
+[ 71%] Building CXX object common/CMakeFiles/llama-common.dir/arg.cpp.o
+[ 71%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/mtmd.cpp.o
+[ 71%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/mtmd-image.cpp.o
+[ 73%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/clip.cpp.o
+[ 71%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper.cpp.o
+[ 73%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/conformer.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4a.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/exaone4_5.cpp.o
+[ 75%] Building CXX object common/CMakeFiles/llama-common.dir/chat-auto-parser-generator.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4uv.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4ua.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4v.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/cogvlm.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/dotsocr.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/glm4v.cpp.o
+[ 75%] Building CXX object common/CMakeFiles/llama-common.dir/chat-auto-parser-helpers.cpp.o
+[ 75%] Building CXX object common/CMakeFiles/llama-common.dir/chat-diff-analyzer.cpp.o
+[ 75%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/granite-speech.cpp.o
+[ 77%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/granite4-vision.cpp.o
+[ 77%] Building CXX object common/CMakeFiles/llama-common.dir/chat-peg-parser.cpp.o
+[ 77%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/hunyuanvl.cpp.o
+[ 77%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/internvl.cpp.o
+[ 79%] Building CXX object common/CMakeFiles/llama-common.dir/chat.cpp.o
+[ 79%] Building CXX object common/CMakeFiles/llama-common.dir/console.cpp.o
+[ 79%] Building CXX object common/CMakeFiles/llama-common.dir/common.cpp.o
+[ 79%] Building CXX object common/CMakeFiles/llama-common.dir/debug.cpp.o
+[ 79%] Building CXX object common/CMakeFiles/llama-common.dir/download.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/fit.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/hf-cache.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/imatrix-loader.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/llguidance.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/json-schema-to-grammar.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/log.cpp.o
+[ 81%] Building CXX object common/CMakeFiles/llama-common.dir/ngram-map.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/llama-common.dir/ngram-cache.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/llama-common.dir/ngram-mod.cpp.o
+[ 83%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/kimivl.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/llama-common.dir/preset.cpp.o
+[ 83%] Building CXX object common/CMakeFiles/llama-common.dir/peg-parser.cpp.o
+[ 83%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/llama4.cpp.o
+[ 83%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/kimik25.cpp.o
+[ 83%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/llava.cpp.o
+[ 83%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/minicpmv.cpp.o
+[ 84%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/nemotron-v2-vl.cpp.o
+[ 84%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/paddleocr.cpp.o
+[ 84%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/pixtral.cpp.o
+[ 86%] Building CXX object common/CMakeFiles/llama-common.dir/sampling.cpp.o
+[ 86%] Building CXX object common/CMakeFiles/llama-common.dir/unicode.cpp.o
+[ 86%] Building CXX object common/CMakeFiles/llama-common.dir/reasoning-budget.cpp.o
+[ 86%] Building CXX object common/CMakeFiles/llama-common.dir/speculative.cpp.o
+[ 86%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/lexer.cpp.o
+[ 88%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/qwen2vl.cpp.o
+[ 90%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/parser.cpp.o
+[ 90%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3vl.cpp.o
+[ 90%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/mimovl.cpp.o
+[ 90%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3a.cpp.o
+[ 90%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/step3vl.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/siglip.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/whisper-enc.cpp.o
+[ 92%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/runtime.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr.cpp.o
+[ 92%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/value.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/mobilenetv5.cpp.o
+[ 92%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/string.cpp.o
+[ 92%] Building CXX object common/CMakeFiles/llama-common.dir/jinja/caps.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr2.cpp.o
+[ 92%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/yasa2.cpp.o
+[ 94%] Building CXX object tools/mtmd/CMakeFiles/mtmd.dir/models/youtuvl.cpp.o
+[ 94%] Linking CXX shared library ../../bin/libmtmd.so
+[ 94%] Built target mtmd
+[ 94%] Linking CXX shared library ../bin/libllama-common.so
+[ 94%] Built target llama-common
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-task.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-queue.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-context.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-chat.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-stream.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-tools.cpp.o
+[ 94%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-schema.cpp.o
+[ 96%] Building CXX object tools/server/CMakeFiles/server-context.dir/server-common.cpp.o
+[ 98%] Linking CXX static library libserver-context.a
+[ 98%] Built target server-context
+[100%] Building CXX object tools/server/CMakeFiles/llama-server-impl.dir/server-models.cpp.o
+[100%] Building CXX object tools/server/CMakeFiles/llama-server-impl.dir/server-http.cpp.o
+[100%] Building CXX object tools/server/CMakeFiles/llama-server-impl.dir/server.cpp.o
+[100%] Linking CXX shared library ../../bin/libllama-server-impl.so
+[100%] Built target llama-server-impl
+[100%] Building CXX object tools/server/CMakeFiles/llama-server.dir/main.cpp.o
+[100%] Linking CXX executable ../../bin/llama-server
+[100%] Built target llama-server
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[1/tossup] 3/20 advvqa-packet1-t-5bTYZUD1fC8LxDPNbeBz
+[1/tossup] 2/20 advvqa-packet1-t-RymSumAaUKDKnumFbZLb
+[1/tossup] 1/20 advvqa-packet1-t-8JAFUITLrwZCMFkrmP6L
+[1/tossup] 4/20 advvqa-packet1-t-LcvtxyoXMR6SDbyJhf4B
+[1/tossup] 5/20 advvqa-packet1-t-Pv4vwLpJWiSpu6CJVx1x
+[1/tossup] 6/20 advvqa-packet1-t-vgzdaVOKiGQUuC8gSLqa
+[1/tossup] 7/20 advvqa-packet1-t-hXDm3m6AEpv2TxJ0HKdZ
+[1/tossup] 8/20 advvqa-packet1-t-NpuyoBsTcOckEOeIVITg
+[1/tossup] 9/20 advvqa-packet1-t-Gwbxzd0ChGS4KynANjU5
+[1/tossup] 10/20 advvqa-packet1-t-w2mhA0hWqQ93KzBmqmec
+[1/tossup] 11/20 advvqa-packet1-t-GzYzrmbzHeXtPnp56Z10
+[1/tossup] 12/20 advvqa-packet1-t-WWi7fNWTDIPJe3p9Pi2c
+[1/tossup] 13/20 advvqa-packet1-t-dqshJgJWfziosu0GhtIh
+[1/tossup] 14/20 advvqa-packet1-t-MEpRrGXZymdGUYb2wAfM
+[1/tossup] 16/20 advvqa-packet1-t-w1r2V5nR5q9pBrSgEi82
+[1/tossup] 15/20 advvqa-packet1-t-xXVg1KHjxl7PR2ueDO1C
+[1/tossup] 17/20 advvqa-packet1-t-Em8Ctxhz4bo7N65jONWg
+[1/tossup] 18/20 advvqa-packet1-t-6EaYU85nVBNW6DcPqaA5
+[1/tossup] 20/20 advvqa-packet1-t-I2QtfMpPDixkYknKBme8
+[1/tossup] 19/20 advvqa-packet1-t-5PMM62rTZCur1sGVOjE4
+/tmp/qanta-frontier.uZ1vP7/output/Packet 1 - Jordan/Tossup/tossup__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[2/tossup] 2/20 advvqa-packet2-t-lTRxMAHr44dPaBWARrv6
+[2/tossup] 3/20 advvqa-packet2-t-NXltSnhuRcd4K2l1mZHE
+[2/tossup] 1/20 advvqa-packet2-t-FoIIY3NZ2zlaiM8m5ssY
+[2/tossup] 4/20 advvqa-packet2-t-OPpqTfpP7LdBBFrDeJAO
+[2/tossup] 5/20 advvqa-packet2-t-tvjdNWhB4uGKe6y8at2B
+[2/tossup] 7/20 advvqa-packet2-t-3gSnEnS3UTlqHBknG8pf
+[2/tossup] 8/20 advvqa-packet2-t-3SJwpETiqeXeVQQeSL2C
+[2/tossup] 6/20 advvqa-packet2-t-XgvmgXLeD6vauaKksUTm
+[2/tossup] 9/20 advvqa-packet2-t-RtTjMY8PLfkYYn0C74ri
+[2/tossup] 11/20 advvqa-packet2-t-qpQRWF7dpNQAkyozTnz7
+[2/tossup] 10/20 advvqa-packet2-t-nWa9M3JHZkZUkh4tvZzv
+[2/tossup] 12/20 advvqa-packet2-t-LNSFjAxXvMVnSAcBfA2j
+[2/tossup] 13/20 advvqa-packet2-t-EmsEd0XimlqZJSW20BPk
+[2/tossup] 14/20 advvqa-packet2-t-EKY1UGSc5TChPU33ARyw
+[2/tossup] 16/20 advvqa-packet2-t-WcEaILk7JG20ddfSX9JM
+[2/tossup] 15/20 advvqa-packet2-t-JSgtsRTgAWKoKskUdk5c
+[2/tossup] 17/20 advvqa-packet2-t-5UqzxUX4qK1CA2UYOByP
+[2/tossup] 18/20 advvqa-packet2-t-ZBkYl7ZwedkrrhTlkylv
+[2/tossup] 19/20 advvqa-packet2-t-BeLRIWMr4JXTcHOWxyUy
+[2/tossup] 20/20 advvqa-packet2-t-bM0YFWPHlm9W4BbTBPcT
+/tmp/qanta-frontier.uZ1vP7/output/Packet 2 - Kurtis/Tossup/tossup__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[3/tossup] 1/20 advvqa-packet3-t-OZBuu5dExz2bWouyhXCX
+[3/tossup] 3/20 advvqa-packet3-t-Wg8cJ7C4f7kEHLehSKAu
+[3/tossup] 4/20 advvqa-packet3-t-Hc46kNNIrL0CrjR6kddu
+[3/tossup] 2/20 advvqa-packet3-t-5gmjQXFfMhDfYWopYPRR
+[3/tossup] 6/20 advvqa-packet3-t-lgOxKPam6BGiv3xhocdG
+[3/tossup] 7/20 advvqa-packet3-t-IPrurnAQ4gUyv58ITNHx
+[3/tossup] 5/20 advvqa-packet3-t-ZqmYznzm1ets28jyV66W
+[3/tossup] 8/20 advvqa-packet3-t-4p672NRbIAIVCFIsFihp
+[3/tossup] 11/20 advvqa-packet3-t-FSlPn89xy82DPpP8gMJD
+[3/tossup] 12/20 advvqa-packet3-t-hzl498g9RffsMQpA1sRa
+[3/tossup] 10/20 advvqa-packet3-t-AJdjjhtK8PcFCMebETh5
+[3/tossup] 9/20 advvqa-packet3-t-8UwxzTV1MdoVkBXntfOe
+[3/tossup] 14/20 advvqa-packet3-t-lmJujW41V3etZ89PTHFz
+[3/tossup] 13/20 advvqa-packet3-t-cW8GwQmlfOm4TCbVMrVt
+[3/tossup] 15/20 advvqa-packet3-t-fD7iPA1popZRRUN4eZE1
+[3/tossup] 16/20 advvqa-packet3-t-AqgleduJLHjpBkkvNkhC
+[3/tossup] 18/20 advvqa-packet3-t-zlBPTJtFek9Wy05AaPTD
+[3/tossup] 17/20 advvqa-packet3-t-o4nZbIcZSX4boHBjTZVn
+[3/tossup] 19/20 advvqa-packet3-t-Z1PH5PnkeCAYIm1b7Ynk
+[3/tossup] 20/20 advvqa-packet3-t-LB2uc5AFzP7RRrDwahoJ
+/tmp/qanta-frontier.uZ1vP7/output/Packet 3 - Irene + Stephen/Tossup/tossup__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[4/tossup] 1/20 advvqa-packet4-t-atvPnPQcM0FFyFz6oRh5
+[4/tossup] 2/20 advvqa-packet4-t-O1yyRkTLvQdrlqua3V0c
+[4/tossup] 3/20 advvqa-packet4-t-Ef0Iqz1ZONhttNfXlfLp
+[4/tossup] 4/20 advvqa-packet4-t-EpS4cHZdIsGK9tbAVLF5
+[4/tossup] 6/20 advvqa-packet4-t-SxqSqGQ1LYJ59RO4htDQ
+[4/tossup] 7/20 advvqa-packet4-t-amzwpECJchH2gf3azeJh
+[4/tossup] 5/20 advvqa-packet4-t-Ln23r1ukl5brDWMdHGR0
+[4/tossup] 8/20 advvqa-packet4-t-xeQ0nXBIAAoLs1okPf4V
+[4/tossup] 9/20 advvqa-packet4-t-SthSdFIXXygj3uduwLeK
+[4/tossup] 10/20 advvqa-packet4-t-t5g7AuUI7qtpnK9CXh0l
+[4/tossup] 12/20 advvqa-packet4-t-REYC2yK3nFZQvvqkNrXa
+[4/tossup] 11/20 advvqa-packet4-t-lFtMblSONntfsqyh20ka
+[4/tossup] 13/20 advvqa-packet4-t-KZEeKW9mDbCCJPWEBVnm
+[4/tossup] 14/20 advvqa-packet4-t-U423cT3kEZQrNXlsHNZU
+[4/tossup] 15/20 advvqa-packet4-t-DJPSA5ZzDdNpt5oakqVQ
+[4/tossup] 16/20 advvqa-packet4-t-r059KXaLJFhyH037WaXB
+[4/tossup] 17/20 advvqa-packet4-t-8eOnJExgG3MFgY747W8t
+[4/tossup] 18/20 advvqa-packet4-t-ftLJXrWhRtZa9W5sPFwP
+[4/tossup] 19/20 advvqa-packet4-t-lhD7XUa6TEodN6cfFSzb
+[4/tossup] 20/20 advvqa-packet4-t-nDlQGIq6PEEQEOIiSbAf
+/tmp/qanta-frontier.uZ1vP7/output/Packet 4 - Chauncey + Eve/Tossup/tossup__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[5/tossup] 3/20 advvqa-packet5-t-ypEHZxOKGVgBppK2k6fr
+[5/tossup] 2/20 advvqa-packet5-t-lVh9xxzpOLwuTEdyFtIj
+[5/tossup] 4/20 advvqa-packet5-t-KZZdrqAOH2QhOsMAJMTA
+[5/tossup] 1/20 advvqa-packet5-t-Y7nH9h1eXbrGfcPZcfgo
+[5/tossup] 5/20 advvqa-packet5-t-bYtiJRSNQ0xjAFD4lUgH
+[5/tossup] 7/20 advvqa-packet5-t-VzrCumSBX87JnIf8ehKt
+[5/tossup] 6/20 advvqa-packet5-t-dYpC7okqKycOB2sUgCQR
+[5/tossup] 8/20 advvqa-packet5-t-ypwtnpo1wweMSf9zm611
+[5/tossup] 10/20 advvqa-packet5-t-nJHFoCbxeqkSt1XnTniM
+[5/tossup] 9/20 advvqa-packet5-t-WATGjmMSduoWIMsBRU9K
+[5/tossup] 11/20 advvqa-packet5-t-Hmv1RMq59r9VklABzrzn
+[5/tossup] 13/20 advvqa-packet5-t-pZ4P6UVC4BTJ53ssDmOr
+[5/tossup] 14/20 advvqa-packet5-t-I0jty1iDUrUB5cMFgdCH
+[5/tossup] 12/20 advvqa-packet5-t-l5CIg8Q0coEDS4KfarUj
+[5/tossup] 16/20 advvqa-packet5-t-f2gHTH1m7ERBnpnPaa3e
+[5/tossup] 15/20 advvqa-packet5-t-3UEcgxseaclCGnJxYSle
+[5/tossup] 17/20 advvqa-packet5-t-piMkTxcl7hSIErHXzovZ
+[5/tossup] 19/20 advvqa-packet5-t-tfFfPpV8sVyypYyIyUP9
+[5/tossup] 18/20 advvqa-packet5-t-j6r5ZXhduCYbTErR2WNr
+[5/tossup] 20/20 advvqa-packet5-t-CRNC5oHzpTDjvGonwNdA
+/tmp/qanta-frontier.uZ1vP7/output/Packet 5 - Tianyi/Tossup/tossup__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[1/bonus] 3/20 advvqa-packet1-b-vkojuf092xAWYMRJcyHk
+[1/bonus] 4/20 advvqa-packet1-b-JCjgMXNkKeHqdl8iPsDN
+[1/bonus] 1/20 advvqa-packet1-b-lxSUo6ZNbRaa4LqQL4lh
+[1/bonus] 2/20 advvqa-packet1-b-L70hk4QrJWj64qPc4c56
+[1/bonus] 7/20 advvqa-packet1-b-nnHuwWxHdkNpcqGIeNvj
+[1/bonus] 5/20 advvqa-packet1-b-jfGHO7KW8eoeGTv50xz7
+[1/bonus] 8/20 advvqa-packet1-b-1yNiVz7Urt147ll9mJRl
+[1/bonus] 6/20 advvqa-packet1-b-0SeXVHLwDmbtOYEld4kE
+[1/bonus] 10/20 advvqa-packet1-b-Q8OEIjk5e00HUt7qls1u
+[1/bonus] 11/20 advvqa-packet1-b-x7QBIDWtVZGo2Z996dJE
+[1/bonus] 12/20 advvqa-packet1-b-Cpw2itPWaf5wzgqdBbuo
+[1/bonus] 9/20 advvqa-packet1-b-IZATmmP6lpKFKDkc9MEB
+[1/bonus] 14/20 advvqa-packet1-b-rBVTER0aClahEXpwAMQm
+[1/bonus] 13/20 advvqa-packet1-b-W17Ks8EjNHFPE9YOOIjb
+[1/bonus] 16/20 advvqa-packet1-b-jD5KSAX5YOrDSojl9lEu
+[1/bonus] 15/20 advvqa-packet1-b-Qdb1qVk8sQdta9OwFiiN
+[1/bonus] 17/20 advvqa-packet1-b-roeIVsFOmO5aMN36AV6Q
+[1/bonus] 18/20 advvqa-packet1-b-uxtYBnMflHjdtukTCogD
+[1/bonus] 20/20 advvqa-packet1-b-bVLhSOrl0rOBuoOxwKA4
+[1/bonus] 19/20 advvqa-packet1-b-fPFqEVUWBAK4x0xycyA7
+/tmp/qanta-frontier.uZ1vP7/output/Packet 1 - Jordan/Bonus/bonus__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[2/bonus] 4/20 advvqa-packet2-b-pOAjFMEpaeJRwOm4iYiA
+[2/bonus] 1/20 advvqa-packet2-b-fSvWgAZNctiri89Hu7YT
+[2/bonus] 2/20 advvqa-packet2-b-TUBSaSaCWhsEkCcYg8od
+[2/bonus] 3/20 advvqa-packet2-b-dmJw487o6olYqnozXGtf
+[2/bonus] 7/20 advvqa-packet2-b-yVSP2w7uG2t93ZoZRLqz
+[2/bonus] 5/20 advvqa-packet2-b-MAB7UJUemEjHoda8aW3o
+[2/bonus] 6/20 advvqa-packet2-b-LrBoBxSjQm3FcWsgeUbQ
+[2/bonus] 8/20 advvqa-packet2-b-tyKtCAGg2dI9ZyYhZrcn
+[2/bonus] 9/20 advvqa-packet2-b-Y1HNUojkbmGvcmuLbJzy
+[2/bonus] 10/20 advvqa-packet2-b-9VjQ9lBNO6rmQJmE7ftC
+[2/bonus] 11/20 advvqa-packet2-b-CXdipkpdbYPo7ZbFSHfU
+[2/bonus] 12/20 advvqa-packet2-b-N4ReI7qsJK7zvmJDICG3
+[2/bonus] 13/20 advvqa-packet2-b-ITg3iLtqet63qneCW3ZB
+[2/bonus] 14/20 advvqa-packet2-b-phDW0Nb5YWdZDLUID6Uc
+[2/bonus] 15/20 advvqa-packet2-b-kToIbZ1PdvoDXK63Gq3C
+[2/bonus] 16/20 advvqa-packet2-b-uMQ0IEOXrY2U4EoBpm1M
+[2/bonus] 17/20 advvqa-packet2-b-E5t10mzhOkAY7T9MNEYL
+[2/bonus] 18/20 advvqa-packet2-b-Hk3eje8dauAH8GChRZ0r
+[2/bonus] 20/20 advvqa-packet2-b-MsnPvfQ1GANWnPJKPBkf
+[2/bonus] 19/20 advvqa-packet2-b-MvloRivBZY8ZBMJpTOKh
+/tmp/qanta-frontier.uZ1vP7/output/Packet 2 - Kurtis/Bonus/bonus__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[3/bonus] 4/20 advvqa-packet3-b-v2rXBD7yUVqYjIM179JE
+[3/bonus] 1/20 advvqa-packet3-b-rdBFzeM4y9sHCVQfaFs4
+[3/bonus] 2/20 advvqa-packet3-b-t2HZ3kTSmoXtErgbe2m8
+[3/bonus] 3/20 advvqa-packet3-b-UjPfb6xPghtmdOFIMprn
+[3/bonus] 7/20 advvqa-packet3-b-kzerchXe5W8OlwQ0fIt9
+[3/bonus] 6/20 advvqa-packet3-b-ONKG87Klz56p26affrdR
+[3/bonus] 5/20 advvqa-packet3-b-yz1HsdJ9KiZEhgKzaKhU
+[3/bonus] 9/20 advvqa-packet3-b-Yo4hiZSSGbqYwDokUdMR
+[3/bonus] 11/20 advvqa-packet3-b-loJyCQy0OKi0ovkJxpV6
+[3/bonus] 10/20 advvqa-packet3-b-4SbH77nDOJp3d4EPQA9e
+[3/bonus] 8/20 advvqa-packet3-b-6eiGnV8rUnGVmskCiQNE
+[3/bonus] 13/20 advvqa-packet3-b-jcKUHDw334yMauf9RAIR
+[3/bonus] 14/20 advvqa-packet3-b-r5rihudcKdLdScE2rzk9
+[3/bonus] 15/20 advvqa-packet3-b-YBQwaXjt8DnhJloIRLAz
+[3/bonus] 16/20 advvqa-packet3-b-BLExSLVdESqnSyJo3zGm
+[3/bonus] 17/20 advvqa-packet3-b-cXVzhjVfw0rno7WTzhuL
+[3/bonus] 12/20 advvqa-packet3-b-bzhflpiTuOX2D1LUuCc4
+[3/bonus] 18/20 advvqa-packet3-b-d9Cb9JlBYfXpVF42szPr
+[3/bonus] 20/20 advvqa-packet3-b-ZKCgP29bWtkoBpAtB2RL
+[3/bonus] 19/20 advvqa-packet3-b-xQjomkAyJTFMM6ZMoLpD
+/tmp/qanta-frontier.uZ1vP7/output/Packet 3 - Irene + Stephen/Bonus/bonus__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[4/bonus] 3/20 advvqa-packet4-b-uSO62CnzwnuvORxgPL3I
+[4/bonus] 4/20 advvqa-packet4-b-xO8oeYpn6ZRIaYEq5q23
+[4/bonus] 2/20 advvqa-packet4-b-LKmMVniSIVg8XOa3p2Wy
+[4/bonus] 1/20 advvqa-packet4-b-vv1seeDRWcei0NEoFjr6
+[4/bonus] 5/20 advvqa-packet4-b-2BG4UBOVzSW0gRjA32mS
+[4/bonus] 6/20 advvqa-packet4-b-KmqloGoz75kLD8EJFXKm
+[4/bonus] 7/20 advvqa-packet4-b-eHzzmH3cGhitonhUqV84
+[4/bonus] 8/20 advvqa-packet4-b-LmjDJkvMoEaXm5ByTPZj
+[4/bonus] 11/20 advvqa-packet4-b-pcAndeCbBOtM2yraTYNF
+[4/bonus] 9/20 advvqa-packet4-b-UuoephrMMiqiFSr4Ycvn
+[4/bonus] 10/20 advvqa-packet4-b-hU9AyK84Jdf1Y6c0bOKp
+[4/bonus] 14/20 advvqa-packet4-b-56cbhp0FfN8GmEh3xEEt
+[4/bonus] 13/20 advvqa-packet4-b-TlZYFJa3StApguWEpOkb
+[4/bonus] 12/20 advvqa-packet4-b-fIx0tZH6tM6Mgo0Pl54W
+[4/bonus] 15/20 advvqa-packet4-b-MDcml0H3P5wwYlhjZdDr
+[4/bonus] 16/20 advvqa-packet4-b-m6WOzxh1Y7LF5nFnxAfw
+[4/bonus] 18/20 advvqa-packet4-b-ENzwKPPns9EUzeByrVyv
+[4/bonus] 19/20 advvqa-packet4-b-P1a1EhFU5deRhjv1AWyS
+[4/bonus] 20/20 advvqa-packet4-b-bqQk9A6lTYVfwzNnVG2N
+[4/bonus] 17/20 advvqa-packet4-b-v634Lk5xHSat6ltEL0gf
+/tmp/qanta-frontier.uZ1vP7/output/Packet 4 - Chauncey + Eve/Bonus/bonus__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+[5/bonus] 2/20 advvqa-packet5-b-j4oumPuYfV4ajA23e1Iz
+[5/bonus] 4/20 advvqa-packet5-b-TcIMYwrsBMrW1baIBpST
+[5/bonus] 1/20 advvqa-packet5-b-AB8am1JBbXR7aXBhcOrI
+[5/bonus] 6/20 advvqa-packet5-b-YHpZDTVxo2nprkulMlyR
+[5/bonus] 7/20 advvqa-packet5-b-nE0hRkUiv4spOjGCPI5V
+[5/bonus] 5/20 advvqa-packet5-b-B79Wa1zS67TPcJeWfvAN
+[5/bonus] 8/20 advvqa-packet5-b-m0PUrd6pEukFc2oOU1iN
+[5/bonus] 3/20 advvqa-packet5-b-CkRAqImfx4uSQFuJQerq
+[5/bonus] 9/20 advvqa-packet5-b-F1RSpFQSHlXS9adMBVr0
+[5/bonus] 10/20 advvqa-packet5-b-DUlOs4B6KCPII5LXrzGa
+[5/bonus] 13/20 advvqa-packet5-b-liLieLemlcZEa0EpPe0Y
+[5/bonus] 14/20 advvqa-packet5-b-1WV1FvfKVTT1oRQIprFy
+[5/bonus] 12/20 advvqa-packet5-b-eV1v2nnfpz5j56lzGjD3
+[5/bonus] 15/20 advvqa-packet5-b-r8fwAdZVV3ImTHpFoiHp
+[5/bonus] 11/20 advvqa-packet5-b-A0sybq8aS0vV0YnE68wa
+[5/bonus] 17/20 advvqa-packet5-b-armFu6DoWFAeft1LamAT
+[5/bonus] 16/20 advvqa-packet5-b-kyljRmn9h0TShMOnPt0T
+[5/bonus] 18/20 advvqa-packet5-b-thxXKq7PBLY8EShfF1Gq
+[5/bonus] 19/20 advvqa-packet5-b-l77X1iqdtk6c2FVPelD3
+[5/bonus] 20/20 advvqa-packet5-b-Xgi94sxMz4SBCqqddhiA
+/tmp/qanta-frontier.uZ1vP7/output/Packet 5 - Tianyi/Bonus/bonus__frontier__20260811_laguna_q4_cpu__poolside__Laguna-S-2.1.jsonl
+Exported benchmark artifacts to /mnt/main/users/ntruong8/Adversarial-AI/qanta-adversarial-benchmark/results/additional_benchmarks

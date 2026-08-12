@@ -56,7 +56,7 @@
     {"id": "zai-org/GLM-5.2", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "zai-org/GLM-5.2"},
     {"id": "thinkingmachines/Inkling", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "thinkingmachines/Inkling"},
     {"id": "Motif-Technologies/Motif-3-Beta", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "Motif-Technologies/Motif-3-Beta"},
-    {"id": "poolside/Laguna-S-2.1", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "ready_cpu_smoke", "artifact": "poolside/Laguna-S-2.1-GGUF"},
+    {"id": "poolside/Laguna-S-2.1", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "complete_cpu_q4_text_only", "artifact": "poolside/Laguna-S-2.1-GGUF"},
     {"id": "upstage/Solar-Open2-250B", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_no_official_cpu_runtime", "artifact": "upstage/Solar-Open2-250B"},
     {"id": "moonshotai/Kimi-K3", "cohort": "additional_benchmark", "tasks": ["tossup", "bonus"], "kind": "frontier_open_weight", "status": "blocked_exceeds_host_memory", "artifact": "moonshotai/Kimi-K3"}
   ]
