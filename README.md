@@ -109,6 +109,8 @@ On a GPU terminal, start here:
 
 ```bash
 git pull --ff-only
+export QANTA_SCRATCH=/path/to/large/scratch/$USER/qanta
+python scripts/frontier_preflight.py --setup-only
 python scripts/frontier_gpu.py list
 python scripts/frontier_gpu.py plan hy3
 python scripts/frontier_gpu.py serve hy3 --dry-run
@@ -116,9 +118,10 @@ python scripts/frontier_gpu.py serve hy3 --dry-run
 
 Then follow the two-terminal smoke/full workflow in the
 **[GPU quick start](docs/gpu_quickstart.md)**. The launcher checks visible GPU
-count and VRAM before it downloads weights, pins the model revision, keeps the
-Hugging Face cache outside Git, and writes a provenance manifest for successful
-benchmark runs.
+count and VRAM before it downloads weights, pins the model revision, requires a
+validated `QANTA_SCRATCH` outside home/project/temporary storage, and writes a
+provenance manifest for successful benchmark runs. The setup preflight also
+verifies all ten pinned Hub revisions from a fresh GitHub clone.
 
 The configured targets are Qwen3.5-397B-A17B, Hy3, DeepSeek-V4-Pro,
 MiniMax-M3, GLM-5.2, Inkling, Motif-3-Beta, Laguna-S-2.1,
@@ -136,7 +139,7 @@ The broader model inventory and CPU feasibility notes are in
 uses Poolside's official Laguna-S-2.1 Q4 GGUF:
 
 ```bash
-scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
+bash scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
 ```
 
 This command clones the public repository and runs from that clone. Model

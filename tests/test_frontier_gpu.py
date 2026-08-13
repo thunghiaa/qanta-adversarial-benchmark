@@ -30,6 +30,7 @@ class FrontierGpuRegistryTest(unittest.TestCase):
                 self.assertEqual(len(model["revision"]), 40)
                 int(model["revision"], 16)
                 self.assertTrue(model["recipe_url"].startswith("https://"))
+                self.assertGreater(model["checkpoint_weight_bytes"], 0)
                 self.assertGreater(model["minimum_total_vram_gb"], 0)
                 self.assertGreater(model["minimum_gpus"], 0)
                 self.assertEqual(model["canonical_id"].count("/"), 1)

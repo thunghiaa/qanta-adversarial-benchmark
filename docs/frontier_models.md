@@ -35,8 +35,9 @@ fork, downloads the pinned official GGUF to scratch, runs the benchmark, and
 exports only results, logs, and provenance metadata:
 
 ```bash
-scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
-scripts/run_frontier_cpu_from_github.sh full /absolute/output/directory
+export QANTA_SCRATCH=/path/to/large/scratch/$USER/qanta
+bash scripts/run_frontier_cpu_from_github.sh smoke /absolute/output/directory
+bash scripts/run_frontier_cpu_from_github.sh full /absolute/output/directory
 ```
 
 `smoke` evaluates one progressive tossup. `full` evaluates tossup and bonus on

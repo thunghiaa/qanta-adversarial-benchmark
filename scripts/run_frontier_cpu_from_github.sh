@@ -14,13 +14,33 @@ if [[ -z "$export_dir" ]]; then
   echo "EXPORT_DIR is required; only benchmark outputs are copied out of scratch" >&2
   exit 2
 fi
+if [[ -z "${QANTA_SCRATCH:-}" ]]; then
+  echo "QANTA_SCRATCH is required and must point to an existing large scratch filesystem" >&2
+  exit 2
+fi
+
+source_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
+PYTHONPATH="$source_root/src" SOURCE_ROOT="$source_root" QANTA_REQUIRED_GIB=130 python - <<'PY'
+import os
+from pathlib import Path
+
+from qanta_bench.preflight import GIB, scratch_from_env
+
+try:
+    report = scratch_from_env(
+        Path(os.environ["SOURCE_ROOT"]), int(os.environ["QANTA_REQUIRED_GIB"]) * GIB
+    )
+except ValueError as error:
+    raise SystemExit(f"Scratch preflight failed: {error}") from error
+print(f"Scratch preflight passed: {report.path} ({report.free_bytes / GIB:.1f} GiB free)")
+PY
 
 git_url="${BENCHMARK_GIT_URL:-https://github.com/thunghiaa/qanta-adversarial-benchmark.git}"
 git_ref="${BENCHMARK_GIT_REF:-main}"
 threads="${LLAMA_THREADS:-150}"
 workers="${BENCHMARK_WORKERS:-4}"
 run_id="${BENCHMARK_RUN_ID:-$(date -u +%Y%m%d_%H%M%S)}"
-scratch_root="$(mktemp -d /tmp/qanta-frontier.XXXXXX)"
+scratch_root="$(mktemp -d "$QANTA_SCRATCH/qanta-frontier.XXXXXX")"
 repo_dir="$scratch_root/repo"
 runtime_dir="$scratch_root/llama.cpp"
 weights_dir="$scratch_root/weights"

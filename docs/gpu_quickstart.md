@@ -19,18 +19,18 @@ and every pinned revision live in `configs/frontier_gpu.json`. NVIDIA or other
 vendor quantizations are explicitly labeled in `checkpoint_provenance`; they
 are not silently treated as the original BF16 checkpoint.
 
-| Slug | Served checkpoint | Minimum allocation for this recipe | Runtime |
+| Slug | Served checkpoint | Supported example allocation | Runtime |
 |---|---|---:|---|
-| `qwen3.5-397b` | `Qwen/Qwen3.5-397B-A17B-FP8` | 8 GPUs, 488 GB total | current vLLM with Qwen3.5 |
-| `hy3` | `tencent/Hy3-FP8` | 8 GPUs, 354 GB total | Hy3 vLLM image/nightly |
-| `deepseek-v4-pro` | `deepseek-ai/DeepSeek-V4-Pro` | 8 GPUs, 960 GB total | vLLM >=0.20 + DeepGEMM |
-| `minimax-m3` | `MiniMaxAI/MiniMax-M3-MXFP8` | 8 GPUs, 513 GB total | dedicated MiniMax-M3 image |
-| `glm-5.2` | `zai-org/GLM-5.2-FP8` | 8 GPUs, 893 GB total | vLLM >=0.23 |
-| `inkling` | `thinkingmachines/Inkling-NVFP4` | 8 GPUs, 651 GB total | vLLM 0.26 nightly |
-| `motif-3-beta` | `Motif-Technologies/Motif-3-Beta` | 8 H200/B200, 756 GB total | Motif vLLM image |
-| `laguna-s-2.1` | `poolside/Laguna-S-2.1` | 4 GPUs, 282 GB total | current vLLM with Poolside parsers |
-| `solar-open2-250b` | `upstage/Solar-Open2-250B` | 8 GPUs, 601 GB total | Upstage vLLM image/fork |
-| `kimi-k3` | `moonshotai/Kimi-K3` | 1,680 GB total | Kimi-K3 vLLM image/nightly |
+| `qwen3.5-397b` | `Qwen/Qwen3.5-397B-A17B-FP8` | 8xH200 or verified GB200, >=488 GB total | vLLM >=0.17 |
+| `hy3` | `tencent/Hy3-FP8` | 8xH200/H20-3e, >=354 GB total | Hy3 vLLM image/nightly |
+| `deepseek-v4-pro` | `deepseek-ai/DeepSeek-V4-Pro` | 8xH200/B200, >=960 GB total | vLLM >=0.20 + DeepGEMM |
+| `minimax-m3` | `MiniMaxAI/MiniMax-M3-MXFP8` | 8xH100/H200/B200, >=513 GB total | dedicated MiniMax-M3 image |
+| `glm-5.2` | `zai-org/GLM-5.2-FP8` | 8xH200/H20, >=893 GB total | vLLM >=0.23 |
+| `inkling` | `thinkingmachines/Inkling-NVFP4` | default 8xH200; official 4xGB200 profile | vLLM 0.26 nightly |
+| `motif-3-beta` | `Motif-Technologies/Motif-3-Beta` | 8xH200/B200, >=756 GB total | Motif vLLM image |
+| `laguna-s-2.1` | `poolside/Laguna-S-2.1` | 2xH200/B200, >=282 GB total | vLLM >=0.25 |
+| `solar-open2-250b` | `upstage/Solar-Open2-250B` | 8xH100/H200, >=601 GB total | Upstage vLLM image/fork |
+| `kimi-k3` | `moonshotai/Kimi-K3` | 8xB300 or official multi-node profile, >=1,680 GB | Kimi-K3 vLLM image/nightly |
 
 These are conservative startup floors for this launcher's default profiles at
 an 8K context window, not performance guarantees. Kimi-K3 normally needs
@@ -39,24 +39,63 @@ Inkling recipe also has a four-GPU GB200 profile, but this launcher's portable
 default is TP8; use the linked official recipe for that special case. Always run
 the preflight on the actual allocation.
 
-## 1. Clone GitHub on the GPU machine
+## 1. Configure scratch and clone GitHub there
+
+`QANTA_SCRATCH` is mandatory. It must already exist, be writable, have enough
+free capacity for the selected pinned checkpoint plus staging headroom, and be
+outside all of the following:
+
+- `/nfshomes/$USER` and the user's home directory;
+- `/tmp` and `/var/tmp`;
+- the Git checkout and normal project storage such as
+  `/mnt/main/users/$USER`.
+
+Ask the cluster documentation or administrator for the actual scratch mount;
+do not substitute a project directory simply because it has free space. On a
+compute node that exposes a suitable scratch path:
 
 ```bash
-git clone https://github.com/thunghiaa/qanta-adversarial-benchmark.git
-cd qanta-adversarial-benchmark
+export QANTA_SCRATCH=/path/to/large/scratch/$USER/qanta
+test -d "$QANTA_SCRATCH" && test -w "$QANTA_SCRATCH"
+
+git clone https://github.com/thunghiaa/qanta-adversarial-benchmark.git \
+  "$QANTA_SCRATCH/qanta-adversarial-benchmark"
+cd "$QANTA_SCRATCH/qanta-adversarial-benchmark"
+```
+
+If that checkout already exists, use `git pull --ff-only` inside it rather than
+creating another long-lived checkout.
+
+## 2. Run the reproducibility preflight
+
+```bash
+python scripts/frontier_preflight.py --setup-only
+```
+
+The preflight performs a fresh public GitHub clone inside `QANTA_SCRATCH`,
+reads `configs/frontier_gpu.json` from that clone, and resolves all ten exact
+Hugging Face revisions anonymously. It also checks configured Git name/email
+and performs a non-writing `git push --dry-run`; it never prints a credential.
+
+To size storage for one model and verify the active GPU allocation as well:
+
+```bash
+python scripts/frontier_preflight.py --model hy3
+```
+
+If `--setup-only` passes but `--model` does not, storage/Git/Hub setup is ready
+and only the supported GPU allocation remains. Never use
+`--skip-git-write-check` for a production run; that flag exists only for
+read-only mirrors and CI. Once setup passes, prepare the Python environment in
+the scratch checkout:
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[inference]'
 ```
 
-If the repository is already cloned:
-
-```bash
-git pull --ff-only
-source .venv/bin/activate
-```
-
-## 2. Inspect the allocation before downloading weights
+## 3. Inspect the allocation before downloading weights
 
 List every target, then plan one model:
 
@@ -73,7 +112,7 @@ Use the scheduler to request enough GPUs first. Extra CPUs do not solve a VRAM
 shortage; 100-150 CPUs may help data preparation or CPU inference, but these ten
 GPU checkpoints are limited primarily by HBM capacity and interconnect.
 
-## 3. Install the model-specific runtime
+## 4. Install the model-specific runtime
 
 Do not assume one vLLM wheel supports all ten day-zero architectures. The
 `plan` output shows the required runtime and container. Prefer that exact
@@ -92,13 +131,14 @@ The printed command includes the pinned Hugging Face revision. If using a
 container, execute the same arguments inside the model-specific image printed
 by `plan`.
 
-## 4. Start the server in terminal A
+## 5. Start the server in terminal A
 
-Use node-local scratch for weights. `frontier_gpu.py` refuses a cache path
-inside the Git checkout.
+Use the validated scratch for weights. `frontier_gpu.py` refuses to start if
+`QANTA_SCRATCH` is absent, lies in a forbidden location, lacks model-specific
+free space, or if `--cache-dir` points outside it.
 
 ```bash
-export MODEL_CACHE="${SLURM_TMPDIR:-/tmp}/qanta-frontier-hf-cache"
+export MODEL_CACHE="$QANTA_SCRATCH/qanta-frontier-hf-cache"
 python scripts/frontier_gpu.py serve hy3 --cache-dir "$MODEL_CACHE"
 ```
 
@@ -113,7 +153,7 @@ pinned checkpoint, revision, served-model name, and 8K benchmark context from
 the dry-run command. The local launcher is not a substitute for configuring the
 cluster fabric.
 
-## 5. Smoke-test in terminal B
+## 6. Smoke-test in terminal B
 
 Start with two questions and one worker:
 
@@ -131,7 +171,7 @@ The client checks `/v1/models` before inference. Results go under
 `results/additional_benchmarks/`, and a JSON provenance manifest is written to
 `results/additional_benchmarks/_manifests/` after a successful run.
 
-## 6. Run packets 1-5
+## 7. Run packets 1-5
 
 Run tossups and bonuses separately. Use the same run ID so the pair is easy to
 audit:
@@ -150,7 +190,7 @@ If the server is unstable, lower `--workers` before changing inference or
 scoring settings. The JSONL writer resumes by QID, so rerunning the same command
 and run ID skips completed questions.
 
-## 7. Validate and push only reproducible artifacts
+## 8. Validate and push only reproducible artifacts
 
 ```bash
 qanta-bench validate
@@ -173,6 +213,8 @@ files, or tokens. Those weight formats and caches are blocked by `.gitignore`.
 - `configs/models.json`: cohort registration (`additional_benchmark`).
 - `scripts/frontier_gpu.py`: allocation preflight, serve command, benchmark
   client, and run manifest.
+- `scripts/frontier_preflight.py`: scratch policy, mandated fresh clone,
+  anonymous pinned-revision check, safe Git write check, and allocation gate.
 - `scripts/benchmark_frontier.py`: common QANTA OpenAI-compatible inference
   protocol and strict scoring.
 

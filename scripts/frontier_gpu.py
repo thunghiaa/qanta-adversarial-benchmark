@@ -19,6 +19,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "configs" / "frontier_gpu.json"
+sys.path.insert(0, str(ROOT / "src"))
+
+from qanta_bench.preflight import checkpoint_scratch_bytes, scratch_from_env  # noqa: E402
 
 
 def load_config() -> dict[str, Any]:
@@ -113,20 +116,28 @@ def render_command(
 
 
 def default_cache_dir() -> Path:
-    scratch = os.environ.get("SLURM_TMPDIR") or os.environ.get("TMPDIR") or "/tmp"
-    return Path(scratch) / "qanta-frontier-hf-cache"
+    report = scratch_from_env(ROOT)
+    return report.path / "qanta-frontier-hf-cache"
 
 
-def ensure_external_cache(cache_dir: Path) -> None:
+def ensure_external_cache(cache_dir: Path, scratch_root: Path | None = None) -> None:
     resolved = cache_dir.expanduser().resolve()
     try:
         resolved.relative_to(ROOT.resolve())
     except ValueError:
-        return
-    raise SystemExit(
-        f"Refusing to store model weights inside the Git checkout: {resolved}. "
-        "Use --cache-dir on scratch storage."
-    )
+        pass
+    else:
+        raise SystemExit(
+            f"Refusing to store model weights inside the Git checkout: {resolved}. "
+            "Use QANTA_SCRATCH."
+        )
+    if scratch_root is not None:
+        try:
+            resolved.relative_to(scratch_root.resolve())
+        except ValueError as error:
+            raise SystemExit(
+                f"Weight cache must be inside QANTA_SCRATCH ({scratch_root}): {resolved}"
+            ) from error
 
 
 def print_model_plan(
@@ -142,6 +153,7 @@ def print_model_plan(
         f"Hardware:    >= {model['minimum_gpus']} GPUs and >= "
         f"{model['minimum_total_vram_gb']} GB total VRAM ({model['deployment']})"
     )
+    print(f"GPU families: {', '.join(model['supported_gpu_families'])}")
     print(f"VRAM basis:  {model['vram_basis']}")
     print(f"Track:       QANTA text-only common track; modalities={','.join(model['modalities'])}")
     print(f"Recipe:      {model['recipe_url']}")
@@ -165,8 +177,12 @@ def list_models(config: dict[str, Any]) -> None:
 
 
 def serve(args: argparse.Namespace, model: dict[str, Any]) -> None:
-    cache_dir = args.cache_dir or default_cache_dir()
-    ensure_external_cache(cache_dir)
+    try:
+        scratch = scratch_from_env(ROOT, checkpoint_scratch_bytes(model))
+    except ValueError as error:
+        raise SystemExit(f"Scratch preflight failed: {error}") from error
+    cache_dir = args.cache_dir or scratch.path / "qanta-frontier-hf-cache"
+    ensure_external_cache(cache_dir, scratch.path)
     command = render_command(
         model,
         tp=args.tp or model["default_tp"],

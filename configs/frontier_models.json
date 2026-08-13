@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "cohort": "additional_benchmark",
-  "verified_at": "2026-08-12",
+  "verified_at": "2026-08-13",
   "policy": {
     "submitted_models_are_excluded": true,
     "pin_every_checkpoint_revision": true,
